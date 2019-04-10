@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SIMALILI/user-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/user-new.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,15 +25,6 @@
                 <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-subject.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -77,12 +67,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../SIMALILI/user-new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="399" column="13" selection-start-line="399" selection-start-column="13" selection-end-line="399" selection-end-column="13" />
+            <state relative-caret-position="524">
+              <caret line="133" column="43" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/user-modify.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/user-delete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -114,15 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -141,8 +140,8 @@
       <find>friend</find>
       <find>assets/</find>
       <find>&amp;nbsp;</find>
-      <find>&lt;td&gt;↓&lt;/td&gt;</find>
       <find>../</find>
+      <find>&lt;td&gt;↓&lt;/td&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>40%</replace>
@@ -170,11 +169,13 @@
         <option value="$PROJECT_DIR$/../SIMALILI/signin-executive.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/secretary-enrollment.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-docent.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/user-modify.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/user-delete.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/user-new.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -209,6 +210,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\WebstormProjects\SIMALILI" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -231,7 +237,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554853939665</updated>
-      <workItem from="1554853946275" duration="16566000" />
+      <workItem from="1554853946275" duration="17061000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -338,18 +344,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554869795426</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[Add] User - New">
+      <created>1554871707654</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1554871707654</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16566000" />
+    <option name="totallyTimeSpent" value="17061000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09747102" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19764957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49947312" weight="0.32917964" />
@@ -396,7 +409,8 @@
     <MESSAGE value="[Add] Secretary - Elements" />
     <MESSAGE value="[Fix] Sign" />
     <MESSAGE value="[Fix] Elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Fix] Elements" />
+    <MESSAGE value="[Add] User - New" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] User - New" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -545,10 +559,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../SIMALILI/user-new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="399" column="13" selection-start-line="399" selection-start-column="13" selection-end-line="399" selection-end-column="13" />
+        <state relative-caret-position="524">
+          <caret line="133" column="43" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
