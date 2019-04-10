@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SIMALILI/executive-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/executive-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SIMALILI/executive-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/executive-list.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,19 +31,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-enrollment.html">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="152" column="33" lean-forward="true" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+            <state relative-caret-position="258">
+              <caret line="117" column="4" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-user.html">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+            <state relative-caret-position="309">
+              <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -172,7 +172,6 @@
         <option value="$PROJECT_DIR$/../SIMALILI/signin-secretary.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-subject.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-student.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-list.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-grade.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-enrollment.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-docent.html" />
@@ -182,6 +181,7 @@
         <option value="$PROJECT_DIR$/../SIMALILI/secretary-list.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/signin-executive.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-user.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/executive-list.html" />
       </list>
     </option>
   </component>
@@ -242,7 +242,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554853939665</updated>
-      <workItem from="1554853946275" duration="12377000" />
+      <workItem from="1554853946275" duration="12558000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -300,11 +300,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554866915855</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Add] Executive User">
+      <created>1554867009659</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554867009659</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12377000" />
+    <option name="totallyTimeSpent" value="12558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
@@ -348,7 +355,8 @@
     <MESSAGE value="[Add] Executive List" />
     <MESSAGE value="[Add] Executive Enrollment" />
     <MESSAGE value="[Add] Executive User&#10;[Fix] Elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] Executive User&#10;[Fix] Elements" />
+    <MESSAGE value="[Add] Executive User" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Executive User" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
@@ -368,13 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="170" column="7" selection-start-line="170" selection-start-column="7" selection-end-line="170" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="152" column="29" lean-forward="true" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -481,8 +482,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="118" column="25" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="25" />
+        <state relative-caret-position="258">
+          <caret line="117" column="4" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
         </state>
       </provider>
     </entry>
