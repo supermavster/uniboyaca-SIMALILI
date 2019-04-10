@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SIMALILI/executive-docent - Copy.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SIMALILI/executive-docent.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/executive-docent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SIMALILI/executive-subject.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/executive-subject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SIMALILI/executive-grade.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/executive-grade.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,14 +29,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-docent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="126" column="86" selection-start-line="126" selection-start-column="86" selection-end-line="126" selection-end-column="86" />
+            <state relative-caret-position="370">
+              <caret line="123" column="77" selection-start-line="123" selection-start-column="77" selection-end-line="123" selection-end-column="77" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-grade.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="126" column="84" selection-start-line="126" selection-start-column="84" selection-end-line="126" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -77,6 +85,7 @@
         <option value="$PROJECT_DIR$/../SIMALILI/signin-secretary.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/signin-executive.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-subject.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/executive-grade.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-docent.html" />
       </list>
     </option>
@@ -138,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554853939665</updated>
-      <workItem from="1554853946275" duration="11775000" />
+      <workItem from="1554853946275" duration="11840000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -161,11 +170,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554866301332</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[Add] Executive Docent">
+      <created>1554866411200</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554866411200</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11775000" />
+    <option name="totallyTimeSpent" value="11840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
@@ -204,7 +220,8 @@
     <MESSAGE value="[Add] Base Actions  - Executive" />
     <MESSAGE value="[Add] Elements Base" />
     <MESSAGE value="[Add] Executive Subject" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] Executive Subject" />
+    <MESSAGE value="[Add] Executive Docent" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Executive Docent" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
@@ -279,10 +296,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-grade.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="126" column="84" selection-start-line="126" selection-start-column="84" selection-end-line="126" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-docent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="126" column="86" selection-start-line="126" selection-start-column="86" selection-end-line="126" selection-end-column="86" />
+        <state relative-caret-position="370">
+          <caret line="123" column="77" selection-start-line="123" selection-start-column="77" selection-end-line="123" selection-end-column="77" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
