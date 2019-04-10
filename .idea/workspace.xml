@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SIMALILI/enrollment-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/enrollment-search.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,27 +31,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-student.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-enrollment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-docent.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
@@ -64,13 +44,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../SIMALILI/user-new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="133" column="43" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
+            <state relative-caret-position="189">
+              <caret line="294" column="50" lean-forward="true" selection-start-line="202" selection-start-column="44" selection-end-line="294" selection-end-column="50" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#1;n#div#0;n#div#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -78,10 +60,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-new.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#1;n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-modify.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5828">
+              <caret line="452" column="7" lean-forward="true" selection-start-line="452" selection-start-column="7" selection-end-line="452" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="443" column="78" selection-start-line="443" selection-start-column="78" selection-end-line="443" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-delete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../SIMALILI/user-modify.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+            <state relative-caret-position="578">
+              <caret line="358" column="94" selection-start-line="358" selection-start-column="94" selection-end-line="358" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -89,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../SIMALILI/user-delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+            <state relative-caret-position="116">
+              <caret line="358" column="93" selection-start-line="358" selection-start-column="93" selection-end-line="358" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -100,24 +122,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="37" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="136" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/secretary-enrollment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="129" column="100" selection-start-line="129" selection-start-column="100" selection-end-line="129" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -139,9 +143,11 @@
       <find>110px</find>
       <find>friend</find>
       <find>assets/</find>
-      <find>&amp;nbsp;</find>
       <find>../</find>
       <find>&lt;td&gt;↓&lt;/td&gt;</find>
+      <find>&amp;nbsp;</find>
+      <find>en el</find>
+      <find>registr</find>
     </findStrings>
     <replaceStrings>
       <replace>40%</replace>
@@ -169,14 +175,19 @@
         <option value="$PROJECT_DIR$/../SIMALILI/signin-executive.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/secretary-enrollment.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/executive-docent.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/user-modify.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/user-delete.html" />
         <option value="$PROJECT_DIR$/../SIMALILI/user-new.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-new.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/user-delete.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/user-modify.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-modify.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-delete.html" />
+        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-search.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -237,7 +248,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554853939665</updated>
-      <workItem from="1554853946275" duration="17061000" />
+      <workItem from="1554853946275" duration="18413000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -351,18 +362,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554871707654</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="[Add] Users">
+      <created>1554872023070</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1554872023070</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17061000" />
+    <option name="totallyTimeSpent" value="18413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19764957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09747102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49947312" weight="0.32917964" />
@@ -410,7 +428,8 @@
     <MESSAGE value="[Fix] Sign" />
     <MESSAGE value="[Fix] Elements" />
     <MESSAGE value="[Add] User - New" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] User - New" />
+    <MESSAGE value="[Add] Users" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Users" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -559,28 +578,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-modify.html">
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+        <state relative-caret-position="189">
+          <caret line="294" column="50" lean-forward="true" selection-start-line="202" selection-start-column="44" selection-end-line="294" selection-end-column="50" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#1;n#div#0;n#div#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../SIMALILI/user-delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
+        <state relative-caret-position="116">
+          <caret line="358" column="93" selection-start-line="358" selection-start-column="93" selection-end-line="358" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="358" column="94" selection-start-line="358" selection-start-column="94" selection-end-line="358" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#1;n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5828">
+          <caret line="452" column="7" lean-forward="true" selection-start-line="452" selection-start-column="7" selection-end-line="452" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
           <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-new.html">
+    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="133" column="43" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="116">
+          <caret line="443" column="78" selection-start-line="443" selection-start-column="78" selection-end-line="443" selection-end-column="78" />
         </state>
       </provider>
     </entry>
