@@ -18,7 +18,6 @@
     <link href="img/logo/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="img/logo/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
     <link href="img/logo/favicon-128.png" rel="icon" sizes="128x128" type="image/png"/>
-    <meta content="&nbsp;" name="application-name"/>
     <meta content="#FFFFFF" name="msapplication-TileColor"/>
     <meta content="img/logo/mstile-144x144.png" name="msapplication-TileImage"/>
     <meta content="img/logo/mstile-70x70.png" name="msapplication-square70x70logo"/>
@@ -27,7 +26,7 @@
     <meta content="img/logo/mstile-310x310.png" name="msapplication-square310x310logo"/>
 
     <!-- Title -->
-    <title>Bienvenda - Secretaria</title>
+    <title>Buscar Asignatura</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
@@ -36,7 +35,6 @@
     <!-- Argon CSS -->
     <link href="css/argon.css?v=1.0.1" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 <header class="header-global">
     <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom" id="navbar-main">
@@ -71,7 +69,7 @@
                     <li class="nav-item d-none d-lg-block ml-lg-4">
                         <a class="btn btn-neutral btn-icon" href="login.html" target="_blank">
                 <span class="btn-inner--icon">
-                  <i class="fa fa-sign-in mr-2"></i>
+                  <i class="fa fa-close mr-2"></i>
                 </span>
                             <span class="nav-link-inner--text">LogOut</span>
                         </a>
@@ -110,7 +108,7 @@
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
                                 <a href="#">
-                                    <img class="rounded-circle" src="img/icons/Usuario.png">
+                                    <img class="rounded-circle" src="img/icons/Asignatura.png">
                                 </a>
                             </div>
                         </div>
@@ -119,23 +117,82 @@
                         <div class="col-lg-4 order-lg-1">
                             <div class="card-profile-stats d-flex justify-content-center">
                                 <div>
-                                    <span class="heading">Bienvenida Secretaria</span>
-                                    <span class="description">A SIMALILI</span>
+                                    <span class="heading">Busqueda de:</span>
+                                    <span class="description">Asignatura</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <h1>Usuario</h1>
+                        <h1>Asignatura</h1>
                         <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i></div>
                     </div>
                     <div class="mt-3 py-5 border-top text-center">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
-                                <a class="btn btn-outline-default" href="user-new.html">Nuevo Usuario</a>
-                                <a class="btn btn-outline-default" href="user-modify.html">Modificar Usuario</a>
-                                <a class="btn btn-outline-default" href="user-search.html">Buscar Usuario</a>
-                                <a class="btn btn-outline-default" href="user-delete.html">Eliminar Usuario</a>
+                                <table class="col-lg-12">
+                                    <tbody>
+                                    <tr class="tableizer-firstrow">
+                                        <th>CODIGO ASIGNATURA:</th>
+                                        <th>
+                                            <div class="dropdown">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                                        id="dropdownMenuButton2" type="button">
+                                                    Seleccione
+                                                </button>
+                                                <div aria-labelledby="dropdownMenuButton2" class="dropdown-menu">
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>NOMBRE:</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                                        id="dropdownMenuButton3" type="button">
+                                                    Seleccione
+                                                </button>
+                                                <div aria-labelledby="dropdownMenuButton3" class="dropdown-menu">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CURSO ASIGNADO:</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                                        id="dropdownMenuButton" type="button">
+                                                    Seleccione
+                                                </button>
+                                                <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOCENTE ASIGNADO:</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                                        id="dropdownMenuButton1" type="button">
+                                                    Seleccione
+                                                </button>
+                                                <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <hr/>
+                                <button class="btn btn-secondary btn-lg" type="button">Buscar</button>
+                                <button class="btn btn-danger btn-lg" type="button">Cancelar</button>
                             </div>
                         </div>
                     </div>
@@ -195,7 +252,6 @@
 <script src="js/argon.js?v=1.0.1"></script>
 <!-- Optional JS -->
 <script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
 
 </body>
 </html>
