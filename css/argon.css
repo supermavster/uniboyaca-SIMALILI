@@ -71,6 +71,10 @@ html
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.dropdown {
+    margin-bottom: 1.5rem !important;
+}
+
 @-ms-viewport
 {
     width: device-width;
