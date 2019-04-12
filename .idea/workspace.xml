@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="[Add] new Elements">
-      <change afterPath="$PROJECT_DIR$/secretary-user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-search.html" afterDir="false" />
+    <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/argon.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/argon.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enrollment-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment-delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enrollment-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment-modify.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enrollment-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment-new.html" afterDir="false" />
@@ -20,10 +19,10 @@
       <change beforePath="$PROJECT_DIR$/grade-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/grade-modify.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grade-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/grade-new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grade-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/grade-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/secretary-enrollment.html" beforeDir="false" afterPath="$PROJECT_DIR$/secretary-enrollment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/secretary-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/secretary-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secretary-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/secretary-user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signin-executive.html" beforeDir="false" afterPath="$PROJECT_DIR$/signin-executive.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signin-secretary.html" beforeDir="false" afterPath="$PROJECT_DIR$/signin-secretary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subject-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/subject-delete.html" afterDir="false" />
@@ -32,6 +31,7 @@
       <change beforePath="$PROJECT_DIR$/user-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-modify.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-search.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,19 +45,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/enrollment-new.html">
+        <entry file="file://$PROJECT_DIR$/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5063">
-              <caret line="160" column="42" selection-start-line="160" selection-start-column="42" selection-end-line="160" selection-end-column="42" />
+            <state relative-caret-position="136">
+              <caret line="107" column="64" selection-start-line="107" selection-start-column="64" selection-end-line="107" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="196" selection-start-line="196" selection-end-line="196" />
+            <state relative-caret-position="558">
+              <caret line="396" column="18" lean-forward="true" selection-start-line="396" selection-start-column="18" selection-end-line="396" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,19 +75,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/enrollment-modify.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5638">
-              <caret line="124" column="34" selection-start-line="124" selection-end-line="125" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user-new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="393" column="57" selection-start-line="393" selection-start-column="57" selection-end-line="393" selection-end-column="57" />
+            <state relative-caret-position="4706">
+              <caret line="400" column="13" selection-start-line="400" selection-start-column="13" selection-end-line="400" selection-end-column="13" />
               <folding>
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -96,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/executive-enrollment.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-218">
-              <caret line="129" column="37" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="37" />
+              <caret line="129" column="69" selection-start-line="129" selection-start-column="59" selection-end-line="129" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -105,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="55" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="57" />
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -127,19 +121,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-delete.html">
+        <entry file="file://$PROJECT_DIR$/enrollment-delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="394" column="10" selection-start-line="394" selection-start-column="10" selection-end-line="394" selection-end-column="10" />
+            <state relative-caret-position="592">
+              <caret line="494" column="9" selection-start-line="494" selection-start-column="9" selection-end-line="494" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/enrollment-delete.html">
+        <entry file="file://$PROJECT_DIR$/secretary-user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="481" column="13" selection-start-line="481" selection-start-column="13" selection-end-line="481" selection-end-column="13" />
+            <state relative-caret-position="762">
+              <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-delete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="408" column="10" selection-start-line="408" selection-start-column="10" selection-end-line="408" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -171,6 +180,10 @@
       <find>&lt;div class=&quot;h6 font-weight-300&quot;&gt;&lt;i class=&quot;ni location_pin mr-2&quot;&gt;&lt;/i&gt;&lt;/div&gt;</find>
       <find>btn-secondary</find>
       <find>&lt;!-- Core --&gt;</find>
+      <find>../../assets/</find>
+      <find>&lt;script src=&quot;vendor/headroom/headroom.min.js&quot;&gt;&lt;/script&gt;</find>
+      <find>.bg-gradient-default</find>
+      <find>.section-shaped .shape-style-1.shape-default</find>
     </findStrings>
     <replaceStrings>
       <replace>40%</replace>
@@ -201,11 +214,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/signin-secretary.html" />
         <option value="$PROJECT_DIR$/signin-secretary.html" />
-        <option value="$PROJECT_DIR$/secretary-user.html" />
         <option value="$PROJECT_DIR$/executive-student.html" />
         <option value="$PROJECT_DIR$/signin-executive.html" />
         <option value="$PROJECT_DIR$/executive-user.html" />
-        <option value="$PROJECT_DIR$/user-search.html" />
         <option value="$PROJECT_DIR$/subject-new.html" />
         <option value="$PROJECT_DIR$/user-delete.html" />
         <option value="$PROJECT_DIR$/user-modify.html" />
@@ -214,10 +225,13 @@
         <option value="$PROJECT_DIR$/enrollment-modify.html" />
         <option value="$PROJECT_DIR$/enrollment-new.html" />
         <option value="$PROJECT_DIR$/executive-grade.html" />
+        <option value="$PROJECT_DIR$/user-new.html" />
+        <option value="$PROJECT_DIR$/css/argon.css" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/enrollment-delete.html" />
-        <option value="$PROJECT_DIR$/user-new.html" />
+        <option value="$PROJECT_DIR$/secretary-user.html" />
+        <option value="$PROJECT_DIR$/user-search.html" />
       </list>
     </option>
   </component>
@@ -291,7 +305,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554853939665</updated>
       <workItem from="1554853946275" duration="19481000" />
-      <workItem from="1555030600758" duration="4526000" />
+      <workItem from="1555030600758" duration="8275000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -433,21 +447,35 @@
       <option name="project" value="LOCAL" />
       <updated>1554874256669</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="[Fix] Base Elements">
+      <created>1555036123995</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1555036123995</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[Fix] Calemdar">
+      <created>1555036319528</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1555036319528</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24007000" />
+    <option name="totallyTimeSpent" value="27756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09747102" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09747102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -495,7 +523,9 @@
     <MESSAGE value="[Add] Users" />
     <MESSAGE value="[Add] Enrollment" />
     <MESSAGE value="[Add] new Elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] new Elements" />
+    <MESSAGE value="[Fix] Base Elements" />
+    <MESSAGE value="[Fix] Calemdar" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Fix] Calemdar" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -589,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/secretary-user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="133" selection-start-line="133" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/executive-student.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -613,13 +636,6 @@
           <folding>
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="224" column="88" selection-start-line="224" selection-start-column="60" selection-end-line="224" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -651,20 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enrollment-delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="481" column="13" selection-start-line="481" selection-start-column="13" selection-end-line="481" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enrollment-modify.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5638">
@@ -689,14 +691,14 @@
     <entry file="file://$PROJECT_DIR$/executive-enrollment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-218">
-          <caret line="129" column="37" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="37" />
+          <caret line="129" column="69" selection-start-line="129" selection-start-column="59" selection-end-line="129" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="57" />
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -717,16 +719,60 @@
     <entry file="file://$PROJECT_DIR$/user-delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
-          <caret line="394" column="10" selection-start-line="394" selection-start-column="10" selection-end-line="394" selection-end-column="10" />
+          <caret line="408" column="10" selection-start-line="408" selection-start-column="10" selection-end-line="408" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="393" column="57" selection-start-line="393" selection-start-column="57" selection-end-line="393" selection-end-column="57" />
+        <state relative-caret-position="4706">
+          <caret line="400" column="13" selection-start-line="400" selection-start-column="13" selection-end-line="400" selection-end-column="13" />
           <folding>
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/argon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="17433" column="28" lean-forward="true" selection-start-line="17433" selection-start-column="27" selection-end-line="17433" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="107" column="64" selection-start-line="107" selection-start-column="64" selection-end-line="107" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrollment-delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="494" column="9" selection-start-line="494" selection-start-column="9" selection-end-line="494" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secretary-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="762">
+          <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="396" column="18" lean-forward="true" selection-start-line="396" selection-start-column="18" selection-end-line="396" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
