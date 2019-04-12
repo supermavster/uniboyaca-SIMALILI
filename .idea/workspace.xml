@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIMALILI/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="[Add] new Elements">
+      <change afterPath="$PROJECT_DIR$/secretary-user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollment-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment-delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollment-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment-modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollment-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment-new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enrollment-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/enrollment-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executive-docent.html" beforeDir="false" afterPath="$PROJECT_DIR$/executive-docent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executive-enrollment.html" beforeDir="false" afterPath="$PROJECT_DIR$/executive-enrollment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executive-grade.html" beforeDir="false" afterPath="$PROJECT_DIR$/executive-grade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executive-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/executive-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executive-student.html" beforeDir="false" afterPath="$PROJECT_DIR$/executive-student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executive-subject.html" beforeDir="false" afterPath="$PROJECT_DIR$/executive-subject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executive-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/executive-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grade-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/grade-delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grade-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/grade-modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grade-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/grade-new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grade-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/grade-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secretary-enrollment.html" beforeDir="false" afterPath="$PROJECT_DIR$/secretary-enrollment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secretary-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/secretary-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signin-executive.html" beforeDir="false" afterPath="$PROJECT_DIR$/signin-executive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signin-secretary.html" beforeDir="false" afterPath="$PROJECT_DIR$/signin-secretary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subject-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/subject-delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subject-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/subject-modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subject-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/subject-new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-new.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,97 +43,103 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-new.html">
+        <entry file="file://$PROJECT_DIR$/enrollment-new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="42" />
+            <state relative-caret-position="-5063">
+              <caret line="160" column="42" selection-start-line="160" selection-start-column="42" selection-end-line="160" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="196" selection-start-line="196" selection-end-line="196" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enrollment-search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6620">
+              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="73" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enrollment-modify.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5638">
+              <caret line="124" column="34" selection-start-line="124" selection-end-line="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-new.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="393" column="57" selection-start-line="393" selection-start-column="57" selection-end-line="393" selection-end-column="57" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#a#1;n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-modify.html">
+        <entry file="file://$PROJECT_DIR$/executive-enrollment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5828">
-              <caret line="452" column="7" lean-forward="true" selection-start-line="452" selection-start-column="7" selection-end-line="452" selection-end-column="7" />
+            <state relative-caret-position="-218">
+              <caret line="129" column="37" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-search.html">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="443" column="78" selection-start-line="443" selection-start-column="65" selection-end-line="443" selection-end-column="78" />
+            <state relative-caret-position="51">
+              <caret line="3" column="55" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-new.html">
+        <entry file="file://$PROJECT_DIR$/signin-executive.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+            <state relative-caret-position="-2224">
+              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="72" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-delete.html">
+        <entry file="file://$PROJECT_DIR$/user-delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/subject-new.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="154" column="76" selection-start-line="154" selection-start-column="65" selection-end-line="154" selection-end-column="76" />
+            <state relative-caret-position="428">
+              <caret line="394" column="10" selection-start-line="394" selection-start-column="10" selection-end-line="394" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/subject-modify.html">
+        <entry file="file://$PROJECT_DIR$/enrollment-delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-modify.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-delete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
+            <state relative-caret-position="462">
+              <caret line="481" column="13" selection-start-line="481" selection-start-column="13" selection-end-line="481" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -131,52 +166,63 @@
       <find>en el</find>
       <find>registr</find>
       <find>&amp;nbsp;</find>
+      <find>&lt;h1&gt;Matricula&lt;/h1&gt;</find>
+      <find>dropdown-menu</find>
+      <find>&lt;div class=&quot;h6 font-weight-300&quot;&gt;&lt;i class=&quot;ni location_pin mr-2&quot;&gt;&lt;/i&gt;&lt;/div&gt;</find>
+      <find>btn-secondary</find>
+      <find>&lt;!-- Core --&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>40%</replace>
+      <replace />
+      <replace>dropdown-menu pre-scrollable</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\Projects\Uniboyaca\SIMALILI</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../SIMALILI" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/landing.html" />
+        <option value="$PROJECT_DIR$/executive-subject.html" />
+        <option value="$PROJECT_DIR$/executive-list.html" />
+        <option value="$PROJECT_DIR$/secretary-list.html" />
+        <option value="$PROJECT_DIR$/secretary-enrollment.html" />
+        <option value="$PROJECT_DIR$/executive-docent.html" />
+        <option value="$PROJECT_DIR$/grade-new.html" />
+        <option value="$PROJECT_DIR$/grade-search.html" />
+        <option value="$PROJECT_DIR$/grade-modify.html" />
+        <option value="$PROJECT_DIR$/grade-delete.html" />
+        <option value="$PROJECT_DIR$/subject-modify.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/signin-secretary.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/signin-secretary.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/landing.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/login.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-subject.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-student.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-list.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-grade.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-enrollment.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-user.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/secretary-list.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/signin-executive.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/secretary-enrollment.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/executive-docent.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/user-new.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/user-delete.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/user-modify.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-modify.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-delete.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-search.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/enrollment-new.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/grade-new.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/grade-search.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/grade-modify.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/grade-delete.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/subject-modify.html" />
-        <option value="$PROJECT_DIR$/../SIMALILI/subject-new.html" />
+        <option value="$PROJECT_DIR$/signin-secretary.html" />
+        <option value="$PROJECT_DIR$/secretary-user.html" />
+        <option value="$PROJECT_DIR$/executive-student.html" />
+        <option value="$PROJECT_DIR$/signin-executive.html" />
+        <option value="$PROJECT_DIR$/executive-user.html" />
+        <option value="$PROJECT_DIR$/user-search.html" />
+        <option value="$PROJECT_DIR$/subject-new.html" />
+        <option value="$PROJECT_DIR$/user-delete.html" />
+        <option value="$PROJECT_DIR$/user-modify.html" />
+        <option value="$PROJECT_DIR$/executive-enrollment.html" />
+        <option value="$PROJECT_DIR$/enrollment-search.html" />
+        <option value="$PROJECT_DIR$/enrollment-modify.html" />
+        <option value="$PROJECT_DIR$/enrollment-new.html" />
+        <option value="$PROJECT_DIR$/executive-grade.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/enrollment-delete.html" />
+        <option value="$PROJECT_DIR$/user-new.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -191,7 +237,7 @@
         <subPane>
           <expand>
             <path>
-              <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SIMALILI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -205,13 +251,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SIMALILI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Uniboyaca\SIMALILI" />
       <recent name="C:\Users\Administrator\WebstormProjects\SIMALILI" />
     </key>
   </component>
@@ -238,6 +291,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554853939665</updated>
       <workItem from="1554853946275" duration="19481000" />
+      <workItem from="1555030600758" duration="4526000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -383,26 +437,26 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19481000" />
+    <option name="totallyTimeSpent" value="24007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09747102" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09747102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" sideWeight="0.49947312" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3322851" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50052685" side_tool="true" weight="0.32917964" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" weight="0.32917964" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3322851" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -447,50 +501,81 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-docent - Copy.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/landing.html">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
+    <entry file="file://$PROJECT_DIR$/executive-docent - Copy.html" />
+    <entry file="file://$PROJECT_DIR$/landing.html" />
+    <entry file="file://$PROJECT_DIR$/executive-subject.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="711" lean-forward="true" selection-start-line="711" selection-end-line="711" />
+        <state relative-caret-position="324">
+          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secretary-enrollment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="129" column="100" selection-start-line="129" selection-start-column="100" selection-end-line="129" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executive-docent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#3;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#35438#35444#0" expanded="true" />
+            <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/secretary-list.html">
+    <entry file="file://$PROJECT_DIR$/grade-new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="122" column="29" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+        <state relative-caret-position="2108">
+          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/signin-executive.html">
+    <entry file="file://$PROJECT_DIR$/grade-delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="2108">
+          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/signin-secretary.html">
+    <entry file="file://$PROJECT_DIR$/subject-modify.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+        <state relative-caret-position="1836">
+          <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grade-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grade-modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executive-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="136" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signin-secretary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="135" column="64" selection-start-line="135" selection-start-column="64" selection-end-line="135" selection-end-column="64" />
           <folding>
             <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -504,190 +589,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/login.html">
+    <entry file="file://$PROJECT_DIR$/secretary-user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="191" column="7" selection-start-line="191" selection-start-column="7" selection-end-line="191" selection-end-column="7" />
-          <folding>
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="133" selection-start-line="133" selection-end-line="136" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/index.html">
+    <entry file="file://$PROJECT_DIR$/executive-student.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-subject.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
+        <state relative-caret-position="418">
+          <caret line="129" column="103" selection-start-line="129" selection-start-column="103" selection-end-line="129" selection-end-column="103" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-enrollment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/secretary-enrollment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="129" column="100" selection-start-line="129" selection-start-column="100" selection-end-line="129" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="136" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-docent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
-          <folding>
-            <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-grade.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/executive-user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="40" selection-start-line="40" selection-end-line="138" selection-end-column="9" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="294" column="50" lean-forward="true" selection-start-line="202" selection-start-column="44" selection-end-line="294" selection-end-column="50" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#a#1;n#div#0;n#div#0;n#td#1;n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="358" column="93" selection-start-line="358" selection-start-column="93" selection-end-line="358" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/user-modify.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="358" column="94" selection-start-line="358" selection-start-column="94" selection-end-line="358" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-modify.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5828">
-          <caret line="452" column="7" lean-forward="true" selection-start-line="452" selection-start-column="7" selection-end-line="452" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="42" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#a#1;n#div#0;n#div#0;n#td#1;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/enrollment-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="443" column="78" selection-start-line="443" selection-start-column="65" selection-end-line="443" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-modify.html">
+    <entry file="file://$PROJECT_DIR$/executive-user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
-          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="72" selection-end-column="18" />
+          <folding>
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/grade-delete.html">
+    <entry file="file://$PROJECT_DIR$/user-search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+        <state relative-caret-position="136">
+          <caret line="224" column="88" selection-start-line="224" selection-start-column="60" selection-end-line="224" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/subject-modify.html">
+    <entry file="file://$PROJECT_DIR$/subject-new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
+        <state relative-caret-position="403">
+          <caret line="148" column="80" selection-start-line="148" selection-start-column="80" selection-end-line="148" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SIMALILI/subject-new.html">
+    <entry file="file://$PROJECT_DIR$/user-modify.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="154" column="76" selection-start-line="154" selection-start-column="65" selection-end-line="154" selection-end-column="76" />
+        <state relative-caret-position="5039">
+          <caret line="330" column="88" selection-start-line="330" selection-start-column="88" selection-end-line="330" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executive-grade.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secretary-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="122" column="29" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrollment-delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="481" column="13" selection-start-line="481" selection-start-column="13" selection-end-line="481" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrollment-modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5638">
+          <caret line="124" column="34" selection-start-line="124" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrollment-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5063">
+          <caret line="160" column="42" selection-start-line="160" selection-start-column="42" selection-end-line="160" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enrollment-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6620">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executive-enrollment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="129" column="37" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signin-executive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2224">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="72" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="394" column="10" selection-start-line="394" selection-start-column="10" selection-end-line="394" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="393" column="57" selection-start-line="393" selection-start-column="57" selection-end-line="393" selection-end-column="57" />
+          <folding>
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
