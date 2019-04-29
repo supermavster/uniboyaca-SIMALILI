@@ -22,7 +22,7 @@ class Settings
     {
         self::setConstants();
         self::setSettings();
-        //self::setDataBase();
+        self::setDataBase();
         self::setLogin();
         self::setURL();
     }
@@ -79,8 +79,10 @@ class Settings
         define("isSession", isset($_SESSION));
 
         define('LOGIN', constant('valuesLogin'));
-        define('isLogin', constant('debug'));
-        //require_once AS_PLUGINS . 'login/sessions.php';
+        require_once AS_PLUGINS . 'login/sessions.php';
+
+        require_once AS_PLUGINS . 'login/class/signIn.php';
+        $signIn = new SignIn(self::getDataBase());
     }
 
     protected function setURL()
@@ -99,10 +101,6 @@ class Settings
         if (isset($this->connection)) {
             $this->connection->close();
         }
-
-        if (isset($this->connectionLogin)) {
-            $this->connectionLogin->close();
-        }
     }
 
     public function getDataBase()
@@ -110,22 +108,16 @@ class Settings
         return $this->connection;
     }
 
-    public function getDataBaseLogin()
-    {
-        return $this->connectionLogin;
-    }
 
     protected function setDataBase()
     {
         //Data Base
         require_once AS_DB . 'DataBase.php';
         $this->connection = new DataBase();
-        $this->connectionLogin = new DataBase('cittisco_generalData');
-        if ($this->connectionLogin !== null && $this->connection != null) {
+        if ($this->connection != null) {
             define("CH_DB", ($this->connection->getDB()) ? "Yes" : "No");
-            define("CH_DB_U", ($this->connectionLogin->getDB()) ? "Yes" : "No");
             //DB System
-            if (CH_DB === 'Yes' && CH_DB_U === 'Yes') {
+            if (CH_DB === 'Yes') {
                 self::includeDAOS();
             } else {
                 exit("No connect to DB");
@@ -137,7 +129,7 @@ class Settings
 
     protected function includeDAOS()
     {
-        //   require_once AS_DB . 'SignInAndSignUpDAO.php';
+        require_once AS_DB . 'SignInAndSignUpDAO.php';
     }
 }
 

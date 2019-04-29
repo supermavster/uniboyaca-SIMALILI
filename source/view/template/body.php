@@ -6,8 +6,12 @@ $main = new HTMLTag('main');
 $section = new HTMLTag('section', array("class" => "section section-shaped section-lg"));
 $section->innerHTML('<div class="shape shape-style-1 bg-gradient-default"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
 // Check if is Login
-if (isLogin) {
-    require_once AS_VIEW . 'login/login.php';
+if (!isLogin) {
+    if (isset($_GET) && isset($_GET["signUp"])) {
+        require_once AS_VIEW . 'login/register.php';
+    } else {
+        require_once AS_VIEW . 'login/login.php';
+    }
 } else {
     //require_once (AS_PLUGINS.'login/base/form.php');
 }

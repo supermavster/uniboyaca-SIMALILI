@@ -2,7 +2,7 @@
 $body->appendInnerHTML('<header class="header-global">
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
         <div class="container">
-            <a class="navbar-brand mr-lg-5" href="../index/index.html">
+            <a class="navbar-brand mr-lg-5" href="' . URLWEB_FULL . '">
                 <img src="' . AS_ASSETS . 'img/logo/logo-horizontal.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
@@ -13,7 +13,7 @@ $body->appendInnerHTML('<header class="header-global">
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a href="../index/index.html">
+                            <a href="' . URLWEB_FULL . '">
                                 <img src="' . AS_ASSETS . 'img/brand/blue.png">
                             </a>
                         </div>

@@ -12,19 +12,19 @@ $section->appendInnerHTML('<div class="container pt-lg-md">
                                         <img src="' . AS_ASSETS . 'img/logo/logo.png" width="260">
                                     </div>
                                     <div class="text-center">
-                                        <a class="btn btn-darker my-2" href="signin-executive.html">Directivo</a>
-                                        <a class="btn btn-darker my-2" href="signin-secretary.html">Secretaria</a>
+                                        <a class="btn btn-darker my-2" href="signin-executive.php">Directivo</a>
+                                        <a class="btn btn-darker my-2" href="signin-secretary.php">Secretaria</a>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <form role="form">
+                                    <form action="post" role="form">
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i
                                                             class="ni ni-circle-08"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Usuario" type="text">
+                                                <input id="userAccess" name="userAccess" class="form-control" placeholder="Usuario" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -33,14 +33,8 @@ $section->appendInnerHTML('<div class="container pt-lg-md">
                                                     <span class="input-group-text"><i
                                                             class="ni ni-lock-circle-open"></i></span>
                                                 </div>
-                                                <input class="form-control" placeholder="Contraseña" type="password">
+                                                <input id="passAccess" name="passAccess" class="form-control" placeholder="Contraseña" type="password">
                                             </div>
-                                        </div>
-                                        <div class="custom-control custom-control-alternative custom-checkbox">
-                                            <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                            <label class="custom-control-label" for=" customCheckLogin">
-                                                <span>Recordarme</span>
-                                            </label>
                                         </div>
                                         <div class="text-center">
                                             <button class="btn btn-success my-4" type="button">Inciar Sesión</button>
@@ -57,7 +51,7 @@ $section->appendInnerHTML('<div class="container pt-lg-md">
                             </a>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="#" class="text-light">
+                            <a href="signup" class="text-light">
                                 <small>Crear una nueva Cuenta</small>
                             </a>
                         </div>

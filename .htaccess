@@ -46,6 +46,8 @@ LimitRequestBody 10240000
     # Index Values
     RewriteRule ^/$ index.php [L]
 
+    RewriteRule ^signup$ /index.php?signUp=true
+
     # SSL
         #RewriteCond %{HTTPS} off
         #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
