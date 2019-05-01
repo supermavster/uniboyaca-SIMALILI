@@ -13,8 +13,8 @@ $section->appendInnerHTML('
                                 <img src="' . AS_ASSETS . 'img/logo/logo.png" width="260">
                             </div>
                             <div class="text-center">
-                                <a class="btn btn-darker my-2" href="signin-executive.php">Directivo</a>
-                                <a class="btn btn-darker my-2" href="signin-secretary.php">Secretaria</a>
+                                <a class="btn btn-darker my-2" href="signin-executive">Directivo</a>
+                                <a class="btn btn-darker my-2" href="signin-secretary">Secretaria</a>
                             </div>
                         </div>
                         <div class="col">

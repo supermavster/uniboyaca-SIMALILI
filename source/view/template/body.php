@@ -1,16 +1,16 @@
 <?php
 $body = new HTMLTag('body');
 $body->setComment(true);
-require_once 'header.php';
+require_once 'header';
 $main = new HTMLTag('main');
 // Check if is Login
 if (isLogin) {
     $section = new HTMLTag('section', array("class" => "section section-shaped section-lg"));
     $section->innerHTML('<div class="shape shape-style-1 bg-gradient-default"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
     if (isset($_GET) && isset($_GET["signUp"])) {
-        require_once AS_VIEW . 'login/register.php';
+        require_once AS_VIEW . 'login/register';
     } else {
-        require_once AS_VIEW . 'login/login.php';
+        require_once AS_VIEW . 'login/login';
     }
 } else {
     $main->appendAttribute("class", "profile-page");
@@ -67,11 +67,11 @@ if (isLogin) {
         // Get File
         $file = getRequest($path);
         // Call Require
-        $path = "$path/$path-$file.php";
+        $path = "$path/$path-$file";
         require_once AS_VIEW . $path;
     }
 }
 $main->appendChild($section);
 $body->appendChild($main);
 // Elements Base (END)
-require_once 'complements.php';
+require_once 'complements';

@@ -29,16 +29,16 @@ $section->appendInnerHTML('
             <div class="mt-3 py-5 border-top text-center">
               <div class="row justify-content-center">
                 <div class="col-lg-12">
-                  <a class="btn btn-outline-default" href="../docent/docent-new.php">Nuevo Docente</a>
-                  <a class="btn btn-outline-default" href="../docent/docent-modify.php">Modificar Docente</a>
-                  <a class="btn btn-outline-default" href="../docent/docent-delete.php">Borrar Docente</a>
-                  <a class="btn btn-outline-default" href="../docent/docent-search.php">Buscar Docente</a>
+                  <a class="btn btn-outline-default" href="../docent-new">Nuevo Docente</a>
+                  <a class="btn btn-outline-default" href="../docent-modify">Modificar Docente</a>
+                  <a class="btn btn-outline-default" href="../docent-delete">Borrar Docente</a>
+                  <a class="btn btn-outline-default" href="../docent-search">Buscar Docente</a>
                 </div>
               </div>
               <br/>
               <div class="row justify-content-center">
                 <div class="col-lg-12">
-                  <a class="btn btn-outline-default" href="../docent/docent-assign.php">Asignar Docente</a>
+                  <a class="btn btn-outline-default" href="../docent-assign">Asignar Docente</a>
                 </div>
               </div>
             </div>

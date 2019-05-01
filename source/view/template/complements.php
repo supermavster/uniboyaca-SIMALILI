@@ -13,4 +13,4 @@ $body->appendInnerHTML('  <!-- Core -->
 ');
 
 //Complements
-//require_once AS_VIEW.'complements/all.php';
+//require_once AS_VIEW.'complements/all';

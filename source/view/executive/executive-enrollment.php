@@ -29,10 +29,10 @@ $section->appendInnerHTML('
             <div class="mt-3 py-5 border-top text-center">
               <div class="row justify-content-center">
                 <div class="col-lg-12">
-                  <a class="btn btn-outline-default" href="../enrollment/enrollment-new.php">Nueva Matrícula</a>
-                  <a class="btn btn-outline-default" href="../enrollment/enrollment-modify.php">Modificar Matrícula</a>
-                  <a class="btn btn-outline-default" href="../enrollment/enrollment-delete.php">Borrar Matrícula</a>
-                  <a class="btn btn-outline-default" href="../enrollment/enrollment-search.php">Buscar Matrícula</a>
+                  <a class="btn btn-outline-default" href="../enrollment-new">Nueva Matrícula</a>
+                  <a class="btn btn-outline-default" href="../enrollment-modify">Modificar Matrícula</a>
+                  <a class="btn btn-outline-default" href="../enrollment-delete">Borrar Matrícula</a>
+                  <a class="btn btn-outline-default" href="../enrollment-search">Buscar Matrícula</a>
                 </div>
               </div>
             </div>

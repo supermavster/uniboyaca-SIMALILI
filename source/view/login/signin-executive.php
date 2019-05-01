@@ -11,7 +11,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Usuario.png">
                                     </div>
                                     <h6 class="text-primary text-uppercase">Usuario</h6>
-                                    <a class="btn btn-default mt-3" href="../executive/executive-user.php"
+                                    <a class="btn btn-default mt-3" href="../executive-user"
                                        style="right: 11px;">Ingresar</a>
                                 </div>
                             </div>
@@ -23,7 +23,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Matricula.png">
                                     </div>
                                     <h6 class="text-warning text-uppercase">Matrícula</h6>
-                                    <a class="btn btn-warning mt-3" href="../executive/executive-enrollment.php"
+                                    <a class="btn btn-warning mt-3" href="../executive-enrollment"
                                        style="right: 11px;">Ingresar</a>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Grado.png">
                                     </div>
                                     <h6 class="text-info text-uppercase" style="margin-left:5%">Grado</h6>
-                                    <a class="btn btn-info mt-4" href="../executive/executive-grade.php"
+                                    <a class="btn btn-info mt-4" href="../executive-grade"
                                        style="right: 5px;">Ingresar</a>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Asignatura.png">
                                     </div>
                                     <h6 class="text-success text-uppercase">Asignatura</h6>
-                                    <a class="btn btn-success mt-3" href="../executive/executive-subject.php"
+                                    <a class="btn btn-success mt-3" href="../executive-subject"
                                        style="right: 11px;">Ingresar</a>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Docente.png">
                                     </div>
                                     <h6 class="text-primary text-uppercase">Docente</h6>
-                                    <a class="btn btn-primary mt-3" href="../executive/executive-docent.php"
+                                    <a class="btn btn-primary mt-3" href="../executive-docent"
                                        style="right: 11px;">Ingresar</a>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Listas.png">
                                     </div>
                                     <h6 class="text-dark text-uppercase" style="margin-left:7%">Lista</h6>
-                                    <a class="btn btn-secondary mt-4" href="../executive/executive-list.php"
+                                    <a class="btn btn-secondary mt-4" href="../executive-list"
                                        style="right: 5px;">Ingresar</a>
                                 </div>
                             </div>

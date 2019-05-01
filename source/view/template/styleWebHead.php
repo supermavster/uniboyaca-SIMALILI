@@ -1,5 +1,5 @@
 <?php
-$head->innerHTML('  <meta charset="utf-8">
+$head->appendInnerHTML('  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Meta Tags -->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="' . AS_ASSETS . 'img/logo/apple-touch-icon-57x57.png"/>

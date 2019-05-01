@@ -29,17 +29,17 @@ $section->appendInnerHTML('
             <div class="mt-3 py-5 border-top text-center">
               <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <a class="btn btn-outline-default" href="../list/list-docent.php">Listado de Docentes</a>
-                    <a class="btn btn-outline-default" href="../list/list-grade.php">Listado por Grados</a>
-                    <a class="btn btn-outline-default" href="../list/list-preschool.php">Listado de Preescolar</a>
-                    <a class="btn btn-outline-default" href="../list/list-student-primary.php">Listado de Primaria</a>
+                    <a class="btn btn-outline-default" href="../list-docent">Listado de Docentes</a>
+                    <a class="btn btn-outline-default" href="../list-grade">Listado por Grados</a>
+                    <a class="btn btn-outline-default" href="../list-preschool">Listado de Preescolar</a>
+                    <a class="btn btn-outline-default" href="../list-student-primary">Listado de Primaria</a>
                 </div>
               </div>
               <br/>
               <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <a class="btn btn-outline-default" href="../list/list-academic.php">Listado de Carga Académica</a>
-                    <a class="btn btn-outline-default" href="../list/list-general.php">Listado de general del Liceo
+                    <a class="btn btn-outline-default" href="../list-academic">Listado de Carga Académica</a>
+                    <a class="btn btn-outline-default" href="../list-general">Listado de general del Liceo
                         Libre</a>
                 </div>
               </div>

@@ -6,4 +6,4 @@ $title->innerHTML(TITLE_WEB);
 $head->appendChild($title);
 
 //Style
-require_once 'styleWebHead.php';
+require_once 'styleWebHead';

@@ -11,7 +11,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Matricula.png">
                                     </div>
                                     <h6 class="text-primary text-uppercase">Matrícula</h6>
-                                    <a class="btn btn-primary mt-3" href="../secretary/secretary-enrollment.php"
+                                    <a class="btn btn-primary mt-3" href="../secretary-enrollment"
                                        style="right: 11px;">Ingresar</a>
                                 </div>
                             </div>
@@ -23,7 +23,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Estudiantes.png">
                                     </div>
                                     <h6 class="text-success text-uppercase">Estudiante</h6>
-                                    <a class="btn btn-success mt-3" href="../executive/executive-secretary-student.php"
+                                    <a class="btn btn-success mt-3" href="../executive-secretary-student"
                                        style="right: 11px;">Ingresar</a>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@ $section->appendInnerHTML('
                                         <img height="100" src="' . AS_ASSETS . 'img/icons/Listas.png">
                                     </div>
                                     <h6 class="text-warning text-uppercase" style="margin-left:15%">Lista</h6>
-                                    <a class="btn btn-warning mt-4" href="../secretary/secretary-list.php"
+                                    <a class="btn btn-warning mt-4" href="../secretary-list"
                                        style="right: 5px;">Ingresar</a>
                                 </div>
                             </div>
