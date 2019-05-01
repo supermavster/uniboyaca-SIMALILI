@@ -84,3 +84,23 @@ function removeCookie($key)
         setcookie($key, '', time() - 3600, '/');
     }
 }
+
+function getRequest($key)
+{
+    if (empty ($_GET[$key]) and empty ($_POST[$key])) {
+        return false;
+    }
+    // Attempt to obtain GET data
+    if (!empty ($_GET[$key])) {
+        $request = $_GET[$key];
+    }
+    // Attempt to obtain POST data
+    if (!empty ($_POST[$key])) {
+        $request = $_POST[$key];
+    }
+    // Strip escape slashes from POST or GET
+    if (get_magic_quotes_gpc()) {
+        $request = stripslashes($request);
+    }
+    return $request;
+}

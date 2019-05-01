@@ -48,6 +48,13 @@ LimitRequestBody 10240000
 
     RewriteRule ^signup$ /index.php?signUp=true
 
+    # Docent
+    RewriteRule ^docent-new$ /index.php?path=docent&docent=new
+    RewriteRule ^docent-modify$ /index.php?path=docent&docent=modify
+    RewriteRule ^docent-delete$ /index.php?path=docent&docent=delete
+    RewriteRule ^docent-search$ /index.php?path=docent&docent=search
+    RewriteRule ^docent-assign$ /index.php?path=docent&docent=assign
+
     # SSL
         #RewriteCond %{HTTPS} off
         #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
