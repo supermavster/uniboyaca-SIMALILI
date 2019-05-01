@@ -15,8 +15,8 @@ $section->appendInnerHTML('
                         </div>
                         <div class="col-lg-4 order-lg-1">
                             <div class="card-profile-stats d-flex justify-content-center">
-                                <div>
-                                    <span class="heading">Moficiación de:</span>
+                                <div style="background:white">
+                    <span class="heading">Moficiación de:</span>
                                     <span class="description">Matrícula</span>
                                 </div>
                             </div>

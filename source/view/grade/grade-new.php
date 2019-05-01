@@ -14,8 +14,8 @@ $section->appendInnerHTML('<div class="container">
                         </div>
                         <div class="col-lg-4 order-lg-1">
                             <div class="card-profile-stats d-flex justify-content-center">
-                                <div>
-                                    <span class="heading">Gestion de:</span>
+                                <div style="background:white">
+                    <span class="heading">Gestion de:</span>
                                     <span class="description">Grado</span>
                                 </div>
                             </div>
