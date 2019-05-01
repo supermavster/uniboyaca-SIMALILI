@@ -1,104 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Meta Tags -->
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57"/>
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72"/>
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-60x60.png" rel="apple-touch-icon-precomposed" sizes="60x60"/>
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-120x120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-76x76.png" rel="apple-touch-icon-precomposed" sizes="76x76"/>
-    <link href="'.AS_ASSETS.'img/logo/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
-    <link href="'.AS_ASSETS.'img/logo/favicon-196x196.png" rel="icon" sizes="196x196" type="image/png"/>
-    <link href="'.AS_ASSETS.'img/logo/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
-    <link href="'.AS_ASSETS.'img/logo/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-    <link href="'.AS_ASSETS.'img/logo/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-    <link href="'.AS_ASSETS.'img/logo/favicon-128.png" rel="icon" sizes="128x128" type="image/png"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF"/>
-    <meta name="msapplication-TileImage" content="img/logo/mstile-144x144.png"/>
-    <meta name="msapplication-square70x70logo" content="img/logo/mstile-70x70.png"/>
-    <meta name="msapplication-square150x150logo" content="img/logo/mstile-150x150.png"/>
-    <meta name="msapplication-wide310x150logo" content="img/logo/mstile-310x150.png"/>
-    <meta name="msapplication-square310x310logo" content="img/logo/mstile-310x310.png"/>
-
-    <!-- Title -->
-    <title>Eliminar Usuario</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <!-- Icons -->
-    <link href="../../../vendor/nucleo/css/nucleo.css" rel="stylesheet">
-    <link href="../../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Argon CSS -->
-    <link href="'.AS_ASSETS.'css/argon.css?v=1.0.1" rel="stylesheet" type="text/css">
-</head>
-<body>
-<header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
-        <div class="container">
-            <a class="navbar-brand mr-lg-5" href="../index/index.html">
-                <img src="'.AS_ASSETS.'img/logo/logo.png"> SIMALILI
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
-                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar_global">
-                <div class="navbar-collapse-header">
-                    <div class="row">
-                        <div class="col-6 collapse-brand">
-                            <a href="../index/index.html">
-                                <img src="'.AS_ASSETS.'img/brand/blue.png">
-                            </a>
-                        </div>
-                        <div class="col-6 collapse-close">
-                            <button type="button" class="navbar-toggler" data-toggle="collapse"
-                                    data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                    <li class="nav-item d-none d-lg-block ml-lg-4">
-                        <a class="btn btn-neutral btn-icon" href="../login/login.php" target="_self">
-                <span class="btn-inner--icon">
-                  <i class="fa fa-close mr-2"></i>
-                </span>
-                            <span class="nav-link-inner--text">LogOut</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<main class="profile-page">
-    <section class="section-profile-cover section-shaped my-0" style="height: 440px">
-        <!-- Circles background -->
-        <div class="shape shape-style-1 shape-primary alpha-4">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- SVG separator -->
-        <div class="separator separator-bottom separator-skew">
-            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-                 xmlns="http://www.w3.org/2000/svg">
-                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
-    </section>
-    <section class="section">
+<?php
+$section->appendInnerHTML('
         <div class="container">
             <div class="card card-profile shadow mt--300">
                 <div class="px-4">
@@ -115,7 +16,7 @@
                         <div class="col-lg-4 order-lg-1">
                             <div class="card-profile-stats d-flex justify-content-center">
                                 <div>
-                                    <span class="heading">Eliminación de:</span>
+                                    <span class="heading">Busqueda de:</span>
                                     <span class="description">Usuario</span>
                                 </div>
                             </div>
@@ -134,9 +35,9 @@
                                         <th>CIBERUSUARIO:</th>
                                         <td>
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="ciberID" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                                        id="ciberID" type="button">
                                                     Seleccione
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton"
@@ -158,8 +59,9 @@
                                         <td>APELLIDOS:</td>
                                         <td>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="lastName"
-                                                       placeholder="Ingrese los Apellidos">
+                                                <input class="form-control" id="lastName"
+                                                       placeholder="Ingrese los Apellidos"
+                                                       type="text">
                                             </div>
                                         </td>
                                     </tr>
@@ -167,9 +69,9 @@
                                         <td>TIPO DE IDENTIFICACIÓN:</td>
                                         <td>
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="typeID" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                                        id="typeID" type="button">
                                                     Seleccione
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
@@ -184,8 +86,9 @@
                                         <td>NÚMERO DE IDENTIFICACIÓN:</td>
                                         <td>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="numberID"
-                                                       placeholder="Ingrese el Número de Identificación">
+                                                <input class="form-control" id="numberID"
+                                                       placeholder="Ingrese el Número de Identificación"
+                                                       type="text">
                                             </div>
                                         </td>
                                     </tr>
@@ -208,8 +111,9 @@
                                         <td>LUGAR DE NACIMIENTO:</td>
                                         <td>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="birthday"
-                                                       placeholder="Ingrese el Lugar de Nacimiento">
+                                                <input class="form-control" id="birthday"
+                                                       placeholder="Ingrese el Lugar de Nacimiento"
+                                                       type="text">
                                             </div>
                                         </td>
                                     </tr>
@@ -217,10 +121,10 @@
                                         <td>EDAD:</td>
                                         <td>
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle"
+                                                        data-toggle="dropdown" id="dropdownMenuButton"
+                                                        type="button">
                                                     Seleccione
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton"
@@ -316,8 +220,9 @@
                                         <td>PROFESIÓN:</td>
                                         <td>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="profesion"
-                                                       placeholder="Ingrese la Profesión">
+                                                <input class="form-control" id="profesion"
+                                                       placeholder="Ingrese la Profesión"
+                                                       type="text">
                                             </div>
                                         </td>
                                     </tr>
@@ -325,9 +230,9 @@
                                         <td>CARGO:</td>
                                         <td>
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="typePerson" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
+                                                <button aria-expanded="false" aria-haspopup="true"
+                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                                        id="typePerson" type="button">
                                                     Seleccione
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
@@ -341,8 +246,9 @@
                                         <td>CONTRASEÑA:</td>
                                         <td>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="password"
-                                                       placeholder="Ingrese la Contraseña">
+                                                <input class="form-control" id="password"
+                                                       placeholder="Ingrese la Contraseña"
+                                                       type="text">
                                             </div>
                                         </td>
                                     </tr>
@@ -350,35 +256,20 @@
                                         <td>REPETIR CONTRASEÑA:</td>
                                         <td>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="password2"
-                                                       placeholder="Repita la Contraseña">
+                                                <input class="form-control" id="password2"
+                                                       placeholder="Repita la Contraseña"
+                                                       type="text">
                                             </div>
                                         </td>
                                     </tr>
                                     </tbody>
                                 </table>
                                 <hr/>
-                                <button type="button" class="btn btn-warning btn-lg">Eliminar</button>
-                                <button type="button" class="btn btn-danger btn-lg">Cancelar</button>
+                                <button class="btn btn-primary btn-lg" type="button">Modificar</button>
+                                <button class="btn btn-danger btn-lg" type="button">Cancelar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
-
-
-<!-- Core -->
-<script src="../../../vendor/jquery/jquery.min.js"></script>
-<script src="../../../vendor/popper/popper.min.js"></script>
-<script src="../../../vendor/bootstrap/bootstrap.min.js"></script>
-<script src="../../../vendor/headroom/headroom.min.js"></script>
-<!-- Argon JS -->
-<script src="'.AS_ASSETS.'js/argon.js?v=1.0.1"></script>
-<!-- Optional JS -->
-<script src="../../../vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
-</body>
-</html>
+        </div>');

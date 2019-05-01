@@ -49,11 +49,58 @@ LimitRequestBody 10240000
     RewriteRule ^signup$ /index.php?signUp=true
 
     # Docent
-    RewriteRule ^docent-new$ /index.php?path=docent&docent=new
-    RewriteRule ^docent-modify$ /index.php?path=docent&docent=modify
-    RewriteRule ^docent-delete$ /index.php?path=docent&docent=delete
-    RewriteRule ^docent-search$ /index.php?path=docent&docent=search
-    RewriteRule ^docent-assign$ /index.php?path=docent&docent=assign
+    RewriteRule ^docent-new$ /index.php?docent=new
+    RewriteRule ^docent-modify$ /index.php?docent=modify
+    RewriteRule ^docent-delete$ /index.php?docent=delete
+    RewriteRule ^docent-search$ /index.php?docent=search
+    RewriteRule ^docent-assign$ /index.php?docent=assign
+
+    # Enrollment
+    RewriteRule ^enrollment-new$ /index.php?enrollment=new
+    RewriteRule ^enrollment-modify$ /index.php?enrollment=modify
+    RewriteRule ^enrollment-delete$ /index.php?enrollment=delete
+    RewriteRule ^enrollment-search$ /index.php?enrollment=search
+
+    # Grade
+    RewriteRule ^grade-new$ /index.php?grade=new
+    RewriteRule ^grade-modify$ /index.php?grade=modify
+    RewriteRule ^grade-delete$ /index.php?grade=delete
+    RewriteRule ^grade-search$ /index.php?grade=search
+
+    # Subject
+    RewriteRule ^subject-new$ /index.php?grade=new
+    RewriteRule ^subject-modify$ /index.php?grade=modify
+    RewriteRule ^subject-delete$ /index.php?grade=delete
+    RewriteRule ^subject-search$ /index.php?grade=search
+
+    # User
+    RewriteRule ^user-new$ /index.php?user=new
+    RewriteRule ^user-modify$ /index.php?user=modify
+    RewriteRule ^user-delete$ /index.php?user=delete
+    RewriteRule ^user-search$ /index.php?user=search
+
+    # Secretary
+    RewriteRule ^secretary-enrollment$ /index.php?secretary=enrollment
+    RewriteRule ^secretary-list$ /index.php?secretary=list
+    RewriteRule ^secretary-user$ /index.php?secretary=user
+
+    # List
+    RewriteRule ^list-academic$ /index.php?list=academic
+    RewriteRule ^list-docent$ /index.php?list=docent
+    RewriteRule ^list-general$ /index.php?list=general
+    RewriteRule ^list-grade$ /index.php?list=grade
+    RewriteRule ^list-preschool$ /index.php?list=preschool
+    RewriteRule ^list-student-primary$ /index.php?list=student-primary
+
+    # Executive
+    RewriteRule ^executive-docent$ /index.php?executive=docent
+    RewriteRule ^executive-enrollment$ /index.php?executive=enrollment
+    RewriteRule ^executive-grade$ /index.php?executive=grade
+    RewriteRule ^executive-list$ /index.php?executive=list
+    RewriteRule ^executive-secretary-student$ /index.php?executive=secretary-student$
+    RewriteRule ^executive-student$ /index.php?executive=student
+    RewriteRule ^executive-subject$ /index.php?executive=subject
+    RewriteRule ^executive-user$ /index.php?executive=user
 
     # SSL
         #RewriteCond %{HTTPS} off

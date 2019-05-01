@@ -29,10 +29,10 @@ $section->appendInnerHTML('
                     <div class="mt-3 py-5 border-top text-center">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
-                                <a class="btn btn-outline-default" href="../user/user-new.html">Nuevo Usuario</a>
-                                <a class="btn btn-outline-default" href="../user/user-modify.html">Modificar Usuario</a>
-                                <a class="btn btn-outline-default" href="../user/user-search.html">Buscar Usuario</a>
-                                <a class="btn btn-outline-default" href="../user/user-delete.html">Eliminar Usuario</a>
+                                <a class="btn btn-outline-default" href="../user/user-new.php">Nuevo Usuario</a>
+                                <a class="btn btn-outline-default" href="../user/user-modify.php">Modificar Usuario</a>
+                                <a class="btn btn-outline-default" href="../user/user-search.php">Buscar Usuario</a>
+                                <a class="btn btn-outline-default" href="../user/user-delete.php">Eliminar Usuario</a>
                             </div>
                         </div>
                     </div>
