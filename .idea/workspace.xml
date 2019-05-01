@@ -4,48 +4,8 @@
     <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-assign.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-assign.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-modify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-new.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/enrollment/enrollment-delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/enrollment/enrollment-delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/enrollment/enrollment-modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/enrollment/enrollment-modify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/enrollment/enrollment-new.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/enrollment/enrollment-new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/enrollment/enrollment-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/enrollment/enrollment-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-docent.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-docent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-enrollment.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-enrollment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-grade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-grade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-secretary-student.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-secretary-student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-student.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-subject.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-subject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/executive/executive-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/executive/executive-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/grade/grade-delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/grade/grade-delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/grade/grade-modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/grade/grade-modify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/grade/grade-new.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/grade/grade-new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/grade/grade-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/grade/grade-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/list/list-academic.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/list/list-academic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/list/list-docent.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/list/list-docent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/list/list-general.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/list/list-general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/list/list-grade.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/list/list-grade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/list/list-preschool.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/list/list-preschool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/list/list-student-primary.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/list/list-student-primary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/login/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/login/signin-executive.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/login/login-executive.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/login/signin-secretary.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/login/login-secretary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/secretary/secretary-enrollment.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/secretary/secretary-enrollment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/secretary/secretary-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/secretary/secretary-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/secretary/secretary-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/secretary/secretary-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/subject/subject-delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/subject/subject-delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/subject/subject-modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/subject/subject-modify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/subject/subject-new.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/subject/subject-new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/subject/subject-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/subject/subject-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/template/body.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/template/body.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/user/user-delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/user/user-delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/user/user-modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/user/user-modify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/user/user-new.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/user/user-new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/user/user-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/user/user-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/plugins/login/exit.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/plugins/login/exit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/view/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/template/header.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,41 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/view/template/body.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/view/docent/docent-assign.php">
+        <entry file="file://$PROJECT_DIR$/source/view/template/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/view/login/login-secretary.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/view/login/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="527">
+              <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -100,45 +30,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1339">
-              <caret line="99" column="84" selection-start-line="99" selection-start-column="84" selection-end-line="99" selection-end-column="84" />
+            <state relative-caret-position="275">
+              <caret line="50" column="30" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/view/login/login-executive.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/plugins/login/exit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/view/template/complements.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/view/template/header.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/view/template/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/model/admin/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -154,9 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;a class=&quot;btn btn-neutral btn-icon&quot; href=&quot;login.html&quot; target=&quot;_blank&quot;&gt;</find>
-      <find>signsup</find>
-      <find>row justify-content-center</find>
       <find>../../../</find>
       <find>../../wwwroot/assets/</find>
       <find>Usuario</find>
@@ -181,9 +80,12 @@
       <find>subject/</find>
       <find>user/</find>
       <find>class=&quot;row justify-content-center&quot;</find>
-      <find>&lt;div class=&quot;card card-profile shadow &quot;&gt;</find>
       <find>card card-profile shadow</find>
       <find>heading</find>
+      <find>&lt;div class=&quot;card card-profile shadow &quot;&gt;</find>
+      <find>Secretaria</find>
+      <find>isLogin</find>
+      <find>valuesLogin</find>
     </findStrings>
     <replaceStrings>
       <replace>40%</replace>
@@ -199,12 +101,15 @@
       <replace />
       <replace>class=&quot;row justify-content-center mt--300&quot;</replace>
       <replace>&lt;div class=&quot;card card-profile shadow mt--300&quot;&gt;</replace>
+      <replace>Secretaría</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Projects\Uniboyaca\SIMALILI</dir>
       <dir>D:\Projects\Uniboyaca\SIMALILI\source</dir>
       <dir>D:\Projects\Uniboyaca\App - SIMALILI\SIMALILI\source\view\executive</dir>
       <dir>D:\Projects\Uniboyaca\App - SIMALILI\SIMALILI\source\view</dir>
+      <dir>D:\Projects\Uniboyaca\App - SIMALILI\SIMALILI</dir>
+      <dir>D:\Projects\Uniboyaca\App - SIMALILI\SIMALILI\source</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -213,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/view/executive/executive-student.html" />
-        <option value="$PROJECT_DIR$/source/view/executive/executive-subject.html" />
-        <option value="$PROJECT_DIR$/source/view/executive/executive-user.html" />
         <option value="$PROJECT_DIR$/source/view/grade/grade-delete.html" />
         <option value="$PROJECT_DIR$/source/view/grade/grade-modify.html" />
         <option value="$PROJECT_DIR$/source/view/grade/grade-new.html" />
@@ -253,17 +155,20 @@
         <option value="$PROJECT_DIR$/source/view/user/user-search.html" />
         <option value="$PROJECT_DIR$/source/wwwroot/assets/css/argon.css" />
         <option value="$PROJECT_DIR$/source/view/executive/executive-list.php" />
-        <option value="$PROJECT_DIR$/source/view/template/styleWebHead.php" />
         <option value="$PROJECT_DIR$/source/view/executive/executive-docent.php" />
         <option value="$PROJECT_DIR$/source/view/executive/executive-enrollment.php" />
         <option value="$PROJECT_DIR$/source/view/template/head.php" />
         <option value="$PROJECT_DIR$/source/view/login/login.php" />
-        <option value="$PROJECT_DIR$/source/model/admin/config.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/source/view/docent/docent-assign.php" />
         <option value="$PROJECT_DIR$/source/view/login/login-secretary.php" />
         <option value="$PROJECT_DIR$/source/view/login/login-executive.php" />
         <option value="$PROJECT_DIR$/source/view/template/body.php" />
+        <option value="$PROJECT_DIR$/source/view/template/styleWebHead.php" />
+        <option value="$PROJECT_DIR$/source/plugins/login/class/signIn.php" />
+        <option value="$PROJECT_DIR$/source/model/admin/config.php" />
+        <option value="$PROJECT_DIR$/source/view/template/header.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/source/plugins/login/exit.php" />
       </list>
     </option>
   </component>
@@ -271,7 +176,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -301,34 +206,20 @@
               <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SIMALILI" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SIMALILI" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SIMALILI" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SIMALILI" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="docent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SIMALILI" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SIMALILI" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SIMALILI" type="b2602c69:ProjectViewProjectNode" />
@@ -405,7 +296,7 @@
       <workItem from="1556464434429" duration="14159000" />
       <workItem from="1556549554672" duration="2411000" />
       <workItem from="1556685579948" duration="316000" />
-      <workItem from="1556686322332" duration="10239000" />
+      <workItem from="1556686322332" duration="11320000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -694,11 +585,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556716690096</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="[Fix] Words And Session">
+      <created>1556718721297</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1556718721297</updated>
+    </task>
+    <task id="LOCAL-00043" summary="[Fix] Login And Header">
+      <created>1556719464659</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1556719464659</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70258000" />
+    <option name="totallyTimeSpent" value="71339000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -710,10 +615,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32603937" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15884861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="PHP-CGI Server" />
@@ -768,8 +673,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="[Add] User - New" />
-    <MESSAGE value="[Add] Users" />
     <MESSAGE value="[Add] Enrollment" />
     <MESSAGE value="[Add] new Elements" />
     <MESSAGE value="[Fix] Base Elements" />
@@ -793,26 +696,14 @@
     <MESSAGE value="[Fix] responsive title" />
     <MESSAGE value="[Fix] Links" />
     <MESSAGE value="[Fix] Connectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Fix] Connectors" />
+    <MESSAGE value="[Fix] Words And Session" />
+    <MESSAGE value="[Fix] Login And Header" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Fix] Login And Header" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/view/subject/subject-delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/view/subject/subject-modify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/view/subject/subject-new.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="790">
@@ -928,33 +819,6 @@
     <entry file="file://$PROJECT_DIR$/source/plugins/login/base/signIn.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/plugins/login/class/signIn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/plugins/login/sessions.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/plugins/login/checkSession.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/controller/Settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/controller/Control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/connection/SignInAndSignUpDAO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1063,40 +927,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/view/template/styleWebHead.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/view/template/html.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/view/template/header.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/source/view/template/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/view/template/complements.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/model/admin/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1339">
-          <caret line="99" column="84" selection-start-line="99" selection-start-column="84" selection-end-line="99" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1114,10 +951,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/view/template/styleWebHead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/view/template/complements.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/view/login/login-executive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="459">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/view/template/body.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1128,13 +985,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/view/template/body.php">
+    <entry file="file://$PROJECT_DIR$/source/plugins/login/signin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugins/login/checkSession.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/controller/Settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/controller/Control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugins/login/sessions.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugins/login/class/signIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/model/admin/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/view/template/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/plugins/login/exit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>

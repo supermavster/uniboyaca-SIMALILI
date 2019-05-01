@@ -48,6 +48,9 @@ LimitRequestBody 10240000
 
     RewriteRule ^signup$ /index.php?signUp=true
 
+    RewriteRule ^exit$ /source/plugins/login/exit.php
+
+
     # Docent
     RewriteRule ^docent-new$ /index.php?docent=new
     RewriteRule ^docent-modify$ /index.php?docent=modify
@@ -101,6 +104,8 @@ LimitRequestBody 10240000
     RewriteRule ^executive-student$ /index.php?executive=student
     RewriteRule ^executive-subject$ /index.php?executive=subject
     RewriteRule ^executive-user$ /index.php?executive=user
+
+
 
 
     # SSL
