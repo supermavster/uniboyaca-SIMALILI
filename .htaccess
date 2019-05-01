@@ -97,10 +97,14 @@ LimitRequestBody 10240000
     RewriteRule ^executive-enrollment$ /index.php?executive=enrollment
     RewriteRule ^executive-grade$ /index.php?executive=grade
     RewriteRule ^executive-list$ /index.php?executive=list
-    RewriteRule ^executive-secretary-student$ /index.php?executive=secretary-student$
+    RewriteRule ^executive-secretary-student$ /index.php?executive=secretary-student
     RewriteRule ^executive-student$ /index.php?executive=student
     RewriteRule ^executive-subject$ /index.php?executive=subject
     RewriteRule ^executive-user$ /index.php?executive=user
+
+    # Executive
+    RewriteRule ^login-secretary /index.php?login=secretary
+
 
     # SSL
         #RewriteCond %{HTTPS} off

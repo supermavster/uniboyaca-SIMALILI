@@ -1,7 +1,7 @@
 <?php
 $section->appendInnerHTML('
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mt--300">
                 <div class="col-lg-12">
                     <div class="row row-grid">
                         <div class="col-lg-4">

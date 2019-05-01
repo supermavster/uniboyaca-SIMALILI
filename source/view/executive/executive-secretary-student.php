@@ -1,6 +1,6 @@
 <?php
 $section->appendInnerHTML('<div class="container">
-            <div class="card card-profile shadow ">
+            <div class="card card-profile shadow mt--300">
                 <div class="px-4">
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
@@ -16,7 +16,7 @@ $section->appendInnerHTML('<div class="container">
                         <div class="col-lg-4 order-lg-1">
                             <div class="card-profile-stats d-flex justify-content-center">
                                 <div style="background:white">
-                    <span class="heading">Bienvenida Secretaria</span>
+                    <span class="heading">Bienvenida Secretaría</span>
                                     <span class="description">A SIMALILI</span>
                                 </div>
                             </div>

@@ -14,7 +14,7 @@ $section->appendInnerHTML('
                             </div>
                             <div class="text-center">
                                 <a class="btn btn-darker my-2" href="signin-executive">Directivo</a>
-                                <a class="btn btn-darker my-2" href="signin-secretary">Secretaria</a>
+                                <a class="btn btn-darker my-2" href="signin-secretary">Secretaría</a>
                             </div>
                         </div>
                         <div class="col">
@@ -49,7 +49,7 @@ $section->appendInnerHTML('
   </button>
   <div class="dropdown-menu" aria-labelledby="userCargo">
     <a class="dropdown-item" href="#">Directivo</a>
-    <a class="dropdown-item" href="#">Secretaria</a>
+    <a class="dropdown-item" href="#">Secretaría</a>
   </div>
 </div>
                                             <div class="dropdown">

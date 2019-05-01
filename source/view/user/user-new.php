@@ -1,7 +1,7 @@
 <?php
 $section->appendInnerHTML('
         <div class="container">
-            <div class="card card-profile shadow ">
+            <div class="card card-profile shadow mt--300">
                 <div class="px-4">
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
@@ -218,7 +218,7 @@ $section->appendInnerHTML('
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
                                                     <a class="dropdown-item" href="#">Directivo</a>
-                                                    <a class="dropdown-item" href="#">Secretaria</a>
+                                                    <a class="dropdown-item" href="#">Secretaría</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -280,7 +280,7 @@ $section->appendInnerHTML('
                     <tr>
                         <th scope="row">2</th>
                         <td>ylfigueroa</td>
-                        <td>Secretaria</td>
+                        <td>Secretaría</td>
                         <td>Yoshua Figueroa</td>
                     </tr>
                     <tr>
