@@ -102,9 +102,6 @@ LimitRequestBody 10240000
     RewriteRule ^executive-subject$ /index.php?executive=subject
     RewriteRule ^executive-user$ /index.php?executive=user
 
-    # Executive
-    RewriteRule ^login-secretary /index.php?login=secretary
-
 
     # SSL
         #RewriteCond %{HTTPS} off

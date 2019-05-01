@@ -4,7 +4,7 @@ $body->setComment(true);
 require_once 'header.php';
 $main = new HTMLTag('main');
 // Check if is Login
-if (isLogin) {
+if (!isLogin) {
     $section = new HTMLTag('section', array("class" => "section section-shaped section-lg"));
     $section->innerHTML('<div class="shape shape-style-1 bg-gradient-default"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
     if (isset($_GET) && isset($_GET["signUp"])) {

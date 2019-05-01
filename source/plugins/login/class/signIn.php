@@ -43,6 +43,9 @@ if (basename($_SERVER['REQUEST_URI']) !== basename(__FILE__)) {
                 $checkDataState = isset($_SESSION['state']) && ($_SESSION['state'] === constant("auth"));
                 $checkUser = ($checkDataUser === true) && ($checkDataState === true);
             }
+            if (constant("debug")) {
+                $checkUser = constant("debug");
+            }
             define('isLogin', $checkUser);
         }
 

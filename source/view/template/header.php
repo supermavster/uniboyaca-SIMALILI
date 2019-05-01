@@ -27,17 +27,17 @@ $body->appendInnerHTML('<header class="header-global">
                         </div>
                     </div>
                 </div>
-                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                ' . ((isLogin) ? '<ul class="navbar-nav align-items-lg-center ml-lg-auto">
                     <li class="nav-item d-none d-lg-block ml-lg-4">
-                        <a class="btn btn-neutral btn-icon" href="login.html" target="_self">
+                        <a class="btn btn-neutral btn-icon" href="../../../index.php" target="_self">
                 <span class="btn-inner--icon">
-                  <i class="fa fa-sign-in mr-2"></i>
+                  <i class="fa fa-sign-out-alt mr-2"></i>
                 </span>
-                            <span class="nav-link-inner--text">Login</span>
+                            <span class="nav-link-inner--text">LogOut</span>
                         </a>
                     </li>
-                </ul>
-            </div>
+                </ul>' : '') .
+    '</div>
         </div>
     </nav>
 </header>
