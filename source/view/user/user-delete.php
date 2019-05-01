@@ -1,7 +1,7 @@
 <?php
 $section->appendInnerHTML('
         <div class="container">
-            <div class="card card-profile shadow mt--300">
+            <div class="card card-profile shadow ">
                 <div class="px-4">
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
