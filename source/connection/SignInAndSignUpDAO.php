@@ -1,6 +1,6 @@
 <?php
 
-class UsersDAO
+class SignInAndSignUpDAO
 {
     final public static function getMaxUsers()
     {
@@ -18,4 +18,4 @@ class UsersDAO
     }
 }
 
-new UsersDAO();
+new SignInAndSignUpDAO();

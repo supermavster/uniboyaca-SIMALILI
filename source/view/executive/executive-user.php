@@ -1,4 +1,10 @@
 <?php
+
+/** User Actions **/
+// Show the max users registers
+$maxUsers = $connection->db_exec("value", UsersDAO::getMaxUser());
+
+
 $section->appendInnerHTML('
       <div class="container">
         <div class="card card-profile shadow mt--300">
@@ -29,10 +35,12 @@ $section->appendInnerHTML('
             <div class="mt-3 py-5 border-top text-center">
               <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <a class="btn btn-outline-default" href="../user-new">Nuevo Usuario</a>
+                    <a class="btn btn-outline-default" href="../user-new">Nuevo Usuario</a>'
+    . (($maxUsers > 1) ? '
                     <a class="btn btn-outline-default" href="../user-modify">Modificar Usuario</a>
                     <a class="btn btn-outline-default" href="../user-search">Buscar Usuario</a>
                     <a class="btn btn-outline-default" href="../user-delete">Eliminar Usuario</a>
+                    ' : '') . '
                 </div>
               </div>
             </div>

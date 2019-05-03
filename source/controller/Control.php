@@ -30,10 +30,15 @@ class Control extends Settings
      **/
     protected function makeWebSite()
     {
+        // Add Connection
+        $connection = parent::getDataBase();
+
+        // Show Files
         $tempFile = array("body", "head", "html");
         for ($i = 0; $i < count($tempFile); $i++) {
             require_once AS_TEMPLATE . $tempFile[$i] . ".php";
         }
+        // End All conections DB
         parent::finish();
     }
 
@@ -44,6 +49,7 @@ class Control extends Settings
             self::makeWebsite();
         }
     }
+
 
     public function finishSession()
     {

@@ -106,7 +106,13 @@ if (!isLogin) {
         <!-- 1st Hero Variation -->
     </div>');
     }
-    // Call Require
+
+    /** Init Process - Users */
+    if (isset($_SERVER['REQUEST_METHOD']) && ($_SERVER['REQUEST_METHOD'] === 'POST')) {
+        require_once 'source/controller/CheckActions.php';
+    }
+
+    /** Call Require **/
     $path = "$path/$path-$file.php";
     require_once AS_VIEW . $path;
 }

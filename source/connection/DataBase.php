@@ -75,6 +75,9 @@ class DataBase
             case 'real_escape_string':
                 $data = mysqli_real_escape_string(self::getDB(), trim($query)) or exit('Error al  ejecutar la consulta:' . "<br/>" . PHP_EOL . ($query) . "<br/>" . PHP_EOL . "<br/>" . PHP_EOL . "En:" . getPath() . '<b>' . basename(__FILE__) . '</b>');
                 break;
+            case 'value':
+                $data = mysqli_fetch_row($result)[0];
+                break;
         }
         return $data;
     }

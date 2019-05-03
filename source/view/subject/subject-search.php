@@ -91,7 +91,7 @@ $section->appendInnerHTML('
                                 </table>
                                 <hr/>
                                 <button class="btn btn-secondary btn-lg" type="button">Buscar</button>
-                                <button class="btn btn-danger btn-lg" type="button">Cancelar</button>
+                                <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>
                     </div>

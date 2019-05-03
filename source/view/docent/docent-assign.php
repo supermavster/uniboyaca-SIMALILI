@@ -55,8 +55,8 @@ $section->appendInnerHTML('
                                                     Seleccione
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Registro Civil</a>
-                                                    <a class="dropdown-item" href="#">Tarjeta de Identidad</a>
+                                                    <option class="dropdown-item">Registro Civil</a>
+                                                    <option class="dropdown-item">Tarjeta de Identidad</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -64,8 +64,8 @@ $section->appendInnerHTML('
                                     </tbody>
                                 </table>
                                 <hr/>
-                                <button class="btn btn-success btn-lg" type="button">Guardar</button>
-                                <button class="btn btn-danger btn-lg" type="button">Cancelar</button>
+                                <button class="btn btn-success btn-lg" type="submit">Guardar</button>
+                                <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>
                     </div>

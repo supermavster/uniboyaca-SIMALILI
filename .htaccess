@@ -51,7 +51,7 @@ LimitRequestBody 10240000
     RewriteRule ^exit$ /source/plugins/login/exit.php
 
 
-    # Docent
+    # DocentDAO
     RewriteRule ^docent-new$ /index.php?docent=new
     RewriteRule ^docent-modify$ /index.php?docent=modify
     RewriteRule ^docent-delete$ /index.php?docent=delete

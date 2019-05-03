@@ -74,9 +74,9 @@ $section->appendInnerHTML('
                                                     Seleccione
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Cedula</a>
-                                                    <a class="dropdown-item" href="#">Pasaporte</a>
-                                                    <a class="dropdown-item" href="#">Cedula extranjería</a>
+                                                    <option class="dropdown-item">Cedula</a>
+                                                    <option class="dropdown-item">Pasaporte</a>
+                                                    <option class="dropdown-item">Cedula extranjería</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -126,89 +126,89 @@ $section->appendInnerHTML('
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton"
                                                      class="dropdown-menu pre-scrollable">
-                                                    <a class="dropdown-item" href="#">18</a><a class="dropdown-item"
-                                                                                               href="#">19</a><a
-                                                        class="dropdown-item" href="#">20</a><a class="dropdown-item"
-                                                                                                href="#">21</a><a
-                                                        class="dropdown-item" href="#">22</a><a class="dropdown-item"
-                                                                                                href="#">23</a><a
-                                                        class="dropdown-item" href="#">24</a><a class="dropdown-item"
-                                                                                                href="#">25</a><a
-                                                        class="dropdown-item" href="#">26</a><a class="dropdown-item"
-                                                                                                href="#">27</a><a
-                                                        class="dropdown-item" href="#">28</a><a class="dropdown-item"
-                                                                                                href="#">29</a><a
-                                                        class="dropdown-item" href="#">30</a><a class="dropdown-item"
-                                                                                                href="#">31</a><a
-                                                        class="dropdown-item" href="#">32</a><a class="dropdown-item"
-                                                                                                href="#">33</a><a
-                                                        class="dropdown-item" href="#">34</a><a class="dropdown-item"
-                                                                                                href="#">35</a><a
-                                                        class="dropdown-item" href="#">36</a><a class="dropdown-item"
-                                                                                                href="#">37</a><a
-                                                        class="dropdown-item" href="#">38</a><a class="dropdown-item"
-                                                                                                href="#">39</a><a
-                                                        class="dropdown-item" href="#">40</a><a class="dropdown-item"
-                                                                                                href="#">41</a><a
-                                                        class="dropdown-item" href="#">42</a><a class="dropdown-item"
-                                                                                                href="#">43</a><a
-                                                        class="dropdown-item" href="#">44</a><a class="dropdown-item"
-                                                                                                href="#">45</a><a
-                                                        class="dropdown-item" href="#">46</a><a class="dropdown-item"
-                                                                                                href="#">47</a><a
-                                                        class="dropdown-item" href="#">48</a><a class="dropdown-item"
-                                                                                                href="#">49</a><a
-                                                        class="dropdown-item" href="#">50</a><a class="dropdown-item"
-                                                                                                href="#">51</a><a
-                                                        class="dropdown-item" href="#">52</a><a class="dropdown-item"
-                                                                                                href="#">53</a><a
-                                                        class="dropdown-item" href="#">54</a><a class="dropdown-item"
-                                                                                                href="#">55</a><a
-                                                        class="dropdown-item" href="#">56</a><a class="dropdown-item"
-                                                                                                href="#">57</a><a
-                                                        class="dropdown-item" href="#">58</a><a class="dropdown-item"
-                                                                                                href="#">59</a><a
-                                                        class="dropdown-item" href="#">60</a><a class="dropdown-item"
-                                                                                                href="#">61</a><a
-                                                        class="dropdown-item" href="#">62</a><a class="dropdown-item"
-                                                                                                href="#">63</a><a
-                                                        class="dropdown-item" href="#">64</a><a class="dropdown-item"
-                                                                                                href="#">65</a><a
-                                                        class="dropdown-item" href="#">66</a><a class="dropdown-item"
-                                                                                                href="#">67</a><a
-                                                        class="dropdown-item" href="#">68</a><a class="dropdown-item"
-                                                                                                href="#">69</a><a
-                                                        class="dropdown-item" href="#">70</a><a class="dropdown-item"
-                                                                                                href="#">71</a><a
-                                                        class="dropdown-item" href="#">72</a><a class="dropdown-item"
-                                                                                                href="#">73</a><a
-                                                        class="dropdown-item" href="#">74</a><a class="dropdown-item"
-                                                                                                href="#">75</a><a
-                                                        class="dropdown-item" href="#">76</a><a class="dropdown-item"
-                                                                                                href="#">77</a><a
-                                                        class="dropdown-item" href="#">78</a><a class="dropdown-item"
-                                                                                                href="#">79</a><a
-                                                        class="dropdown-item" href="#">80</a><a class="dropdown-item"
-                                                                                                href="#">81</a><a
-                                                        class="dropdown-item" href="#">82</a><a class="dropdown-item"
-                                                                                                href="#">83</a><a
-                                                        class="dropdown-item" href="#">84</a><a class="dropdown-item"
-                                                                                                href="#">85</a><a
-                                                        class="dropdown-item" href="#">86</a><a class="dropdown-item"
-                                                                                                href="#">87</a><a
-                                                        class="dropdown-item" href="#">88</a><a class="dropdown-item"
-                                                                                                href="#">89</a><a
-                                                        class="dropdown-item" href="#">90</a><a class="dropdown-item"
-                                                                                                href="#">91</a><a
-                                                        class="dropdown-item" href="#">92</a><a class="dropdown-item"
-                                                                                                href="#">93</a><a
-                                                        class="dropdown-item" href="#">94</a><a class="dropdown-item"
-                                                                                                href="#">95</a><a
-                                                        class="dropdown-item" href="#">96</a><a class="dropdown-item"
-                                                                                                href="#">97</a><a
-                                                        class="dropdown-item" href="#">98</a><a class="dropdown-item"
-                                                                                                href="#">99</a><a
-                                                        class="dropdown-item" href="#">100</a>
+                                                    <option class="dropdown-item">18</option>
+<option class="dropdown-item" >19</option>
+<option class="dropdown-item" >20</option>
+<option class="dropdown-item" >21</option>
+<option class="dropdown-item" >22</option>
+<option class="dropdown-item" >23</option>
+<option class="dropdown-item" >24</option>
+<option class="dropdown-item" >25</option>
+<option class="dropdown-item" >26</option>
+<option class="dropdown-item" >27</option>
+<option class="dropdown-item" >28</option>
+<option class="dropdown-item" >29</option>
+<option class="dropdown-item" >30</option>
+<option class="dropdown-item" >31</option>
+<option class="dropdown-item" >32</option>
+<option class="dropdown-item" >33</option>
+<option class="dropdown-item" >34</option>
+<option class="dropdown-item" >35</option>
+<option class="dropdown-item" >36</option>
+<option class="dropdown-item" >37</option>
+<option class="dropdown-item" >38</option>
+<option class="dropdown-item" >39</option>
+<option class="dropdown-item" >40</option>
+<option class="dropdown-item" >41</option>
+<option class="dropdown-item" >42</option>
+<option class="dropdown-item" >43</option>
+<option class="dropdown-item" >44</option>
+<option class="dropdown-item" >45</option>
+<option class="dropdown-item" >46</option>
+<option class="dropdown-item" >47</option>
+<option class="dropdown-item" >48</option>
+<option class="dropdown-item" >49</option>
+<option class="dropdown-item" >50</option>
+<option class="dropdown-item" >51</option>
+<option class="dropdown-item" >52</option>
+<option class="dropdown-item" >53</option>
+<option class="dropdown-item" >54</option>
+<option class="dropdown-item" >55</option>
+<option class="dropdown-item" >56</option>
+<option class="dropdown-item" >57</option>
+<option class="dropdown-item" >58</option>
+<option class="dropdown-item" >59</option>
+<option class="dropdown-item" >60</option>
+<option class="dropdown-item" >61</option>
+<option class="dropdown-item" >62</option>
+<option class="dropdown-item" >63</option>
+<option class="dropdown-item" >64</option>
+<option class="dropdown-item" >65</option>
+<option class="dropdown-item" >66</option>
+<option class="dropdown-item" >67</option>
+<option class="dropdown-item" >68</option>
+<option class="dropdown-item" >69</option>
+<option class="dropdown-item" >70</option>
+<option class="dropdown-item" >71</option>
+<option class="dropdown-item" >72</option>
+<option class="dropdown-item" >73</option>
+<option class="dropdown-item" >74</option>
+<option class="dropdown-item" >75</option>
+<option class="dropdown-item" >76</option>
+<option class="dropdown-item" >77</option>
+<option class="dropdown-item" >78</option>
+<option class="dropdown-item" >79</option>
+<option class="dropdown-item" >80</option>
+<option class="dropdown-item" >81</option>
+<option class="dropdown-item" >82</option>
+<option class="dropdown-item" >83</option>
+<option class="dropdown-item" >84</option>
+<option class="dropdown-item" >85</option>
+<option class="dropdown-item" >86</option>
+<option class="dropdown-item" >87</option>
+<option class="dropdown-item" >88</option>
+<option class="dropdown-item" >89</option>
+<option class="dropdown-item" >90</option>
+<option class="dropdown-item" >91</option>
+<option class="dropdown-item" >92</option>
+<option class="dropdown-item" >93</option>
+<option class="dropdown-item" >94</option>
+<option class="dropdown-item" >95</option>
+<option class="dropdown-item" >96</option>
+<option class="dropdown-item" >97</option>
+<option class="dropdown-item" >98</option>
+<option class="dropdown-item" >99</option>
+<option class="dropdown-item" >100</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -232,8 +232,8 @@ $section->appendInnerHTML('
                                                     Seleccione
                                                 </button>
                                                 <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Directivo</a>
-                                                    <a class="dropdown-item" href="#">Secretaría</a>
+                                                    <option class="dropdown-item">Directivo</a>
+                                                    <option class="dropdown-item">Secretaría</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -259,8 +259,8 @@ $section->appendInnerHTML('
                                     </tbody>
                                 </table>
                                 <hr/>
-                                <button type="button" class="btn btn-primary btn-lg">Modificar</button>
-                                <button type="button" class="btn btn-danger btn-lg">Cancelar</button>
+                                <button class="btn btn-primary btn-lg" type="submit">Modificar</button>
+                                <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>
                     </div>

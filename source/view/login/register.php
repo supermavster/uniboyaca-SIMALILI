@@ -48,8 +48,8 @@ $section->appendInnerHTML('
     Cargo
   </button>
   <div class="dropdown-menu" aria-labelledby="userCargo">
-    <a class="dropdown-item" href="#">Directivo</a>
-    <a class="dropdown-item" href="#">Secretaría</a>
+    <option class="dropdown-item">Directivo</a>
+    <option class="dropdown-item">Secretaría</a>
   </div>
 </div>
                                             <div class="dropdown">
@@ -57,8 +57,8 @@ $section->appendInnerHTML('
     Estado
   </button>
   <div class="dropdown-menu" aria-labelledby="userState">
-    <a class="dropdown-item" href="#">Activo</a>
-    <a class="dropdown-item" href="#">Inactivo</a>
+    <option class="dropdown-item">Activo</a>
+    <option class="dropdown-item">Inactivo</a>
   </div>
 </div>
                                     </div>

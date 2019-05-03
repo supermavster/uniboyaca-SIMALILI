@@ -130,6 +130,8 @@ class Settings
     protected function includeDAOS()
     {
         require_once AS_DB . 'SignInAndSignUpDAO.php';
+        require_once AS_DB . 'UserDAO.php';
+        require_once AS_DB . 'DocentDAO.php';
     }
 }
 

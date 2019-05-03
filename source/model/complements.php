@@ -75,6 +75,11 @@ function getContent($dir)
     return $content;
 }
 
+function showContent($txt)
+{
+    echo highlight_string("<?php\n\$data =\n" . var_export($txt, true) . ";\n?>");
+}
+
 # Remove all Cookies
 function removeCookie($key)
 {
@@ -83,6 +88,12 @@ function removeCookie($key)
         // empty value and old timestamp
         setcookie($key, '', time() - 3600, '/');
     }
+}
+
+function getActualURL()
+{
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    return $actual_link;
 }
 
 function getRequest($key)

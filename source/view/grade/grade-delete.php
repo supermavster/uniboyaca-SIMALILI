@@ -43,8 +43,8 @@ $section->appendInnerHTML('
                                         </tbody>
                                 </table>
                                 <hr/>
-                                <button type="button" class="btn btn-warning btn-lg">Eliminar</button>
-                                <button type="button" class="btn btn-danger btn-lg">Cancelar</button>
+                                <button class="btn btn-warning btn-lg" type="submit">Eliminar</button>
+                                <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>
                     </div>
