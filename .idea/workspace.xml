@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/connection/DocentDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/connection/DocentDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/connection/SubjectDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/connection/SubjectDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/connection/UserDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/connection/UsersDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/controller/CheckActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/CheckActions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/controller/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-assign.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-assign.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-modify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/view/docent/docent-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/docent/docent-search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/view/template/body.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/template/body.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -106,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/view/template/body.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="323">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
               </folding>
@@ -425,7 +415,7 @@
       <workItem from="1556685579948" duration="316000" />
       <workItem from="1556686322332" duration="11986000" />
       <workItem from="1556836143456" duration="48000" />
-      <workItem from="1556846265642" duration="22640000" />
+      <workItem from="1556846265642" duration="22832000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Login">
       <created>1554859444818</created>
@@ -756,11 +746,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556864544711</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="[Add] codss">
+      <created>1556869445002</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1556869445002</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94693000" />
+    <option name="totallyTimeSpent" value="94885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,7 +828,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="[Fix] Elements Base" />
     <MESSAGE value="[Fix] Users" />
     <MESSAGE value="[Fix] Elements" />
     <MESSAGE value="[Fix] Docent" />
@@ -856,7 +852,8 @@
     <MESSAGE value="[Add] Docent" />
     <MESSAGE value="[Add] Grade" />
     <MESSAGE value="[Add] Subject" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] Subject" />
+    <MESSAGE value="[Add] codss" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] codss" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1213,8 +1210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/view/template/body.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="323">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
           </folding>
