@@ -16,8 +16,8 @@ if (!isLogin) {
     $main->appendAttribute("class", "profile-page");
     $section = new HTMLTag('section', array("class" => "section"));
     // Default Values
-    //$file = "executive"; // Change by Session (secretary)
-    $file = "secretary";
+    $file = "executive"; // Change by Session (secretary)
+    //$file = "secretary";
     $path = "login";
     // Switch - Select Process
     if (isset($_GET) && !empty($_GET)) {
