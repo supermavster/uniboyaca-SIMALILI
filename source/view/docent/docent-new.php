@@ -251,7 +251,6 @@ $section->appendInnerHTML('
                                     </tbody>
                                 </table>
                                 <hr/>
-                                <hr/>
                                 <input type="submit" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn btn-success btn-lg" value="Guardar">
                                 <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>

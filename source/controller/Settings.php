@@ -132,6 +132,8 @@ class Settings
         require_once AS_DB . 'SignInAndSignUpDAO.php';
         require_once AS_DB . 'UserDAO.php';
         require_once AS_DB . 'DocentDAO.php';
+        require_once AS_DB . 'StudentDAO.php';
+        require_once AS_DB . 'GradeDAO.php';
     }
 }
 

@@ -43,29 +43,125 @@ class CheckActions
             case "docent":
                 self::insertDocent();
                 break;
+            case "enrollment":
+                self::insertStudent();
+                break;
+            case "grade":
+                self::grade();
+                break;
         }
-
-
-        //
-
-        /*        $data =
-            array (
-                'name' => 'a',
-                'lastName' => 'v',
-                'typeID' => 'Cedula',
-                'numberID' => '1',
-                'birthday' => '06/25/2018',
-                'birthplace' => 'q',
-                'years' => '20',
-                'profesion' => 'a',
-                'position' => 'Directivo',
-                'ciberusuario' => '3',
-                'password' => '1',
-                'password2' => '1',
-            );
-*/
     }
 
+
+    /** Grade */
+    protected function grade()
+    {
+        switch (getRequest("grade")) {
+            case "new":
+                self::insertGrade();
+                break;
+            case "modify":
+                self::modifyGrade();
+                break;
+            case "delete":
+                self::deleteGrade();
+                break;
+        }
+    }
+
+    protected function insertGrade()
+    {
+        // Add Grade
+        if (!$this->connection->db_exec("query", GradeDAO::addGrade($_POST['idGrade']))) {
+            self::addAndExit();
+        }
+    }
+
+    protected function modifyGrade()
+    {
+        // Modify Grade
+        if (!$this->connection->db_exec("query", GradeDAO::updateName($_POST['idGrade'], $_POST['idNewGrade']))) {
+            self::addAndExit("Modificados");
+        }
+    }
+
+    protected function deleteGrade()
+    {
+        // Delete Grade
+        if (!$this->connection->db_exec("query", GradeDAO::deleteName($_POST['idGrade']))) {
+            self::addAndExit("Eliminado");
+        }
+    }
+
+
+    /** Student */
+    protected function insertStudent()
+    {
+//        `Nombre_Completo`, `Lugar_nacimiento`, `Fecha_nac`, `Edad`, `Religion`, `Nombre_tutor`, `Tipo_estudiante`, `Codigo_estudiante`, `Num_ID`
+
+        $data = $_POST;
+
+        $values =
+            array(
+                'name' => '',
+                'lastName' => '',
+                'typeID' => 'Seleccione...',
+                'numberID' => '',
+                'birthday' => '06/20/2018',
+                'birthplace' => '',
+                'years' => 'Seleccione...',
+                'rh' => 'Seleccione...',
+                'eps' => '',
+                'nameFather' => '',
+                'ccFather' => '',
+                'phoneFather' => '',
+                'nameMother' => '',
+                'ccMother' => '',
+                'phoneMother' => '',
+                'nameAttendant' => '',
+                'phoneAttendant' => '',
+                'relationship' => '',
+                'address' => '',
+                'grade' => '',
+                'religion' => '',
+                'institute' => '',
+            );
+
+        // Data Values Main
+        $values = array(
+
+            "Nombre_Completo" => $data['name'] . " " . $data['lastName'],
+            "Lugar_nacimiento" => $data['birthplace'],
+            "Fecha_nac" => $data['birthday'],
+            "Edad" => $data['years'],
+            "Religion" => $data['religion'],
+            "Titulo_profesional" => $data['profession'],
+            "Titulo_documento" => $data['typeID'],
+            "Num_id" => $data['numberID'],
+            "Fecha_Registro" => $registerDate,
+            "Fecha_fin" => $endDate,
+            "Estado" => $data['eps'],
+            "Usuarios_idUsuarios" => $data['birthplace']
+        );
+        showContent($data);
+        /*$registerDate = date("Y-m-d", strtotime($data['registerDate']));
+        $endDate = date("Y-m-d", strtotime($data['endDate']));
+
+
+
+
+        // Show the max users registers
+        $maxUsers = $this->connection->db_exec("value", UsersDAO::getMaxUser()) + 1;
+
+        // Add User
+        if (!$this->connection->db_exec("query", UsersDAO::addUser($maxUsers, $values))) {
+            // Add Docent
+            if (!$this->connection->db_exec("query", DocentDAO::addDocent($maxUsers, $values))) {
+                $this->connection->close();
+                echo("<script>alert('Datos Añadidos con Exito');window.open('" . getActualURL() . "', '_self');    </script>");
+            }
+        }*/
+    }
 
     /** DOCENT **/
     protected function insertDocent()
@@ -96,12 +192,17 @@ class CheckActions
         if (!$this->connection->db_exec("query", UsersDAO::addUser($maxUsers, $values))) {
             // Add Docent
             if (!$this->connection->db_exec("query", DocentDAO::addDocent($maxUsers, $values))) {
-                $this->connection->close();
-                echo("<script>alert('Datos Añadidos con Exito');window.open('" . getActualURL() . "', '_self');    </script>");
+                self::addAndExit();
             }
         }
 
 
+    }
+
+    private function addAndExit($txt = "Añadidos")
+    {
+        $this->connection->close();
+        echo("<script>alert('Datos $txt con Exito');window.open('" . getActualURL() . "', '_self');    </script>");
     }
 
     private function exitAll($message)

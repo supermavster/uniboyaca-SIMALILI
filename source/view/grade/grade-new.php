@@ -25,21 +25,24 @@ $section->appendInnerHTML('<div class="container">
                         <h1>Grado</h1>
                         <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i></div>
                     </div>
+                                        <form action="' . getActualURL() . '" method="POST">
+
                     <div class="mt-3 py-5 border-top text-center">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
                                 <table class="col-lg-12">
                                         <tbody><tr class="tableizer-firstrow"><td>NOMBRE DEL GRADO:</td><td><div class="form-group">
-                                            <input type="text" class="form-control" id="idGrade" placeholder="Digite el nombre">
+                                            <input type="text" class="form-control" id="idGrade" name="idGrade" placeholder="Digite el nombre">
                                         </div></td></tr>
                                         </tbody>
                                 </table>
                                 <hr/>
-                                <button class="btn btn-success btn-lg" type="submit">Guardar</button>
+                                <input type="submit" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn btn-success btn-lg" value="Guardar">
                                 <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>');

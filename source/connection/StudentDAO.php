@@ -1,12 +1,13 @@
 <?php
 
 
-class DocentDAO
+class StudentDAO
 {
-    final public static function addDocent($maxID, $values)
+
+    final public static function addStudent($maxID, $values)
     {
         // Docent
-        $sql = "INSERT INTO `docente` (`idDocente`, `Nombre_Completo`, `Lugar_nacimiento`, `Fecha_Nacimiento`, `Edad`, `Religion`, `Titulo_profesional`, `Titulo_documento`, `Num_id`, `Fecha_Registro`, `Fecha_fin`, `Estado`, `Usuarios_idUsuarios`) VALUES ( NULL,";
+        $sql = "\"INSERT INTO `estudiante` (`idEstudiante`, `Nombre_Completo`, `Lugar_nacimiento`, `Fecha_nac`, `Edad`, `Religion`, `Nombre_tutor`, `Tipo_estudiante`, `Codigo_estudiante`, `Num_ID`) VALUES ( NULL,";
         $tempValue = 0;
         foreach ($values as $clave => $valor) {
             $sql .= "'$valor'";
@@ -19,8 +20,7 @@ class DocentDAO
         }
         return $sql;
     }
-
-
 }
 
-new DocentDAO();
+
+new StudentDAO();
