@@ -134,6 +134,7 @@ class Settings
         require_once AS_DB . 'DocentDAO.php';
         require_once AS_DB . 'StudentDAO.php';
         require_once AS_DB . 'GradeDAO.php';
+        require_once AS_DB . 'SubjectDAO.php';
     }
 }
 

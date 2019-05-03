@@ -20,6 +20,10 @@ class DocentDAO
         return $sql;
     }
 
+    final public static function getNameDocents()
+    {
+        return "SELECT `Nombre_Completo` FROM `docente`";
+    }
 
 }
 

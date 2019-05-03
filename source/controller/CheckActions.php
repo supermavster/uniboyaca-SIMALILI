@@ -49,6 +49,9 @@ class CheckActions
             case "grade":
                 self::grade();
                 break;
+            case "subject":
+                self::subject();
+                break;
         }
     }
 
@@ -86,6 +89,58 @@ class CheckActions
     }
 
     protected function deleteGrade()
+    {
+        // Delete Grade
+        if (!$this->connection->db_exec("query", GradeDAO::deleteName($_POST['idGrade']))) {
+            self::addAndExit("Eliminado");
+        }
+    }
+
+    /** Subject */
+    protected function subject()
+    {
+        switch (getRequest("subject")) {
+            case "new":
+                self::insertSubject();
+                break;
+            case "modify":
+                self::modifySubject();
+                break;
+            case "delete":
+                self::deleteSubject();
+                break;
+        }
+    }
+
+    protected function insertSubject()
+    {
+        $dataTemp = $_POST;
+        $data = array(
+            "Cod_Asignatur" => $dataTemp['codeSubject'],
+            "Nombre_asignatura" => $dataTemp['nameSubject'],
+            "Estado" => "Activa",
+            "Asignatura_curso_idAsignatura_curso" => 1,
+            "Asignatura_curso_Curso_id_curso" => 1,
+            "Asignatura_curso_Curso_Grado_id_Grado" => 1,
+            "Docente_idDocente" => $dataTemp['nameDocent'],
+            "Docente_idDocente1" => $dataTemp['nameDocent'],
+            "Grado_id_Grado" => $dataTemp['idGrade'],
+        );
+        // Add Subject
+        if (!$this->connection->db_exec("query", SubjectDAO::addSubject($data))) {
+            self::addAndExit();
+        }
+    }
+
+    protected function modifySubject()
+    {
+        // Modify Grade
+        if (!$this->connection->db_exec("query", GradeDAO::updateName($_POST['idGrade'], $_POST['idNewGrade']))) {
+            self::addAndExit("Modificados");
+        }
+    }
+
+    protected function deleteSubject()
     {
         // Delete Grade
         if (!$this->connection->db_exec("query", GradeDAO::deleteName($_POST['idGrade']))) {

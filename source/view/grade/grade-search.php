@@ -17,7 +17,6 @@ foreach ($gradeNames as $keys => $values) {
 }
 
 
-
 $section->appendInnerHTML('
         <div class="container">
             <div class="card card-profile shadow mt--300">

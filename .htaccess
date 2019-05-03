@@ -71,10 +71,10 @@ LimitRequestBody 10240000
     RewriteRule ^grade-search$ /index.php?grade=search
 
     # Subject
-    RewriteRule ^subject-new$ /index.php?grade=new
-    RewriteRule ^subject-modify$ /index.php?grade=modify
-    RewriteRule ^subject-delete$ /index.php?grade=delete
-    RewriteRule ^subject-search$ /index.php?grade=search
+    RewriteRule ^subject-new$ /index.php?subject=new
+    RewriteRule ^subject-modify$ /index.php?subject=modify
+    RewriteRule ^subject-delete$ /index.php?subject=delete
+    RewriteRule ^subject-search$ /index.php?subject=search
 
     # User
     RewriteRule ^user-new$ /index.php?user=new
