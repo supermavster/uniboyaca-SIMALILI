@@ -1,53 +1,34 @@
 <?php
-$section->appendInnerHTML('
-        <div class="container">
-            <div class="card card-profile shadow mt--300">
-                <div class="px-4">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 order-lg-2">
-                            <div class="card-profile-image">
-                                <a href="#">
-                                    <img class="rounded-circle" src="'.AS_ASSETS.'img/icons/Docente.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
-                        </div>
-                        <div class="col-lg-4 order-lg-1">
-                            <div class="card-profile-stats d-flex justify-content-center">
-                                <div style="background:white">
-                    <span class="heading">Modificación de:</span>
-                                    <span class="description">Docente</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-5">
-                        <h1>Docente</h1>
-                        <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i></div>
-                    </div>
-                    <form action="' . getActualURL() . '" method="POST">
-                        <div class="mt-3 py-5 border-top text-center">
-                            <div class="row justify-content-center">
-                                    <div class="col-lg-12">
-                                        <table class="col-lg-12">
-                                            <tbody>
-                                            <tr>
-                                                <td>NOMBRE COMPLETO:</td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <select id="fullName" name="fullName" class="btn btn-secondary dropdown-toggle">
-                                                            <option class="dropdown-item" selected>Seleccione...</option>      
-                                                        </select>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
+
+/** Docent Actions **/
+// Show grades registers
+$gradeNames = $connection->db_exec("fetch_array", DocentDAO::getNameDocents());
+$data = "";
+$names = "";
+if (isset($_POST) && !empty($_POST)) {
+    $names = '<option class="dropdown-item" >' . $_POST['fullName'] . '</option>';
+} else {
+    $names = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
+}
+foreach ($gradeNames as $keys => $values) {
+    $names .= '<option class="dropdown-item" >' . $values[0] . '</option>';
+}
+//showContent($_POST);
+// Submit Values
+if (isset($_POST) && !empty($_POST)) {
+
+    // Data SQL
+    /**
+     * array(26) { [0]=> string(1) "8" ["idDocente"]=> string(1) "8" [1]=> string(10) "qweqwe qwe" ["Nombre_Completo"]=> string(10) "qweqwe qwe" [2]=> string(5) "uihñ" ["Lugar_nacimiento"]=> string(5) "uihñ" [3]=> string(10) "06/20/2018" ["Fecha_Nacimiento"]=> string(10) "06/20/2018" [4]=> string(2) "32" ["Edad"]=> string(2) "32" [5]=> string(4) "qweq" ["Religion"]=> string(4) "qweq" [6]=> string(5) "qweqw" ["Titulo_profesional"]=> string(5) "qweqw" [7]=> string(9) "Pasaporte" ["Titulo_documento"]=> string(9) "Pasaporte" [8]=> string(8) "12311313" ["Num_id"]=> string(8) "12311313" [9]=> string(10) "2018-06-20" ["Fecha_Registro"]=> string(10) "2018-06-20" [10]=> string(10) "2018-06-20" ["Fecha_fin"]=> string(10) "2018-06-20" [11]=> string(6) "Activo" ["Estado"]=> string(6) "Activo" [12]=> string(1) "8" ["Usuarios_idUsuarios"]=> string(1) "8" }
+     */
+    $getDocent = $connection->db_exec("fetch_array", DocentDAO::getDocent($_POST['fullName']))[0];
+
+    $data = '<tr>
                                                 <td>TIPO DE IDENTIFICACIÓN:</td>
                                                 <td>
                                                     <div class="dropdown">
                                                       <select id="typeID" name="typeID" class="btn btn-secondary dropdown-toggle">
-                                                            <option class="dropdown-item" selected>Seleccione...</option>
+                                                            <option class="dropdown-item" selected>' . $getDocent['Titulo_documento'] . '</option>
                                                             <option class="dropdown-item" >Cedula</option>
                                                             <option class="dropdown-item" >Pasaporte</option>
                                                             <option class="dropdown-item" >Cedula extranjería</option>
@@ -60,7 +41,7 @@ $section->appendInnerHTML('
                                                 <td>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" id="numberID" name="numberID"
-                                                               placeholder="Ingrese el Número de Identificación">
+                                                               placeholder="Ingrese el Número de Identificación" value="' . $getDocent['Num_id'] . '">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -74,7 +55,7 @@ $section->appendInnerHTML('
                                                                         class="ni ni-calendar-grid-58"></i></span>
                                                             </div>
                                                             <input id="birthday" name="birthday" class="form-control datepicker" placeholder="Select date"
-                                                                   type="text" value="06/20/2018">
+                                                                   type="text" value="' . $getDocent['Fecha_Nacimiento'] . '">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -84,7 +65,7 @@ $section->appendInnerHTML('
                                                 <td>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" id="birthplace" name="birthplace"
-                                                               placeholder="Ingrese el Lugar de Nacimiento">
+                                                               placeholder="Ingrese el Lugar de Nacimiento"  value="' . $getDocent['Lugar_nacimiento'] . '">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -93,7 +74,7 @@ $section->appendInnerHTML('
                                                 <td>
                                                     <div class="dropdown">
                                                     <select id="years" name="years" class="btn btn-secondary dropdown-toggle">
-                                                        <option class="dropdown-item" selected>Seleccione...</option>      
+                                                        <option class="dropdown-item" selected>' . $getDocent['Edad'] . '</option>      
                                                         <option class="dropdown-item">18</option>
                                                         <option class="dropdown-item" >19</option>
                                                         <option class="dropdown-item" >20</option>
@@ -186,7 +167,7 @@ $section->appendInnerHTML('
                                         <td>
                                             <div class="form-group">
                                                 <input class="form-control" id="eps" name="eps" placeholder="Ingrese la EPS"
-                                                       type="text">
+                                                       type="text" >
                                             </div>
                                         </td>
                                     </tr>
@@ -196,7 +177,7 @@ $section->appendInnerHTML('
                                             <div class="form-group">
                                                 <input class="form-control" id="religion" name="religion" 
                                                        placeholder="Ingrese la religion"
-                                                       type="text">
+                                                       type="text" value="' . $getDocent['Religion'] . '">
                                             </div>
                                         </td>
                                     </tr>
@@ -206,7 +187,7 @@ $section->appendInnerHTML('
                                             <div class="form-group">
                                                 <input class="form-control" id="profession" name="profession"
                                                        placeholder="Ingrese la profesión"
-                                                       type="text">
+                                                       type="text" value="' . $getDocent['Titulo_profesional'] . '">
                                             </div>
                                         </td>
                                     </tr>
@@ -220,7 +201,7 @@ $section->appendInnerHTML('
                                                                 class="ni ni-calendar-grid-58"></i></span>
                                                     </div>
                                                     <input class="form-control datepicker" placeholder="Select date" id="registerDate" name="registerDate"
-                                                           type="text" value="06/20/2018">
+                                                           type="text" value="' . $getDocent['Fecha_Registro'] . '">
                                                 </div>
                                             </div>
                                         </td>
@@ -235,15 +216,62 @@ $section->appendInnerHTML('
                                                                 class="ni ni-calendar-grid-58"></i></span>
                                                     </div>
                                                     <input class="form-control datepicker" placeholder="Select date" id="endDate" name="endDate"
-                                                           type="text" value="06/20/2018">
+                                                           type="text" value="' . $getDocent['Fecha_fin'] . '">
                                                 </div>
                                             </div>
                                         </td>
-                                    </tr>
+                                    </tr>';
+}
+
+$section->appendInnerHTML('
+        <div class="container">
+            <div class="card card-profile shadow mt--300">
+                <div class="px-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 order-lg-2">
+                            <div class="card-profile-image">
+                                <a href="#">
+                                    <img class="rounded-circle" src="'.AS_ASSETS.'img/icons/Docente.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
+                        </div>
+                        <div class="col-lg-4 order-lg-1">
+                            <div class="card-profile-stats d-flex justify-content-center">
+                                <div style="background:white">
+                    <span class="heading">Modificación de:</span>
+                                    <span class="description">Docente</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <h1>Docente</h1>
+                        <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i></div>
+                    </div>
+                    <form action="' . getActualURL() . '" method="POST">
+                        <div class="mt-3 py-5 border-top text-center">
+                            <div class="row justify-content-center">
+                                    <div class="col-lg-12">
+                                        <table class="col-lg-12">
+                                            <tbody>
+                                            <tr>
+                                                <td>NOMBRE COMPLETO:</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <div class="dropdown">
+                                                            <select id="fullName" name="fullName" class="btn btn-secondary dropdown-toggle" onchange="this.form.submit()">
+                                                            ' . $names . '
+                                                            </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            ' . $data . '
                                     </tbody>
                                 </table>
                                 <hr/>
-                                <button class="btn btn-primary btn-lg" type="button">Modificar</button>
+                                <input type="submit" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn btn-primary btn-lg" id="modify" name="modify" value="Modificar">
                                 <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>

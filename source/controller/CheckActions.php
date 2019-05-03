@@ -41,7 +41,7 @@ class CheckActions
     {
         switch ($this->path) {
             case "docent":
-                self::insertDocent();
+                self::docent();
                 break;
             case "enrollment":
                 self::insertStudent();
@@ -149,6 +149,96 @@ class CheckActions
     }
 
 
+    /** Docent **/
+    protected function docent()
+    {
+        switch (getRequest("docent")) {
+            case "new":
+                self::insertDocent();
+                break;
+            case "modify":
+                self::modifyDocent();
+                break;
+            case "delete":
+                self::deleteDocent();
+                break;
+        }
+    }
+
+    protected function insertDocent()
+    {
+        // Add Docent
+        $data = $_POST;
+        $registerDate = date("Y-m-d", strtotime($data['registerDate']));
+        $endDate = date("Y-m-d", strtotime($data['endDate']));
+        // Show the max users registers
+        $maxUsers = $this->connection->db_exec("value", UsersDAO::getMaxUser()) + 1;
+
+        $values = array(
+            "Nombre_Completo" => $data['name'] . " " . $data['lastName'],
+            "Lugar_nacimiento" => $data['birthplace'],
+            "Fecha_Nacimiento" => $data['birthday'],
+            "Edad" => $data['years'],
+            "Religion" => $data['religion'],
+            "Titulo_profesional" => $data['profession'],
+            "Titulo_documento" => $data['typeID'],
+            "Num_id" => $data['numberID'],
+            "Fecha_Registro" => $registerDate,
+            "Fecha_fin" => $endDate,
+            "Estado" => $data['eps'],
+            "Usuarios_idUsuarios" => $maxUsers
+        );
+
+        // Add User
+        if (!$this->connection->db_exec("query", UsersDAO::addUser($maxUsers, $values))) {
+            // Add Docent
+            if (!$this->connection->db_exec("query", DocentDAO::addDocent($maxUsers, $values))) {
+                self::addAndExit();
+            }
+        }
+    }
+
+    protected function modifyDocent()
+    {
+        // Add Docent
+        $data = $_POST;
+        if (!isset($data['fullName'])) {
+            $registerDate = date("Y-m-d", strtotime($data['registerDate']));
+            $endDate = date("Y-m-d", strtotime($data['endDate']));
+            // Show the max users registers
+            $maxUsers = $this->connection->db_exec("value", UsersDAO::getMaxUser()) + 1;
+
+            $values = array(
+                "Nombre_Completo" => $data['name'] . " " . $data['lastName'],
+                "Lugar_nacimiento" => $data['birthplace'],
+                "Fecha_Nacimiento" => $data['birthday'],
+                "Edad" => $data['years'],
+                "Religion" => $data['religion'],
+                "Titulo_profesional" => $data['profession'],
+                "Titulo_documento" => $data['typeID'],
+                "Num_id" => $data['numberID'],
+                "Fecha_Registro" => $registerDate,
+                "Fecha_fin" => $endDate,
+                "Estado" => $data['eps'],
+                "Usuarios_idUsuarios" => $maxUsers
+            );
+
+            // Modify Docent
+            if (!$this->connection->db_exec("query", DocentDAO::updateDocent($values))) {
+                self::addAndExit("Modificados");
+            }
+        }
+    }
+
+
+    protected function deleteDocent()
+    {
+        // Delete Docent
+        if (!$this->connection->db_exec("query", DocentDAO::deleteName($_POST['fullName']))) {
+            self::addAndExit("Eliminado");
+        }
+    }
+
     /** Student */
     protected function insertStudent()
     {
@@ -218,41 +308,6 @@ class CheckActions
         }*/
     }
 
-    /** DOCENT **/
-    protected function insertDocent()
-    {
-        $data = $_POST;
-
-        $registerDate = date("Y-m-d", strtotime($data['registerDate']));
-        $endDate = date("Y-m-d", strtotime($data['endDate']));
-
-        $values = array(
-            "Nombre_Completo" => $data['name'] . " " . $data['lastName'],
-            "Lugar_nacimiento" => $data['birthplace'],
-            "Fecha_Nacimiento" => $data['birthday'],
-            "Edad" => $data['years'],
-            "Religion" => $data['religion'],
-            "Titulo_profesional" => $data['profession'],
-            "Titulo_documento" => $data['typeID'],
-            "Num_id" => $data['numberID'],
-            "Fecha_Registro" => $registerDate,
-            "Fecha_fin" => $endDate,
-            "Estado" => $data['eps'],
-            "Usuarios_idUsuarios" => $data['birthplace']
-        );
-        // Show the max users registers
-        $maxUsers = $this->connection->db_exec("value", UsersDAO::getMaxUser()) + 1;
-
-        // Add User
-        if (!$this->connection->db_exec("query", UsersDAO::addUser($maxUsers, $values))) {
-            // Add Docent
-            if (!$this->connection->db_exec("query", DocentDAO::addDocent($maxUsers, $values))) {
-                self::addAndExit();
-            }
-        }
-
-
-    }
 
     private function addAndExit($txt = "Añadidos")
     {

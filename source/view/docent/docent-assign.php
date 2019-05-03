@@ -1,4 +1,19 @@
 <?php
+/** Docent Actions **/
+// Show grades registers
+$docentNames = $connection->db_exec("fetch_array", DocentDAO::getNameDocents());
+$names = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
+foreach ($docentNames as $keys => $values) {
+    $names .= '<option class="dropdown-item" >' . $values[0] . '</option>';
+}
+
+$subjectNames = $connection->db_exec("fetch_array", SubjectDAO::getName());
+$nameSubject = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
+foreach ($subjectNames as $keys => $values) {
+    $names .= '<option class="dropdown-item" >' . $values[0] . '</option>';
+}
+
+
 $section->appendInnerHTML('
         <div class="container">
             <div class="card card-profile shadow mt--300">
@@ -35,30 +50,20 @@ $section->appendInnerHTML('
                                         <td>CODIGO ASIGNATURA:</td>
                                         <td>
                                             <div class="dropdown">
-                                                <button aria-expanded="false" aria-haspopup="true"
-                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                                        id="typeID" type="button">
-                                                    Seleccione
-                                                </button>
-                                                <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                                                </div>
-                                            </div>
+                                                                                                            <select id="subject" name="subject" class="btn btn-secondary dropdown-toggle">
+                                                            ' . $nameSubject . '
+                                                            </select>
+</div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>DOCENTE ASIGNADO:</td>
                                         <td>
                                             <div class="dropdown">
-                                                <button aria-expanded="false" aria-haspopup="true"
-                                                        class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                                                        id="nameDocent" type="button">
-                                                    Seleccione
-                                                </button>
-                                                <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                                                    <option class="dropdown-item">Registro Civil</a>
-                                                    <option class="dropdown-item">Tarjeta de Identidad</a>
-                                                </div>
-                                            </div>
+                                                                                                            <select id="fullName" name="fullName" class="btn btn-secondary dropdown-toggle">
+                                                            ' . $names . '
+                                                            </select>
+</div>
                                         </td>
                                     </tr>
                                     </tbody>
