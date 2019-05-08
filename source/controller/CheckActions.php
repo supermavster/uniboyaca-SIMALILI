@@ -79,28 +79,56 @@ class CheckActions
     {
         // Add Docent
         $data = $_POST;
-        $registerDate = date("Y-m-d", strtotime($data['registerDate']));
+        /**
+         * {
+         * "name": "",
+         * "lastName": "",
+         * "typeID": "Seleccione...",
+         * "numberID": "",
+         * "birthday": "06\/20\/2018",
+         * "rh": "Seleccione...",
+         * "religion": "",
+         * "numberPhone": "",
+         * "position": "Seleccione...",
+         * "initDate": "06\/20\/2018",
+         * "endDate": "06\/20\/2018",
+         * "ciberusuario": "",
+         * "password": ""
+         * }
+         */
+        $initDate = date("Y-m-d", strtotime($data['initDate']));
         $endDate = date("Y-m-d", strtotime($data['endDate']));
+        $birthday = date("Y-m-d", strtotime($data['birthday']));
         // Show the max users registers
-        $maxUsers = $this->connection->db_exec("value", UsersDAO::getMaxUser()) + 1;
+        $id = $this->connection->db_exec("value", PersonDAO::getMaxID()) + 1;
 
-        $values = array(
-            "firstName" => $data['name'],
-            "lastName" => $data['lastName'],
-            "Lugar_nacimiento" => $data['birthplace'],
-            "Fecha_Nacimiento" => $data['birthday'],
-            "Edad" => $data['years'],
-            "Religion" => $data['religion'],
-            "Titulo_profesional" => $data['profession'],
-            "Titulo_documento" => $data['typeID'],
-            "Num_id" => $data['numberID'],
-            "Fecha_Registro" => $registerDate,
-            "Fecha_fin" => $endDate,
-            "Estado" => $data['eps'],
-            "Usuarios_idUsuarios" => $maxUsers
-        );
+        $values =
+            array(
+                'idPerson' => $id,
+                'person' => array(
+                    'name' => $data['name'],
+                    'lastName' => $data['lastName'],
+                    'typeID' => $data['typeID'],
+                    'numberID' => $data['numberID'],
+                    'birthday' => $birthday,
+                    'rh' => $data['rh'],
+                    'religion' => $data['religion'],
+                    'numberPhone' => $data['numberPhone'],
+                ),
+                'institutionalcharge' => array(
+                    'position' => $data['position'],
+                    'initDate' => $initDate,
+                    'endDate' => $endDate,
+                    'enable' => true,
+                ),
+                'user' => array(
+                    'ciberusuario' => $data['ciberusuario'],
+                    'password' => $data['password']
+                )
+            );
+        showContent($values);
         // Add Grade
-        if (!$this->connection->db_exec("query", PersonDAO::addGrade($_POST['idGrade']))) {
+        if (!$this->connection->db_exec("query", PersonDAO::addPerson($values))) {
             self::addAndExit();
         }
     }

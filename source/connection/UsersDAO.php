@@ -11,17 +11,15 @@ class UsersDAO
     {
 
         // User
-        $sql = "INSERT INTO `usuarios` (`idUsuarios`, `Nombre`, `Documento_id`, `Cargo`, `Fecha_inicio`, `Fecha_fin`, `Contraseña`, `Estado`) VALUES ($maxID,";
+        $sql = "INSERT INTO `user` (`idUser`, `idInstitutionalCharge`, `user`, `password`) VALUES (";
+        $tempValue = 0;
         foreach ($values as $clave => $valor) {
-            if ($clave == "Nombre_Completo") {
-                $sql .= "'$valor',";
-            } elseif ($clave == "Num_id") {
-                $sql .= "'$valor','Ninguno',";
-            } elseif ($clave == "Fecha_Registro") {
-                $sql .= "'$valor',";
-            } elseif ($clave == "Fecha_fin") {
-                $sql .= "'$valor','12345','Activo');";
+            $sql .= "'$valor'";
+            if ($tempValue++ == count($values) - 3) {
+                $sql .= ");";
                 break;
+            } else {
+                $sql .= ",";
             }
         }
         return $sql;

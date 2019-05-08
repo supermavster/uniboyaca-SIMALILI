@@ -135,6 +135,7 @@ class Settings
         require_once AS_DB . 'GradeDAO.php';
         require_once AS_DB . 'SubjectDAO.php';
         require_once AS_DB . 'PersonDAO.php';
+        require_once AS_DB . 'InstitutionalChargeDAO.php';
     }
 }
 
