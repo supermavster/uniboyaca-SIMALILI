@@ -80,9 +80,8 @@ class Settings
 
         define('LOGIN', constant('valuesLogin'));
         require_once AS_PLUGINS . 'login/sessions.php';
-
         require_once AS_PLUGINS . 'login/class/signIn.php';
-        $signIn = new SignIn(self::getDataBase());
+
     }
 
     protected function setURL()

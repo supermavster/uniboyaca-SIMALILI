@@ -29,7 +29,7 @@ $body->appendInnerHTML('<header class="header-global">
                 </div>
                 ' . ((isLogin) ? '<ul class="navbar-nav align-items-lg-center ml-lg-auto">
                     <li class="nav-item d-none d-lg-block ml-lg-4">
-                        <a class="btn btn-neutral btn-icon" href="../../../exit" target="_self">
+                        <a class="btn btn-neutral btn-icon" href="' . URLWEB_FULL . 'exit" target="_self">
                 <span class="btn-inner--icon">
                   <i class="fa fa-sign-out-alt mr-2"></i>
                 </span>

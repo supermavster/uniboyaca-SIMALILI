@@ -3,8 +3,10 @@ $body = new HTMLTag('body');
 $body->setComment(true);
 require_once 'header.php';
 $main = new HTMLTag('main');
+
 // Check if is Login
-if (!isLogin) {
+if (getRequest("SignIn")) {
+    $signIn = new SignIn(self::getDataBase());
     $section = new HTMLTag('section', array("class" => "section section-shaped section-lg"));
     $section->innerHTML('<div class="shape shape-style-1 bg-gradient-default"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
     if (isset($_GET) && isset($_GET["signUp"])) {
@@ -13,16 +15,24 @@ if (!isLogin) {
         require_once AS_VIEW . 'login/login.php';
     }
 } else {
+    if (!isLogin) {
+        header("Location:/SignIn");
+    }
     $main->appendAttribute("class", "profile-page");
     $section = new HTMLTag('section', array("class" => "section"));
     // Default Values
-    $file = "executive"; // Change by Session (secretary)
-    //$file = "secretary";
     $path = "login";
+    $file = "";
+    if (isset($_SESSION['charge'])) {
+        $file = $_SESSION['charge']; // Change by Session (secretary)
+        if ($file == "Directivo") {
+            $file = "executive";
+        } else {
+            $file = "secretary";
+        }
+    }
     // Switch - Select Process
     if (isset($_GET) && !empty($_GET)) {
-        $path = "";
-        $file = "";
         switch (true) {
             case getRequest("docent"):
                 $path = "docent";
@@ -47,10 +57,6 @@ if (!isLogin) {
                 break;
             case getRequest("secretary"):
                 $path = "secretary";
-                break;
-
-            case getRequest("login"):
-                $path = "login";
                 break;
         }
     }

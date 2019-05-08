@@ -23,9 +23,10 @@ removeCookie("COOKIE_INDEFINED_SESSION");
 removeCookie("COOKIE_DATA_INDEFINED_SESSION[nombre]");
 removeCookie("COOKIE_DATA_INDEFINED_SESSION[password]");
 // Remove Session
+session_start();
+session_destroy();
 unset($_SESSION);
 session_unset();
-session_destroy();
 session_start();
 // Return Home
 header("Location: /");

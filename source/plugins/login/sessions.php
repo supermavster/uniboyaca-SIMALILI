@@ -23,3 +23,15 @@ if (isset($_SESSION['ultima_actividad']) && (($hora - $_SESSION['ultima_activida
 
 // Definimos el valor de la sesión "ultima_actividad" como el timestamp del servidor
 $_SESSION['ultima_actividad'] = $hora;
+
+# Define Login
+$checkUser = false;
+if (isSession) {
+    $checkDataUser = isset($_SESSION['user']) and !empty($_SESSION['user']);
+    $checkDataState = isset($_SESSION['state']) and !empty($_SESSION['state']) && ($_SESSION['state'] === constant("auth"));
+    $checkUser = ($checkDataUser === true) && ($checkDataState === true);
+}
+if (constant("debug")) {
+    $checkUser = constant("debug");
+}
+define('isLogin', $checkUser);

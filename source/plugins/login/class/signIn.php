@@ -36,17 +36,6 @@ if (basename($_SERVER['REQUEST_URI']) !== basename(__FILE__)) {
             if (isset($_SERVER['REQUEST_METHOD']) && ($_SERVER['REQUEST_METHOD'] === 'POST')) {
                 self::initProcess();
             }
-            # Define Login    
-            $checkUser = false;
-            if (isSession) {
-                $checkDataUser = isset($_SESSION['user']);
-                $checkDataState = isset($_SESSION['state']) && ($_SESSION['state'] === constant("auth"));
-                $checkUser = ($checkDataUser === true) && ($checkDataState === true);
-            }
-            if (constant("debug")) {
-                $checkUser = constant("debug");
-            }
-            define('isLogin', $checkUser);
         }
 
         protected function initProcess()
@@ -87,8 +76,8 @@ if (basename($_SERVER['REQUEST_URI']) !== basename(__FILE__)) {
             //Definimos la cantidad máxima de caracteres
             //Esta comprobación se tiene en cuenta por si se llegase a modificar el "maxlength" del formulario
             //Los valores deben coincidir con el tamaño máximo de la fila de la base de datos
-            $maxCaracteresUsername = "20";
-            $maxCaracteresPassword = "60";
+            $maxCaracteresUsername = "100";
+            $maxCaracteresPassword = "100";
 
             //Si los input son de mayor tamaño, se "muere" el resto del código y muestra la respuesta correspondiente
             if (strlen($this->userPOST) > $maxCaracteresUsername) {
@@ -107,14 +96,14 @@ if (basename($_SERVER['REQUEST_URI']) !== basename(__FILE__)) {
         protected function setDatesDB()
         {
             //Obtenemos los resultados
-            $datos = self::getConnection()->db_exec("fetch_array", SignInAndSignUp::getDataUserByID($this->userPOSTMinusculas));
+            $datos = self::getConnection()->db_exec("fetch_array", SignInAndSignUpDAO::getDataUserByID($this->userPOSTMinusculas));
             //Guardamos los resultados del nombre de usuario en minúsculas
             //y de la contraseña de la base de datos
-            if (isset($datos)) {
-                $this->userBD = $datos[0]['usernamelowercase'];
+            if (isset($datos) && !empty($datos)) {
+                $this->userBD = $datos[0]['user'];
                 $this->passwordBD = $datos[0]['password'];
                 $this->id = $datos[0]["idUser"];
-                $this->userName = $datos[0]["username"];
+                $this->userName = $datos[0]["user"];
                 //echo $this->passPOST . ", " . $this->passwordBD;
             } else {
                 print_r($datos);
@@ -134,10 +123,10 @@ if (basename($_SERVER['REQUEST_URI']) !== basename(__FILE__)) {
             } else if ($this->userBD != $this->userPOSTMinusculas) {
                 //Usuario Incorrecto
                 $message = $this->langType['LOGIN-ERRO-2'];
-            } else if (!password_verify($this->passPOST, $this->passwordBD)) {
+            } else if ($this->passPOST !== $this->passwordBD) {//(!password_verify($this->passPOST, $this->passwordBD)) {
                 //Clave  Incorrecta
                 $message = $this->langType['LOGIN-ERRO-3'];
-            } else if ($this->userBD == $this->userPOSTMinusculas and password_verify($this->passPOST, $this->passwordBD)) {
+            } else if ($this->userBD == $this->userPOSTMinusculas and ($this->passPOST == $this->passwordBD)) {//password_verify($this->passPOST, $this->passwordBD)) {
                 //COmpleto
                 $this->loginUser();
                 // Complete
@@ -171,7 +160,7 @@ if (basename($_SERVER['REQUEST_URI']) !== basename(__FILE__)) {
                     "message" => $message,
                 )
             );
-            showElements($showElements);
+            //showElements($showElements);
         }
 
         protected function loginUser()
@@ -184,17 +173,21 @@ if (basename($_SERVER['REQUEST_URI']) !== basename(__FILE__)) {
             setcookie("marca", true, $rand, "/");
             $_SESSION['marca'] = $rand;
             /* Sesión iniciada, si se desea, se puede redireccionar desde el servidor */
-            $name = self::getConnection()->db_exec("fetch_row", SignInAndSignUp::getNameByUser($this->userName))[0];
+            $name = self::getConnection()->db_exec("fetch_row", SignInAndSignUpDAO::getNameByUser($this->userName))[0];
+            $charge = self::getConnection()->db_exec("fetch_row", SignInAndSignUpDAO::getChargeByUser($this->userName))[0];
+            $_SESSION['charge'] = $charge;
             $_SESSION['name'] = $name;
             $_SESSION['user'] = $this->userName;
             $_SESSION['state'] = 'Autenticado';
             //Si los datos no son correctos, o están vacíos, muestra un error
             //Además, hay un script que vacía los campos con la clase "acceso" (formulario)
+
+            header("Location:/");
         }
 
         public function exit()
         {
-            self::getConnection()->db_exec("query", SignInAndSignUp::updateCookieByUserName(0, $_SESSION['user']));
+            self::getConnection()->db_exec("query", SignInAndSignUpDAO::updateCookieByUserName(0, $_SESSION['user']));
             // Remove Cookies
             removeCookie("COOKIE_INDEFINED_SESSION");
             removeCookie("COOKIE_DATA_INDEFINED_SESSION[nombre]");

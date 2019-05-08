@@ -46,7 +46,7 @@ LimitRequestBody 10240000
     # Index Values
     RewriteRule ^/$ index.php [L]
 
-    RewriteRule ^signup$ /index.php?signUp=true
+    RewriteRule ^SignIn$ /index.php?SignIn=true
 
     RewriteRule ^exit$ /source/plugins/login/exit.php
 

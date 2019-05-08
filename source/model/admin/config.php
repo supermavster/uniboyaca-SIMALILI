@@ -9,7 +9,7 @@
 
 /** TODO: Admin TEST - DEBUG */
 // Debug Project (Only Admin)
-const debug = true;
+const debug = false;
 
 #Config Main
 const limitTime = 300;
