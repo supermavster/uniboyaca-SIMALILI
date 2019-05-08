@@ -36,7 +36,7 @@ $section->appendInnerHTML('
               <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <a class="btn btn-outline-default" href="../user-new">Nuevo Usuario</a>'
-    . (($maxUsers > 1) ? '
+    . (($maxUsers >= 1) ? '
                     <a class="btn btn-outline-default" href="../user-modify">Modificar Usuario</a>
                     <a class="btn btn-outline-default" href="../user-search">Buscar Usuario</a>
                     <a class="btn btn-outline-default" href="../user-delete">Eliminar Usuario</a>
