@@ -112,6 +112,7 @@ class CheckActions
                     'numberID' => $data['numberID'],
                     'birthday' => $birthday,
                     'rh' => $data['rh'],
+                    'eps' => $data['eps'],
                     'religion' => $data['religion'],
                     'numberPhone' => $data['numberPhone'],
                 ),
@@ -129,7 +130,11 @@ class CheckActions
         showContent($values);
         // Add Grade
         if (!$this->connection->db_exec("query", PersonDAO::addPerson($values))) {
-            self::addAndExit();
+            if (!$this->connection->db_exec("query", InstitutionalChargeDAO::addInstitutionalCharge($values))) {
+                if (!$this->connection->db_exec("query", UsersDAO::addUser($values))) {
+                    self::addAndExit();
+                }
+            }
         }
     }
 

@@ -69,9 +69,10 @@ $section->appendInnerHTML('
                                                     <div class="dropdown">
                                                       <select id="typeID" name="typeID" class="btn btn-secondary dropdown-toggle">
                                                             <option class="dropdown-item" selected>Seleccione...</option>
-                                                            <option class="dropdown-item" >Cedula</option>
+                                                            <option class="dropdown-item" >Cedula de Ciudadania</option>
                                                             <option class="dropdown-item" >Pasaporte</option>
-                                                            <option class="dropdown-item" >Cedula extranjería</option>
+                                                            <option class="dropdown-item" >Cedula Extranjera</option>
+                                                            
                                                       </select>
                                                     </div>
                                                 </td>
@@ -115,6 +116,15 @@ $section->appendInnerHTML('
                                                             <option class="dropdown-item" >B+</option>
                                                             <option class="dropdown-item" >B-</option>
                                                       </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>EPS:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="eps" name="eps"
+                                                               placeholder="Ingrese su EPS">
                                                     </div>
                                                 </td>
                                             </tr>
