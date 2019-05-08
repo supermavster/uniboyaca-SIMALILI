@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2b1b4ee-9e62-451b-8057-1d83d534efdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/connection/InstitutionalChargeDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/connection/PersonDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/connection/PersonDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/connection/InstitutionalChargeDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/connection/InstitutionalChargeDAO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/connection/UsersDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/connection/UsersDAO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/controller/CheckActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/CheckActions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/controller/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/controller/Settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/view/user/user-new.php" beforeDir="false" afterPath="$PROJECT_DIR$/source/view/user/user-new.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +21,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/controller/CheckActions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
+            <state relative-caret-position="459">
+              <caret line="133" column="75" selection-start-line="133" selection-start-column="75" selection-end-line="133" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/view/user/user-new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="71" column="120" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -33,8 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/connection/InstitutionalChargeDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="11" column="130" selection-start-line="11" selection-start-column="122" selection-end-line="11" selection-end-column="130" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/connection/UsersDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -48,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/connection/PersonDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="11" column="183" lean-forward="true" selection-start-line="11" selection-start-column="154" selection-end-line="11" selection-end-column="183" />
             </state>
           </provider>
         </entry>
@@ -190,12 +205,12 @@
         <option value="$PROJECT_DIR$/source/view/template/body.php" />
         <option value="$PROJECT_DIR$/source/view/executive/executive-user.php" />
         <option value="$PROJECT_DIR$/source/connection/InstitutionalchargeDAO.php" />
+        <option value="$PROJECT_DIR$/source/controller/Settings.php" />
+        <option value="$PROJECT_DIR$/source/connection/PersonDAO.php" />
+        <option value="$PROJECT_DIR$/source/connection/InstitutionalChargeDAO.php" />
+        <option value="$PROJECT_DIR$/source/controller/CheckActions.php" />
         <option value="$PROJECT_DIR$/source/connection/UsersDAO.php" />
         <option value="$PROJECT_DIR$/source/view/user/user-new.php" />
-        <option value="$PROJECT_DIR$/source/connection/InstitutionalChargeDAO.php" />
-        <option value="$PROJECT_DIR$/source/controller/Settings.php" />
-        <option value="$PROJECT_DIR$/source/controller/CheckActions.php" />
-        <option value="$PROJECT_DIR$/source/connection/PersonDAO.php" />
       </list>
     </option>
   </component>
@@ -420,14 +435,7 @@
       <workItem from="1556846265642" duration="22986000" />
       <workItem from="1556895188797" duration="6312000" />
       <workItem from="1557238775773" duration="27000" />
-      <workItem from="1557290166683" duration="11166000" />
-    </task>
-    <task id="LOCAL-00006" summary="[Add] Executive List">
-      <created>1554866597452</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1554866597452</updated>
+      <workItem from="1557290166683" duration="11730000" />
     </task>
     <task id="LOCAL-00007" summary="[Add] Executive Enrollment">
       <created>1554866685571</created>
@@ -765,11 +773,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557317107829</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="[Add] SQL and View User">
+      <created>1557319510213</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1557319510213</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112544000" />
+    <option name="totallyTimeSpent" value="113108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,7 +855,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="[Fix] Log Out (SELF)" />
     <MESSAGE value="[add] Table" />
     <MESSAGE value="[Remove] Index" />
     <MESSAGE value="[Fix] Problems" />
@@ -865,7 +879,8 @@
     <MESSAGE value="[Add] Login and New BD" />
     <MESSAGE value="[Add] Login and New BD, Grade" />
     <MESSAGE value="[Fix] User" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Fix] User" />
+    <MESSAGE value="[Add] SQL and View User" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] SQL and View User" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1152,20 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/connection/UsersDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/view/user/user-new.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/model/complements.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
@@ -1187,24 +1188,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/connection/PersonDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="183" lean-forward="true" selection-start-line="11" selection-start-column="154" selection-end-line="11" selection-end-column="183" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/connection/InstitutionalChargeDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="11" column="130" selection-start-line="11" selection-start-column="122" selection-end-line="11" selection-end-column="130" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/controller/CheckActions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
+        <state relative-caret-position="459">
+          <caret line="133" column="75" selection-start-line="133" selection-start-column="75" selection-end-line="133" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/connection/PersonDAO.php">
+    <entry file="file://$PROJECT_DIR$/source/connection/UsersDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="340">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/view/user/user-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="71" column="120" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
         </state>
       </provider>
     </entry>
