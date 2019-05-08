@@ -5,28 +5,29 @@ class GradeDAO
 {
     final public static function addGrade($value)
     {
-        return "INSERT INTO `grado` (`id_Grado`, `Nombre`) VALUES (NULL, '$value')";
+
+        return "INSERT INTO `grade` (`idGrade`, `nameGrade`) VALUES (NULL, '$value')";
     }
 
     final public static function getNameGrades()
     {
-        return "SELECT `Nombre` FROM `grado`";
+        return "SELECT `nameGrade` FROM `grade`";
     }
 
     final public static function updateName($oldName, $newName)
     {
-        return "UPDATE `grado` SET `Nombre` = '$newName' WHERE `grado`.`Nombre` = '$oldName';";
+        return "UPDATE `grade` SET `nameGrade` = '$newName' WHERE `nameGrade` = '$oldName';";
     }
 
     final public static function deleteName($name)
     {
-        return "DELETE FROM `grado` WHERE `grado`.`Nombre` = '$name'";
+        return "DELETE FROM `grade` WHERE `nameGrade` = '$name'";
     }
 
 
     final public static function selectName($name)
     {
-        return "SELECT * FROM `grado` WHERE `Nombre` LIKE '%$name%'";
+        return "SELECT * FROM `grade` WHERE `nameGrade` LIKE '%$name%'";
     }
 
 

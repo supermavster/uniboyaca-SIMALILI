@@ -4,7 +4,7 @@ class UsersDAO
 {
     final public static function getMaxUser()
     {
-        return "SELECT MAX(`idUsuarios`) count FROM `usuarios` ";
+        return "SELECT MAX(`idUser`) count FROM `user` ";
     }
 
     final public static function addUser($maxID, $values)

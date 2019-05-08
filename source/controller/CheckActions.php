@@ -40,6 +40,9 @@ class CheckActions
     protected function getData()
     {
         switch ($this->path) {
+            case "user":
+                self::user();
+                break;
             case "docent":
                 self::docent();
                 break;
@@ -55,6 +58,68 @@ class CheckActions
         }
     }
 
+    /** User */
+    protected function user()
+    {
+        //`idPerson`, `firstName`, `lastName`, `TypeDocument`, `NumberDocument`, `birthday`, `rh`,`eps`, `religion`, `phone`
+        switch (getRequest("user")) {
+            case "new":
+                self::insertUser();
+                break;
+            case "modify":
+                self::modifyUser();
+                break;
+            case "delete":
+                self::deleteUser();
+                break;
+        }
+    }
+
+    protected function insertUser()
+    {
+        // Add Docent
+        $data = $_POST;
+        $registerDate = date("Y-m-d", strtotime($data['registerDate']));
+        $endDate = date("Y-m-d", strtotime($data['endDate']));
+        // Show the max users registers
+        $maxUsers = $this->connection->db_exec("value", UsersDAO::getMaxUser()) + 1;
+
+        $values = array(
+            "firstName" => $data['name'],
+            "lastName" => $data['lastName'],
+            "Lugar_nacimiento" => $data['birthplace'],
+            "Fecha_Nacimiento" => $data['birthday'],
+            "Edad" => $data['years'],
+            "Religion" => $data['religion'],
+            "Titulo_profesional" => $data['profession'],
+            "Titulo_documento" => $data['typeID'],
+            "Num_id" => $data['numberID'],
+            "Fecha_Registro" => $registerDate,
+            "Fecha_fin" => $endDate,
+            "Estado" => $data['eps'],
+            "Usuarios_idUsuarios" => $maxUsers
+        );
+        // Add Grade
+        if (!$this->connection->db_exec("query", PersonDAO::addGrade($_POST['idGrade']))) {
+            self::addAndExit();
+        }
+    }
+
+    protected function modifyUser()
+    {
+        // Modify Grade
+        if (!$this->connection->db_exec("query", GradeDAO::updateName($_POST['idGrade'], $_POST['idNewGrade']))) {
+            self::addAndExit("Modificados");
+        }
+    }
+
+    protected function deleteUser()
+    {
+        // Delete Grade
+        if (!$this->connection->db_exec("query", GradeDAO::deleteName($_POST['idGrade']))) {
+            self::addAndExit("Eliminado");
+        }
+    }
 
     /** Grade */
     protected function grade()

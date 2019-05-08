@@ -23,14 +23,7 @@ if (getRequest("SignIn")) {
     // Default Values
     $path = "login";
     $file = "";
-    if (isset($_SESSION['charge'])) {
-        $file = $_SESSION['charge']; // Change by Session (secretary)
-        if ($file == "Directivo") {
-            $file = "executive";
-        } else {
-            $file = "secretary";
-        }
-    }
+
     // Switch - Select Process
     if (isset($_GET) && !empty($_GET)) {
         switch (true) {
@@ -62,7 +55,7 @@ if (getRequest("SignIn")) {
     }
 
     // Get File
-    if (isset($file) && empty($file)) {
+    if (getRequest($path)) {
         $main->innerHTML('<section class="section-profile-cover section-shaped my-0" style="height: 440px">
       <!-- Circles background -->
       <div class="shape shape-style-1 shape-primary alpha-4">
@@ -84,6 +77,15 @@ if (getRequest("SignIn")) {
         $file = getRequest($path);
 
     } else {
+        // Check Permission
+        if (isset($_SESSION['charge'])) {
+            $file = $_SESSION['charge']; // Change by Session (secretary)
+            if ($file == "Directivo") {
+                $file = "executive";
+            } else {
+                $file = "secretary";
+            }
+        }
         $main->appendInnerHTML('<div class="position-relative">
         <!-- shape Hero -->
         <section class="section section-lg section-shaped pb-250">

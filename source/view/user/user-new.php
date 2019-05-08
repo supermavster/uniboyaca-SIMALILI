@@ -1,4 +1,16 @@
 <?php
+
+// Data User
+$datos = $connection->db_exec("fetch_array", SignInAndSignUpDAO::getDataUser($_SESSION['user']));
+$tabs = "";
+foreach ($datos as $key => $data) {
+    $tabs .= "<tr>
+                        <th scope='row'>" . ($key + 1) . "</th>
+                        <td>$data[0]</td>
+                        <td>$data[1]</td>
+                        <td>$data[2] $data[3]</td>
+                    </tr>";
+}
 $section->appendInnerHTML('
         <div class="container">
             <div class="card card-profile shadow mt--300">
@@ -241,7 +253,7 @@ $section->appendInnerHTML('
                                         </table>
                                         <hr/>
                                         <button type="submit" class="btn btn-success btn-lg">Guardar</button>
-                                        <a href="javascript:location.reload();" class="btn btn-danger btn-lg">Cancelar</a>
+                                        <a href="' . URLWEB_FULL . '" class="btn btn-danger btn-lg">Cancelar</a>
                                     </div>
                                 </div>
                         </div>
@@ -259,24 +271,7 @@ $section->appendInnerHTML('
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>afcamacho</td>
-                        <td>Directivo</td>
-                        <td>Andres Camacho</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>ylfigueroa</td>
-                        <td>Secretaría</td>
-                        <td>Yoshua Figueroa</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>pavillamil</td>
-                        <td>Directivo</td>
-                        <td>Alejandra Villamil</td>
-                    </tr>
+                    ' . $tabs . '
                     </tbody>
                 </table>
             </div>
