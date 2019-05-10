@@ -24,6 +24,14 @@ class InstitutionalChargeDAO
         return $sql;
     }
 
+    final public static function updateInstitutionalCharge($values)
+    {
+        $idPerson = $values['id'];
+        $values = $values['institutionalcharge'];
+        $sql = "UPDATE `institutionalcharge` SET `charge` = '$values[position]', `initDate` = '$values[initDate]', `endDate` = '$values[endDate]',`enable` = '$values[enable]' WHERE `institutionalcharge`.`idPerson` = $idPerson;";
+        return $sql;
+    }
+
 }
 
 new InstitutionalChargeDAO();

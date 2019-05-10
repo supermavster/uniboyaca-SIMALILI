@@ -6,7 +6,7 @@ $main = new HTMLTag('main');
 
 // Check if is Login
 if (getRequest("SignIn")) {
-    $signIn = new SignIn(self::getDataBase());
+    $signIn = new SignIn(self::getConnection());
     $section = new HTMLTag('section', array("class" => "section section-shaped section-lg"));
     $section->innerHTML('<div class="shape shape-style-1 bg-gradient-default"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>');
     if (isset($_GET) && isset($_GET["signUp"])) {
@@ -115,6 +115,17 @@ if (getRequest("SignIn")) {
         <!-- 1st Hero Variation -->
     </div>');
     }
+
+    $tempCharge = "";
+    if (isset($_SESSION['charge'])) {
+        $tempCharge = $_SESSION['charge'];
+        if ($tempCharge == "Directivo") {
+            $tempCharge = "executive";
+        } else {
+            $tempCharge = "secretary";
+        }
+    }
+    $pathMain = "$tempCharge-$path";
 
     /** Init Process - Users */
     if (isset($_SERVER['REQUEST_METHOD']) && ($_SERVER['REQUEST_METHOD'] === 'POST')) {

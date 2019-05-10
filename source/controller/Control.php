@@ -31,7 +31,7 @@ class Control extends Settings
     protected function makeWebSite()
     {
         // Add Connection
-        $connection = parent::getDataBase();
+        $connection = parent::getConnection();
 
         // Show Files
         $tempFile = array("body", "head", "html");

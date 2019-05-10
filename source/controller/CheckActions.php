@@ -67,7 +67,9 @@ class CheckActions
                 self::insertUser();
                 break;
             case "modify":
-                self::modifyUser();
+                if (!isset($_POST['idMain'])) {
+                    self::modifyUser();
+                }
                 break;
             case "delete":
                 self::deleteUser();
@@ -75,7 +77,7 @@ class CheckActions
         }
     }
 
-    protected function insertUser()
+    protected function getDataPostUser()
     {
         // Add Docent
         $data = $_POST;
@@ -92,6 +94,7 @@ class CheckActions
          * "position": "Seleccione...",
          * "initDate": "06\/20\/2018",
          * "endDate": "06\/20\/2018",
+         *   'checkEnable' => 'on',
          * "ciberusuario": "",
          * "password": ""
          * }
@@ -99,35 +102,44 @@ class CheckActions
         $initDate = date("Y-m-d", strtotime($data['initDate']));
         $endDate = date("Y-m-d", strtotime($data['endDate']));
         $birthday = date("Y-m-d", strtotime($data['birthday']));
+        $checkEnable = (isset($data['checkEnable'])) ? 1 : 0;
         // Show the max users registers
-        $id = $this->connection->db_exec("value", PersonDAO::getMaxID()) + 1;
-
+        $idPerson = $this->connection->db_exec("value", PersonDAO::getMaxID()) + 1;
+        $id = self::getConnection()->db_exec("value", PersonDAO::getID($data['ciberusuario']));
         $values =
             array(
-                'idPerson' => $id,
+                'source' => $this->path,
+                'id' => $id,
+                'idPerson' => $idPerson,
                 'person' => array(
-                    'name' => $data['name'],
+                    'firstName' => $data['name'],
                     'lastName' => $data['lastName'],
-                    'typeID' => $data['typeID'],
-                    'numberID' => $data['numberID'],
+                    'TypeDocument' => $data['typeID'],
+                    'NumberDocument' => $data['numberID'],
                     'birthday' => $birthday,
                     'rh' => $data['rh'],
                     'eps' => $data['eps'],
                     'religion' => $data['religion'],
-                    'numberPhone' => $data['numberPhone'],
+                    'phone' => $data['numberPhone'],
                 ),
                 'institutionalcharge' => array(
                     'position' => $data['position'],
                     'initDate' => $initDate,
                     'endDate' => $endDate,
-                    'enable' => true,
+                    'enable' => $checkEnable,
                 ),
                 'user' => array(
                     'ciberusuario' => $data['ciberusuario'],
                     'password' => $data['password']
                 )
             );
-        showContent($values);
+        return $values;
+    }
+
+    protected function insertUser()
+    {
+        $values = self::getDataPostUser();
+        //showContent($values);
         // Add Grade
         if (!$this->connection->db_exec("query", PersonDAO::addPerson($values))) {
             if (!$this->connection->db_exec("query", InstitutionalChargeDAO::addInstitutionalCharge($values))) {
@@ -140,10 +152,16 @@ class CheckActions
 
     protected function modifyUser()
     {
+        $values = self::getDataPostUser();
         // Modify Grade
-        if (!$this->connection->db_exec("query", GradeDAO::updateName($_POST['idGrade'], $_POST['idNewGrade']))) {
-            self::addAndExit("Modificados");
+        if (!self::getConnection()->db_exec("query", PersonDAO::updatePerson($values))) {
+            if (!self::getConnection()->db_exec("query", InstitutionalChargeDAO::updateInstitutionalCharge($values))) {
+                if (!self::getConnection()->db_exec('query', UsersDAO::updateUser($values))) {
+                    self::addAndExit("Modificado");
+                }
+            }
         }
+        //showContent($values);
     }
 
     protected function deleteUser()
@@ -386,7 +404,7 @@ class CheckActions
             "Estado" => $data['eps'],
             "Usuarios_idUsuarios" => $data['birthplace']
         );
-        showContent($data);
+        //showContent($data);
         /*$registerDate = date("Y-m-d", strtotime($data['registerDate']));
         $endDate = date("Y-m-d", strtotime($data['endDate']));
 
@@ -416,6 +434,11 @@ class CheckActions
     private function exitAll($message)
     {
         exit ('<b>' . str_replace(".php", "", basename($_SERVER['PHP_SELF'])) . '</b>: ' . $message);
+    }
+
+    protected function getConnection()
+    {
+        return $this->connection;
     }
 }
 

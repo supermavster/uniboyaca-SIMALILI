@@ -102,7 +102,7 @@ class Settings
         }
     }
 
-    public function getDataBase()
+    public function getConnection()
     {
         return $this->connection;
     }

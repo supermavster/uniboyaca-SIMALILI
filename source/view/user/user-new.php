@@ -1,7 +1,8 @@
 <?php
 
 // Data User
-$datos = $connection->db_exec("fetch_array", SignInAndSignUpDAO::getDataUser($_SESSION['user']));
+$datos = $connection->db_exec("fetch_array", SignInAndSignUpDAO::getDataUser());
+
 $tabs = "";
 foreach ($datos as $key => $data) {
     $tabs .= "<tr>
@@ -191,10 +192,12 @@ $section->appendInnerHTML('
                                             <tr>
                                                 <td>¿Habilitado?:</td>
                                                 <td>
-                                                   <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="checkEnable" value="false" name="checkEnable">
-    <label class="form-check-label" for="exampleCheck1">¿Habilitado?</label>
-  </div>
+                                                <div class="custom-control custom-checkbox mb-3">
+              <input class="custom-control-input" id="checkEnable" name="checkEnable" type="checkbox">
+              <label class="custom-control-label" for="checkEnable">
+                <span>¿Habilitado?</span>
+              </label>
+            </div> 
                                                 </td>
                                             </tr>
                                             <tr>

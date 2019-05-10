@@ -7,6 +7,27 @@ class UsersDAO
         return "SELECT MAX(`idUser`) count FROM `user` ";
     }
 
+    final public static function getUser($username)
+    {
+        return "SELECT 
+person.firstName, person.lastName, person.TypeDocument, person.NumberDocument, person.birthday, person.rh, person.eps, person.religion, person.phone, 
+institutionalcharge.charge, institutionalcharge.initDate, institutionalcharge.endDate, institutionalcharge.enable,
+user.user, user.password
+FROM 
+`institutionalcharge` institutionalcharge , `user` user, `person` person
+WHERE
+institutionalcharge .`idPerson` = user.`idInstitutionalCharge`
+AND
+person.idPerson = institutionalcharge.idPerson
+and user.`user` = '" . $username . "'";
+    }
+
+
+    final public static function getNameUsers()
+    {
+        return "SELECT `user` FROM `user` ";
+    }
+
     final public static function addUser($values)
     {
 
@@ -24,6 +45,13 @@ class UsersDAO
             }
         }
         return $sql;
+    }
+
+    final public static function updateUser($values)
+    {
+        $values = $values['user'];
+        return "UPDATE `user` SET `password` = '$values[password]' WHERE `user`.`user` = '$values[ciberusuario]';";
+
     }
 
 }
