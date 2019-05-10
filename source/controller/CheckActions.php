@@ -67,12 +67,12 @@ class CheckActions
                 self::insertUser();
                 break;
             case "modify":
-                if (!isset($_POST['idMain'])) {
+                if (!isset($_POST['idMain']))
                     self::modifyUser();
-                }
                 break;
             case "delete":
-                self::deleteUser();
+                if (!isset($_POST['idMain']))
+                    self::deleteUser();
                 break;
         }
     }
@@ -167,8 +167,14 @@ class CheckActions
     protected function deleteUser()
     {
         // Delete Grade
-        if (!$this->connection->db_exec("query", GradeDAO::deleteName($_POST['idGrade']))) {
-            self::addAndExit("Eliminado");
+        $values = self::getDataPostUser();
+        // Modify Grade
+        if (!self::getConnection()->db_exec('query', UsersDAO::deleteUser($values))) {
+            if (!self::getConnection()->db_exec("query", InstitutionalChargeDAO::deleteInstitutionalCharge($values))) {
+                if (!self::getConnection()->db_exec("query", PersonDAO::deletePerson($values))) {
+                    self::addAndExit("Eliminado");
+                }
+            }
         }
     }
 

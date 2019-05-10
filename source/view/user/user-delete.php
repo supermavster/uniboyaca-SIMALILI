@@ -1,4 +1,212 @@
 <?php
+/** User Actions **/
+
+// Constant
+$idMain = 'idMain';
+$date = 'm/d/Y';
+// Variable
+$getData = null;
+$names = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
+$data = '';
+
+// Actions
+$options = self::getConnection()->db_exec("fetch_array", UsersDAO::getNameUsers());
+if (isset($_POST) && !empty($_POST)) {
+    // Data SQL
+    $getData = self::getConnection()->db_exec("fetch_array", UsersDAO::getUser($_POST[$idMain]))[0];
+    $names = '<option class="dropdown-item" >' . $_POST[$idMain] . '</option>';
+
+    // Modify Data
+
+    $initDate = date($date, strtotime($getData['initDate']));
+    $endDate = date($date, strtotime($getData['endDate']));
+    $birthday = date($date, strtotime($getData['birthday']));
+}
+
+foreach ($options as $keys => $values) {
+    $names .= '<option class="dropdown-item" >' . $values[0] . '</option>';
+}
+
+// Start VIew
+$data = '<tr>
+            <th>CIBERUSUARIO:</th>
+            <td>
+                <div class="dropdown">
+                <select id="' . $idMain . '" name="' . $idMain . '" class="btn btn-secondary dropdown-toggle" onchange="this.form.submit()">
+                         ' . $names . '
+                </select>
+                </div>
+            </td>
+        </tr>';
+
+// Submit Values
+if (isset($_POST) && !empty($_POST)) {
+    $data = '
+        <tr>
+            <td>CIBERUSUARIO:</td>
+            <td>
+                <div class="form-group">
+                    <input type="hidden"  id="ciberusuario" name="ciberusuario" value="' . $getData['user'] . '"/>
+                    <input type="text" class="form-control" disabled value="' . $getData['user'] . '"
+                           placeholder="Ingrese el Ciberusuario">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>NOMBRES:</td>
+            <td>
+                <div class="form-group">
+                    <input class="form-control" name="name" id="name" placeholder="Ingrese los Nombres" value="' . $getData['firstName'] . '" disabled
+                           type="text">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>APELLIDOS:</td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="lastName" name="lastName" value="' . $getData['lastName'] . '" disabled
+                           placeholder="Ingrese los Apellidos">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>TIPO DE IDENTIFICACIÓN:</td>
+            <td>
+                <div class="dropdown">
+                  <select id="typeID" name="typeID" class="btn btn-secondary dropdown-toggle" disabled>
+                  <option class="dropdown-item" selected >' . $getData['TypeDocument'] . '</option>
+                        
+                  </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>NÚMERO DE IDENTIFICACIÓN:</td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="numberID" name="numberID" value="' . $getData['NumberDocument'] . '" disabled
+                           placeholder="Ingrese el Número de Identificación">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>FECHA DE NACIMIENTO:</td>
+            <td>
+                <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i
+                                    class="ni ni-calendar-grid-58"></i></span>
+                        </div>
+                        <input id="birthday" name="birthday" class="form-control datepicker" placeholder="Select date" disabled
+                               type="text" value="' . $birthday . '">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>RH:</td>
+            <td>
+                <div class="dropdown">
+                  <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle" disabled>
+                        <option class="dropdown-item" selected>' . $getData['rh'] . '</option>
+                  </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>EPS:</td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="eps" name="eps" value="' . $getData['eps'] . '" disabled
+                           placeholder="Ingrese su EPS">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Religión:</td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="religion" name="religion" value="' . $getData['religion'] . '" disabled
+                           placeholder="Ingrese su Religión">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>NÚMERO DE CELULAR:</td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="numberPhone" name="numberPhone" value="' . $getData['phone'] . '" disabled
+                           placeholder="Ingrese el Número de Celular">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>CARGO:</td>
+            <td>
+                <div class="dropdown">
+                <select id="position" name="position" class="btn btn-secondary dropdown-toggle" disabled>
+                    <option class="dropdown-item" selected>' . $getData['charge'] . '</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>FECHA DE INICIO:</td>
+            <td>
+                <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i
+                                    class="ni ni-calendar-grid-58"></i></span>
+                        </div>
+                        <input id="initDate" name="initDate" class="form-control datepicker" placeholder="Select date" disabled
+                               type="text" value="' . $initDate . '">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>FECHA DE FIN:</td>
+            <td>
+                <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i
+                                    class="ni ni-calendar-grid-58"></i></span>
+                        </div>
+                        <input id="endDate" name="endDate" class="form-control datepicker" placeholder="Select date" disabled
+                               type="text" value="' . $endDate . '">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>¿Habilitado?:</td>
+            <td>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" id="checkEnable" ' . ($getData['enable'] ? 'checked' : '') . ' name="checkEnable" type="checkbox" disabled>
+                  <label class="custom-control-label" for="checkEnable">
+                    <span>¿Habilitado?</span>
+                  </label>
+                </div> 
+            </td>
+        </tr>
+        <tr>
+            <td>CONTRASEÑA:</td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="password" name="password" disabled
+                           placeholder="Ingrese la Contraseña"  value="' . $getData['password'] . '">
+                </div>
+            </td>
+        </tr> ';
+
+}
+
+
+// Add Form
 $section->appendInnerHTML('
         <div class="container">
             <div class="card card-profile shadow mt--300">
@@ -7,7 +215,7 @@ $section->appendInnerHTML('
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
                                 <a href="#">
-                                    <img class="rounded-circle" src="'.AS_ASSETS.'img/icons/Usuario.png">
+                                    <img class="rounded-circle" src="' . AS_ASSETS . 'img/icons/Usuario.png">
                                 </a>
                             </div>
                         </div>
@@ -16,7 +224,7 @@ $section->appendInnerHTML('
                         <div class="col-lg-4 order-lg-1">
                             <div class="card-profile-stats d-flex justify-content-center">
                                 <div style="background:white">
-                    <span class="heading">Eliminación de:</span>
+                    <span class="heading">Busqueda de:</span>
                                     <span class="description">Usuario</span>
                                 </div>
                             </div>
@@ -26,244 +234,22 @@ $section->appendInnerHTML('
                         <h1>Usuario</h1>
                         <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i></div>
                     </div>
+                    <form action="' . getActualURL() . '" method="POST">
                     <div class="mt-3 py-5 border-top text-center">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
                                 <table class="col-lg-12">
                                     <tbody>
-                                    <tr>
-                                        <th>CIBERUSUARIO:</th>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="ciberID" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
-                                                    Seleccione
-                                                </button>
-                                                <div aria-labelledby="dropdownMenuButton"
-                                                     class="dropdown-menu pre-scrollable">
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>NOMBRES:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input class="form-control" id="Name" placeholder="Ingrese los Nombres"
-                                                       type="text">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>APELLIDOS:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="lastName"
-                                                       placeholder="Ingrese los Apellidos">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>TIPO DE IDENTIFICACIÓN:</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="typeID" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
-                                                    Seleccione
-                                                </button>
-                                                <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                                                    <option class="dropdown-item">Cedula</a>
-                                                    <option class="dropdown-item">Pasaporte</a>
-                                                    <option class="dropdown-item">Cedula extranjería</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>NÚMERO DE IDENTIFICACIÓN:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="numberID"
-                                                       placeholder="Ingrese el Número de Identificación">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>FECHA DE NACIMIENTO:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i
-                                                                class="ni ni-calendar-grid-58"></i></span>
-                                                    </div>
-                                                    <input class="form-control datepicker" placeholder="Select date"
-                                                           type="text" value="06/20/2018">
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>LUGAR DE NACIMIENTO:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="birthday"
-                                                       placeholder="Ingrese el Lugar de Nacimiento">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>EDAD:</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
-                                                    Seleccione
-                                                </button>
-                                                <div aria-labelledby="dropdownMenuButton"
-                                                     class="dropdown-menu pre-scrollable">
-                                                    <option class="dropdown-item">18</option>
-<option class="dropdown-item" >19</option>
-<option class="dropdown-item" >20</option>
-<option class="dropdown-item" >21</option>
-<option class="dropdown-item" >22</option>
-<option class="dropdown-item" >23</option>
-<option class="dropdown-item" >24</option>
-<option class="dropdown-item" >25</option>
-<option class="dropdown-item" >26</option>
-<option class="dropdown-item" >27</option>
-<option class="dropdown-item" >28</option>
-<option class="dropdown-item" >29</option>
-<option class="dropdown-item" >30</option>
-<option class="dropdown-item" >31</option>
-<option class="dropdown-item" >32</option>
-<option class="dropdown-item" >33</option>
-<option class="dropdown-item" >34</option>
-<option class="dropdown-item" >35</option>
-<option class="dropdown-item" >36</option>
-<option class="dropdown-item" >37</option>
-<option class="dropdown-item" >38</option>
-<option class="dropdown-item" >39</option>
-<option class="dropdown-item" >40</option>
-<option class="dropdown-item" >41</option>
-<option class="dropdown-item" >42</option>
-<option class="dropdown-item" >43</option>
-<option class="dropdown-item" >44</option>
-<option class="dropdown-item" >45</option>
-<option class="dropdown-item" >46</option>
-<option class="dropdown-item" >47</option>
-<option class="dropdown-item" >48</option>
-<option class="dropdown-item" >49</option>
-<option class="dropdown-item" >50</option>
-<option class="dropdown-item" >51</option>
-<option class="dropdown-item" >52</option>
-<option class="dropdown-item" >53</option>
-<option class="dropdown-item" >54</option>
-<option class="dropdown-item" >55</option>
-<option class="dropdown-item" >56</option>
-<option class="dropdown-item" >57</option>
-<option class="dropdown-item" >58</option>
-<option class="dropdown-item" >59</option>
-<option class="dropdown-item" >60</option>
-<option class="dropdown-item" >61</option>
-<option class="dropdown-item" >62</option>
-<option class="dropdown-item" >63</option>
-<option class="dropdown-item" >64</option>
-<option class="dropdown-item" >65</option>
-<option class="dropdown-item" >66</option>
-<option class="dropdown-item" >67</option>
-<option class="dropdown-item" >68</option>
-<option class="dropdown-item" >69</option>
-<option class="dropdown-item" >70</option>
-<option class="dropdown-item" >71</option>
-<option class="dropdown-item" >72</option>
-<option class="dropdown-item" >73</option>
-<option class="dropdown-item" >74</option>
-<option class="dropdown-item" >75</option>
-<option class="dropdown-item" >76</option>
-<option class="dropdown-item" >77</option>
-<option class="dropdown-item" >78</option>
-<option class="dropdown-item" >79</option>
-<option class="dropdown-item" >80</option>
-<option class="dropdown-item" >81</option>
-<option class="dropdown-item" >82</option>
-<option class="dropdown-item" >83</option>
-<option class="dropdown-item" >84</option>
-<option class="dropdown-item" >85</option>
-<option class="dropdown-item" >86</option>
-<option class="dropdown-item" >87</option>
-<option class="dropdown-item" >88</option>
-<option class="dropdown-item" >89</option>
-<option class="dropdown-item" >90</option>
-<option class="dropdown-item" >91</option>
-<option class="dropdown-item" >92</option>
-<option class="dropdown-item" >93</option>
-<option class="dropdown-item" >94</option>
-<option class="dropdown-item" >95</option>
-<option class="dropdown-item" >96</option>
-<option class="dropdown-item" >97</option>
-<option class="dropdown-item" >98</option>
-<option class="dropdown-item" >99</option>
-<option class="dropdown-item" >100</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>PROFESIÓN:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="profesion"
-                                                       placeholder="Ingrese la Profesión">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CARGO:</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="typePerson" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
-                                                    Seleccione
-                                                </button>
-                                                <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                                                    <option class="dropdown-item">Directivo</a>
-                                                    <option class="dropdown-item">Secretaría</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CONTRASEÑA:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="password"
-                                                       placeholder="Ingrese la Contraseña">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>REPETIR CONTRASEÑA:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="password2"
-                                                       placeholder="Repita la Contraseña">
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    ' . $data . '
                                     </tbody>
                                 </table>
                                 <hr/>
-                                <button class="btn btn-warning btn-lg" type="submit">Eliminar</button>
-                                <a href="' . URLWEB_FULL . '" class="btn btn-danger btn-lg">Cancelar</a>
+                                <input type="button" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn warning btn-lg" value="Eliminar">
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL . $pathMain)) . '" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>');

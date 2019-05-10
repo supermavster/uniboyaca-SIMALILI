@@ -1,6 +1,6 @@
 <?php
 /** User Actions **/
-// Show grades registers
+
 // Constant
 $idMain = 'idMain';
 $date = 'm/d/Y';
@@ -228,7 +228,7 @@ $section->appendInnerHTML('
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
                                 <a href="#">
-                                    <img class="rounded-circle" src="'.AS_ASSETS.'img/icons/Usuario.png">
+                                    <img class="rounded-circle" src="' . AS_ASSETS . 'img/icons/Usuario.png">
                                 </a>
                             </div>
                         </div>

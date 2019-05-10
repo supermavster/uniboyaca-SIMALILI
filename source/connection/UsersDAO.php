@@ -54,6 +54,12 @@ and user.`user` = '" . $username . "'";
 
     }
 
+    final public static function deleteUser($values)
+    {
+        $values = $values['user'];
+        return "DELETE FROM `user` WHERE `user` = '$values[ciberusuario]'";
+    }
+
 }
 
 new UsersDAO();

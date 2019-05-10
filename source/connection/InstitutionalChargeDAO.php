@@ -32,6 +32,11 @@ class InstitutionalChargeDAO
         return $sql;
     }
 
+    final public static function deleteInstitutionalCharge($values)
+    {
+        $values = $values['id'];
+        return "DELETE FROM `institutionalcharge` WHERE `institutionalcharge`.`idPerson` = $values";
+    }
 }
 
 new InstitutionalChargeDAO();

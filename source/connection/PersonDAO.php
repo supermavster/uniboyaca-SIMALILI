@@ -38,6 +38,11 @@ class PersonDAO
         return $sql;
     }
 
+    final public static function deletePerson($values)
+    {
+        $values = $values['id'];
+        return "DELETE FROM `person` WHERE `person`.`idPerson` = $values";
+    }
 }
 
 new PersonDAO();
