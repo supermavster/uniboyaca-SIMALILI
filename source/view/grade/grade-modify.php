@@ -59,7 +59,7 @@ $section->appendInnerHTML('
                                 </table>
                                 <hr/>
                                 <input type="submit" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn btn-primary btn-lg" value="Modificar">
-                                <a href="' . URLWEB_FULL . '" class="btn btn-danger btn-lg">Cancelar</a>
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL . $pathMain)) . '" class="btn btn-danger btn-lg">Cancelar</a>
 
                             </div>
                         </div>

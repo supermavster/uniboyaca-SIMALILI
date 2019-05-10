@@ -273,7 +273,7 @@ $section->appendInnerHTML('
                                 </table>
                                 <hr/>
                                 <button class="btn btn-secondary btn-lg" type="button">Buscar</button>
-                                <a href="' . URLWEB_FULL . '" class="btn btn-danger btn-lg">Cancelar</a>
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL . $pathMain)) . '" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>
                     </div>
