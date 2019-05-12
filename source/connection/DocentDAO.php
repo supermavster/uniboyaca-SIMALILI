@@ -3,15 +3,17 @@
 
 class DocentDAO
 {
-    final public static function addDocent($maxID, $values)
+    final public static function addDocent($values)
     {
         // Docent
-        $sql = "INSERT INTO `docente` (`idDocente`, `Nombre_Completo`, `Lugar_nacimiento`, `Fecha_Nacimiento`, `Edad`, `Religion`, `Titulo_profesional`, `Titulo_documento`, `Num_id`, `Fecha_Registro`, `Fecha_fin`, `Estado`, `Usuarios_idUsuarios`) VALUES ( NULL,";
+        $sql = "INSERT INTO `docent` (`idPerson`, `jobTitle`, `initDate`, `endDate`, `enable`) VALUES ($values[idPerson],";
+        //'1', 'q', '2019-05-15', '2019-05-15', '1');
+        $values = $values['docent'];
         $tempValue = 0;
-        foreach ($values as $clave => $valor) {
+        foreach ($values as $valor) {
             $sql .= "'$valor'";
-            if ($tempValue++ == count($values) - 3) {
-                $sql .= ",'Activo',$maxID);";
+            if ($tempValue++ == count($values) - 1) {
+                $sql .= ");";
                 break;
             } else {
                 $sql .= ",";
@@ -21,45 +23,37 @@ class DocentDAO
     }
 
     final public static function updateDocent($values)
-    {/*
-    $values = array(
-                "Nombre_Completo" => $data['name'] . " " . $data['lastName'],
-                "Lugar_nacimiento" => $data['birthplace'],
-                "Fecha_Nacimiento" => $data['birthday'],
-                "Edad" => $data['years'],
-                "Religion" => $data['religion'],
-                "Titulo_profesional" => $data['profession'],
-                "Titulo_documento" => $data['typeID'],
-                "Num_id" => $data['numberID'],
-                "Fecha_Registro" => $registerDate,
-                "Fecha_fin" => $endDate,
-                "Estado" => $data['eps'],
-                "Usuarios_idUsuarios" => $data['birthplace']
-            );
-
-    */
-        // Docent
-        $sql = "UPDATE `docente` SET `Nombre_Completo` = '$values[Nombre_Completo]', `Lugar_nacimiento` = '$values[Nombre_Completo]', `Fecha_Nacimiento` = '$values[Nombre_Completo]', `Edad` = '$values[Nombre_Completo]', `Religion` = '$values[Nombre_Completo]', `Titulo_profesional` = '$values[Nombre_Completo]', `Titulo_documento` = '$values[Nombre_Completo]', `Num_id` = '$values[Nombre_Completo]', `Fecha_Registro` = '$values[Nombre_Completo]', `Fecha_fin` = '$values[Nombre_Completo]' WHERE `docente`.`Usuarios_idUsuarios` = $values[Usuarios_idUsuarios];";
+    {  // Docent
+        $idPerson = $values['id'];
+        $values = $values['docent'];
+        $sql = "UPDATE `docent` SET `jobTitle` = '$values[jobTitle]', `initDate` = '$values[initDate]', `endDate` = '$values[endDate]', `enable` = '$values[enable]' WHERE `docent`.`idPerson` = $idPerson;";
         return $sql;
     }
 
 
-    final public static function getNameDocents()
+    final public static function getNames()
     {
-        return "SELECT `Nombre_Completo` FROM `docente`";
+        return "SELECT person.NumberDocument NumberDocument FROM `person` person, `docent` docent WHERE docent.idPerson = person.idPerson";
     }
 
-    final public static function getDocent($name)
+    final public static function getDocent($id)
     {
-        return "SELECT * FROM `docente` where `Nombre_Completo`  = '$name'";
+        return "SELECT 
+person.firstName, person.lastName, person.TypeDocument, person.NumberDocument, person.birthday, person.rh, person.eps, person.religion, person.phone, 
+docent.jobTitle, docent.initDate, docent.endDate, docent.enable
+FROM 
+`docent` docent , `user` user, `person` person
+WHERE
+person .`idPerson` = docent.`idPerson`
+and person.NumberDocument = '" . $id . "'";
     }
 
 
-    final public static function deleteName($name)
+    final public static function deleteDocent($values)
     {
-        return "DELETE FROM `docente` WHERE `Nombre_Completo` = '$name'";
+        $values = $values['id'];
+        return "DELETE FROM `docent` WHERE `docent`.`idPerson` = '$values'";
     }
-
 
 
 }

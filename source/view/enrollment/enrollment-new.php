@@ -6,7 +6,7 @@ $section->appendInnerHTML('
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
-                                <a href="#">
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL)) . '">
                                     <img class="rounded-circle" src="'.AS_ASSETS.'img/icons/Matricula.png">
                                 </a>
                             </div>
@@ -56,9 +56,10 @@ $section->appendInnerHTML('
                                                     <div class="dropdown">
                                                       <select id="typeID" name="typeID" class="btn btn-secondary dropdown-toggle">
                                                             <option class="dropdown-item" selected>Seleccione...</option>
-                                                            <option class="dropdown-item" >Cedula</option>
+                                                            <option class="dropdown-item" >Cedula de Ciudadania</option>
                                                             <option class="dropdown-item" >Pasaporte</option>
-                                                            <option class="dropdown-item" >Cedula extranjería</option>
+                                                            <option class="dropdown-item" >Cedula Extranjera</option>
+                                                            
                                                       </select>
                                                     </div>
                                                 </td>
@@ -82,142 +83,58 @@ $section->appendInnerHTML('
                                                                         class="ni ni-calendar-grid-58"></i></span>
                                                             </div>
                                                             <input id="birthday" name="birthday" class="form-control datepicker" placeholder="Select date"
-                                                                   type="text" value="06/20/2018">
+                                                                   type="text" value="' . date('m/d/Y') . '">
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>LUGAR DE NACIMIENTO:</td>
+                                                <td>RH:</td>
                                                 <td>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="birthplace" name="birthplace"
-                                                               placeholder="Ingrese el Lugar de Nacimiento">
+                                                    <div class="dropdown">
+                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
+                                                            <option class="dropdown-item" selected>Seleccione...</option>
+                                                            <option class="dropdown-item" >O+</option>
+                                                            <option class="dropdown-item" >O-</option>
+                                                            <option class="dropdown-item" >AB+</option>
+                                                            <option class="dropdown-item" >AB-</option>
+                                                            <option class="dropdown-item" >A+</option>
+                                                            <option class="dropdown-item" >A-</option>
+                                                            <option class="dropdown-item" >B+</option>
+                                                            <option class="dropdown-item" >B-</option>
+                                                      </select>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>EDAD:</td>
+                                                <td>EPS:</td>
                                                 <td>
-                                                    <div class="dropdown">
-                                                    <select id="years" name="years" class="btn btn-secondary dropdown-toggle">
-                                                        <option class="dropdown-item" selected>Seleccione...</option>      
-                                                        <option class="dropdown-item">18</option>
-                                                        <option class="dropdown-item" >19</option>
-                                                        <option class="dropdown-item" >20</option>
-                                                        <option class="dropdown-item" >21</option>
-                                                        <option class="dropdown-item" >22</option>
-                                                        <option class="dropdown-item" >23</option>
-                                                        <option class="dropdown-item" >24</option>
-                                                        <option class="dropdown-item" >25</option>
-                                                        <option class="dropdown-item" >26</option>
-                                                        <option class="dropdown-item" >27</option>
-                                                        <option class="dropdown-item" >28</option>
-                                                        <option class="dropdown-item" >29</option>
-                                                        <option class="dropdown-item" >30</option>
-                                                        <option class="dropdown-item" >31</option>
-                                                        <option class="dropdown-item" >32</option>
-                                                        <option class="dropdown-item" >33</option>
-                                                        <option class="dropdown-item" >34</option>
-                                                        <option class="dropdown-item" >35</option>
-                                                        <option class="dropdown-item" >36</option>
-                                                        <option class="dropdown-item" >37</option>
-                                                        <option class="dropdown-item" >38</option>
-                                                        <option class="dropdown-item" >39</option>
-                                                        <option class="dropdown-item" >40</option>
-                                                        <option class="dropdown-item" >41</option>
-                                                        <option class="dropdown-item" >42</option>
-                                                        <option class="dropdown-item" >43</option>
-                                                        <option class="dropdown-item" >44</option>
-                                                        <option class="dropdown-item" >45</option>
-                                                        <option class="dropdown-item" >46</option>
-                                                        <option class="dropdown-item" >47</option>
-                                                        <option class="dropdown-item" >48</option>
-                                                        <option class="dropdown-item" >49</option>
-                                                        <option class="dropdown-item" >50</option>
-                                                        <option class="dropdown-item" >51</option>
-                                                        <option class="dropdown-item" >52</option>
-                                                        <option class="dropdown-item" >53</option>
-                                                        <option class="dropdown-item" >54</option>
-                                                        <option class="dropdown-item" >55</option>
-                                                        <option class="dropdown-item" >56</option>
-                                                        <option class="dropdown-item" >57</option>
-                                                        <option class="dropdown-item" >58</option>
-                                                        <option class="dropdown-item" >59</option>
-                                                        <option class="dropdown-item" >60</option>
-                                                        <option class="dropdown-item" >61</option>
-                                                        <option class="dropdown-item" >62</option>
-                                                        <option class="dropdown-item" >63</option>
-                                                        <option class="dropdown-item" >64</option>
-                                                        <option class="dropdown-item" >65</option>
-                                                        <option class="dropdown-item" >66</option>
-                                                        <option class="dropdown-item" >67</option>
-                                                        <option class="dropdown-item" >68</option>
-                                                        <option class="dropdown-item" >69</option>
-                                                        <option class="dropdown-item" >70</option>
-                                                        <option class="dropdown-item" >71</option>
-                                                        <option class="dropdown-item" >72</option>
-                                                        <option class="dropdown-item" >73</option>
-                                                        <option class="dropdown-item" >74</option>
-                                                        <option class="dropdown-item" >75</option>
-                                                        <option class="dropdown-item" >76</option>
-                                                        <option class="dropdown-item" >77</option>
-                                                        <option class="dropdown-item" >78</option>
-                                                        <option class="dropdown-item" >79</option>
-                                                        <option class="dropdown-item" >80</option>
-                                                        <option class="dropdown-item" >81</option>
-                                                        <option class="dropdown-item" >82</option>
-                                                        <option class="dropdown-item" >83</option>
-                                                        <option class="dropdown-item" >84</option>
-                                                        <option class="dropdown-item" >85</option>
-                                                        <option class="dropdown-item" >86</option>
-                                                        <option class="dropdown-item" >87</option>
-                                                        <option class="dropdown-item" >88</option>
-                                                        <option class="dropdown-item" >89</option>
-                                                        <option class="dropdown-item" >90</option>
-                                                        <option class="dropdown-item" >91</option>
-                                                        <option class="dropdown-item" >92</option>
-                                                        <option class="dropdown-item" >93</option>
-                                                        <option class="dropdown-item" >94</option>
-                                                        <option class="dropdown-item" >95</option>
-                                                        <option class="dropdown-item" >96</option>
-                                                        <option class="dropdown-item" >97</option>
-                                                        <option class="dropdown-item" >98</option>
-                                                        <option class="dropdown-item" >99</option>
-                                                        <option class="dropdown-item" >100</option>
-                                                        </select>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="eps" name="eps"
+                                                               placeholder="Ingrese su EPS">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Religión:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="religion" name="religion"
+                                                               placeholder="Ingrese su Religión">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>NÚMERO DE CELULAR:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="numberPhone" name="numberPhone"
+                                                               placeholder="Ingrese el Número de Celular">
                                                     </div>
                                                 </td>
                                             </tr>
                                     <tr>
-                                    <tr>
-                                        <td>RH:</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                    <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
-                                                        <option class="dropdown-item" selected>Seleccione...</option>
-                                                        <option class="dropdown-item">A+</option>
-                                                        <option class="dropdown-item"> A-</option>
-                                                        <option class="dropdown-item">B+</option>
-                                                        <option class="dropdown-item">B-</option>
-                                                        <option class="dropdown-item">AB+</option>
-                                                        <option class="dropdown-item">AB-</option>
-                                                        <option class="dropdown-item">O+</option>
-                                                        <option class="dropdown-item">O-</option>
-                                                      </select>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>EPS:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="eps" name="eps"
-                                                       placeholder="Ingresar EPS">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
+                                    <tr><td><hr/></td><td><hr/></td></tr>
                                         <td>NOMBRE DEL PADRE:</td>
                                         <td>
                                             <div class="form-group">

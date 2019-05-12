@@ -20,7 +20,7 @@ $section->appendInnerHTML('
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
-                                <a href="#">
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL)) . '">
                                     <img class="rounded-circle" src="' . AS_ASSETS . 'img/icons/Usuario.png">
                                 </a>
                             </div>
@@ -97,7 +97,7 @@ $section->appendInnerHTML('
                                                                         class="ni ni-calendar-grid-58"></i></span>
                                                             </div>
                                                             <input id="birthday" name="birthday" class="form-control datepicker" placeholder="Select date"
-                                                                   type="text" value="06/20/2018">
+                                                                   type="text" value="' . date('m/d/Y') . '">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -169,7 +169,7 @@ $section->appendInnerHTML('
                                                                         class="ni ni-calendar-grid-58"></i></span>
                                                             </div>
                                                             <input id="initDate" name="initDate" class="form-control datepicker" placeholder="Select date"
-                                                                   type="text" value="06/20/2018">
+                                                                   type="text" value="' . date('m/d/Y') . '">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -184,7 +184,7 @@ $section->appendInnerHTML('
                                                                         class="ni ni-calendar-grid-58"></i></span>
                                                             </div>
                                                             <input id="endDate" name="endDate" class="form-control datepicker" placeholder="Select date"
-                                                                   type="text" value="06/20/2018">
+                                                                   type="text" value="' . date('m/d/Y') . '">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -192,12 +192,12 @@ $section->appendInnerHTML('
                                             <tr>
                                                 <td>¿Habilitado?:</td>
                                                 <td>
-                                                <div class="custom-control custom-checkbox mb-3">
-              <input class="custom-control-input" id="checkEnable" name="checkEnable" type="checkbox">
-              <label class="custom-control-label" for="checkEnable">
-                <span>¿Habilitado?</span>
-              </label>
-            </div> 
+                                                    <div class="custom-control custom-checkbox mb-3">
+                                                      <input class="custom-control-input" id="checkEnable" name="checkEnable" type="checkbox">
+                                                      <label class="custom-control-label" for="checkEnable">
+                                                        <span>¿Habilitado?</span>
+                                                      </label>
+                                                    </div> 
                                                 </td>
                                             </tr>
                                             <tr>

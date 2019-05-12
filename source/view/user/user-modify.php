@@ -227,7 +227,7 @@ $section->appendInnerHTML('
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
-                                <a href="#">
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL)) . '">
                                     <img class="rounded-circle" src="' . AS_ASSETS . 'img/icons/Usuario.png">
                                 </a>
                             </div>
@@ -257,7 +257,7 @@ $section->appendInnerHTML('
                                     </tbody>
                                 </table>
                                 <hr/>
-                                <input type="button" name="modify" id="modify" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn btn-primary btn-lg" value="Modificar">
+                                <input type="button" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn btn-primary btn-lg" value="Modificar">
                                 <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL . $pathMain)) . '" class="btn btn-danger btn-lg">Cancelar</a>
                             </div>
                         </div>

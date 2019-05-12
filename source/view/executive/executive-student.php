@@ -5,7 +5,7 @@ $section->appendInnerHTML('<div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
-                  <a href="#">
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL)) . '">
                       <img class="rounded-circle" src="' . AS_ASSETS . 'img/icons/Estudiantes.png"
                            style="border-radius: 20% !important; max-width: 300px !important;">
                   </a>

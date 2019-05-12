@@ -22,7 +22,7 @@ class SubjectDAO
 
     final public static function getName()
     {
-        return "SELECT `Nombre_asignatura` FROM `asignatura`";
+        return "SELECT `nameSubject` FROM `subject`";
     }
 
 

@@ -61,6 +61,7 @@ class Settings
 
         // Límite de ejecución
         set_time_limit(constant("limitTime"));
+        date_default_timezone_set(constant('TimeZone'));
 
         //Description Web
         define('TITLE_WEB', constant('Title'));

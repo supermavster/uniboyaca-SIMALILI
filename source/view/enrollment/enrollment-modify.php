@@ -6,7 +6,7 @@ $section->appendInnerHTML('
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
-                                <a href="#">
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL)) . '">
                                     <img class="rounded-circle" src="'.AS_ASSETS.'img/icons/Matricula.png">
                                 </a>
                             </div>
@@ -82,7 +82,7 @@ $section->appendInnerHTML('
                                                                 class="ni ni-calendar-grid-58"></i></span>
                                                     </div>
                                                     <input class="form-control datepicker" placeholder="Select date"
-                                                           type="text" value="06/20/2018">
+                                                           type="text" value="' . date('m/d/Y') . '">
                                                 </div>
                                             </div>
                                         </td>

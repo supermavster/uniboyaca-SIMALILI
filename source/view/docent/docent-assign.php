@@ -1,7 +1,7 @@
 <?php
 /** Docent Actions **/
 // Show grades registers
-$docentNames = $connection->db_exec("fetch_array", DocentDAO::getNameDocents());
+$docentNames = $connection->db_exec("fetch_array", DocentDAO::getNames());
 $names = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
 foreach ($docentNames as $keys => $values) {
     $names .= '<option class="dropdown-item" >' . $values[0] . '</option>';
@@ -21,7 +21,7 @@ $section->appendInnerHTML('
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
-                                <a href="#">
+                                <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL)) . '">
                                     <img class="rounded-circle" src="' . AS_ASSETS . 'img/icons/Docente.png">
                                 </a>
                             </div>
