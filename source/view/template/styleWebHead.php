@@ -30,4 +30,5 @@ $head->appendInnerHTML('  <meta charset="utf-8">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
   <!-- Argon CSS -->
   <link type="text/css" href="' . AS_ASSETS . 'css/argon.css?v=1.0.1" rel="stylesheet">
+  <script src="' . AS_ASSETS . 'vendor/jquery/jquery.min.js"></script>
 ');

@@ -196,9 +196,19 @@ class CheckActions
 
     protected function insertGrade()
     {
-        // Add Grade
-        if (!$this->connection->db_exec("query", GradeDAO::addGrade($_POST['idGrade']))) {
-            self::addAndExit();
+        showElements($_POST);
+
+
+        //{ "idGrade": "a", "numberCourses": "2", "selectCourse": "a1", "selectDocent": "3" }
+        self::getConnection()->db_exec("query", GradeDAO::addGrade($_POST['idGrade']));
+
+        $idGrade = self::getCoannection()->db_exec("value", GradeDAO::getIDGradeByName($_POST['idGrade']));
+        $idDocent = self::getCoannection()->db_exec("value", DocentDAO::getIDDocentByID($_POST['selectDocent']));
+        if (isset($id) && !empty($id)) {
+            $name = $_POST['selectCourse'];
+            if (!self::getConnection()->db_exec("query", GradeDAO::addCourses($name, $idGrade, $idDocent))) {
+                self::addAndExit();
+            }
         }
     }
 

@@ -47,6 +47,7 @@ $section->appendInnerHTML('
             <div class="mt-3 py-5 border-top text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
+                   
                         <table class="col-lg-12">
                             <thead>
                                 <tr class="tableizer-firstrow">

@@ -30,7 +30,28 @@ $section->appendInnerHTML('
                         <div class="mt-3 py-5 border-top text-center">
                             <div class="row justify-content-center">
                                     <div class="col-lg-12">
-                                        <table class="col-lg-12">
+                                     <div class="nav-wrapper">
+    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>Matricula</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Estudiante</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>Acudiente</a>
+        </li>
+    </ul>
+</div>
+<div class="card shadow">
+    <div class="card-body">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                <p class="description">Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                <p class="description">Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse.</p>
+            </div>
+            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                <table class="col-lg-12">
                                             <tbody>
                                             <tr>
                                                 <td>NOMBRES:</td>
@@ -133,126 +154,173 @@ $section->appendInnerHTML('
                                                     </div>
                                                 </td>
                                             </tr>
-                                    <tr>
-                                    <tr><td><hr/></td><td><hr/></td></tr>
-                                        <td>NOMBRE DEL PADRE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="nameFather" name="nameFather"
-                                                       placeholder="Ingresar nombre Padre">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CEDULA DEL PADRE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="ccFather" name="ccFather"
-                                                       placeholder="Ingresar CC Padre">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>TELEFONO DEL PADRE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="phoneFather" name="phoneFather"
-                                                       placeholder="Ingresar tel. Padre">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>NOMBRE DE LA MADRE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="nameMother" name="nameMother"
-                                                       placeholder="Ingresar nom. Madre">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CEDULA DE LA MADRE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="ccMother" name="ccMother"
-                                                       placeholder="Ingresar CC Madre">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>TELEFONO DE LA MADRE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="phoneMother" name="phoneMother"
-                                                       placeholder="Ingresar tel. Madre ">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>NOMBRE DEL ACUDIENTE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="nameAttendant" name="nameAttendant"
-                                                       placeholder="Ingresar nombre Ac.">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>TELEFONO DEL ACUDIENTE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="phoneAttendant" name="phoneAttendant"
-                                                       placeholder="Ingresar tel">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>PARENTESCO:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="relationship" name="relationship"
-                                                       placeholder="Ingresar parentesco">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>DIRECCIÓN:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="address" name="address"
-                                                       placeholder="Ingresar direccion">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>GRADO:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="grade" name="grade"
-                                                       placeholder="Ingresar grado">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>RELIGIÓN:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="religion" name="religion"
-                                                       placeholder="Ingresar religión">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>INSTITUCION DE DONDE PROVIENE:</td>
-                                        <td>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="institute" name="institute"
-                                                       placeholder="Ingresar institucion">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+ <tr>
+                                                <td>Código de Estudiante:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="numberPhone" name="numberPhone"
+                                                               placeholder="Ingrese el Número de Celular">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lugar de Nacimiento:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="numberPhone" name="numberPhone"
+                                                               placeholder="Ingrese el Número de Celular">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tipo de estudiante:</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
+                                                            <option class="dropdown-item" selected>Seleccione...</option>
+                                                            <option class="dropdown-item" >Normal</option>
+                                                            <option class="dropdown-item" >Especial</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Curso:</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
+                                                            <option class="dropdown-item" selected>Seleccione...</option>
+                                                            <option class="dropdown-item" >Normal</option>
+                                                            <option class="dropdown-item" >Especial</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                            </table>
+            </div>
+            <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                <p class="description">Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                <table class="col-lg-12">
+                                            <tbody>
+                                            <tr>
+                                                <td>NOMBRES:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input class="form-control" name="name" id="name" placeholder="Ingrese los Nombres"
+                                                               type="text">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>APELLIDOS:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="lastName" name="lastName"
+                                                               placeholder="Ingrese los Apellidos">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>TIPO DE IDENTIFICACIÓN:</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                      <select id="typeID" name="typeID" class="btn btn-secondary dropdown-toggle">
+                                                            <option class="dropdown-item" selected>Seleccione...</option>
+                                                            <option class="dropdown-item" >Cedula de Ciudadania</option>
+                                                            <option class="dropdown-item" >Pasaporte</option>
+                                                            <option class="dropdown-item" >Cedula Extranjera</option>
+                                                            
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>NÚMERO DE IDENTIFICACIÓN:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="numberID" name="numberID"
+                                                               placeholder="Ingrese el Número de Identificación">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>FECHA DE NACIMIENTO:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="input-group input-group-alternative">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i
+                                                                        class="ni ni-calendar-grid-58"></i></span>
+                                                            </div>
+                                                            <input id="birthday" name="birthday" class="form-control datepicker" placeholder="Select date"
+                                                                   type="text" value="' . date('m/d/Y') . '">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>RH:</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
+                                                            <option class="dropdown-item" selected>Seleccione...</option>
+                                                            <option class="dropdown-item" >O+</option>
+                                                            <option class="dropdown-item" >O-</option>
+                                                            <option class="dropdown-item" >AB+</option>
+                                                            <option class="dropdown-item" >AB-</option>
+                                                            <option class="dropdown-item" >A+</option>
+                                                            <option class="dropdown-item" >A-</option>
+                                                            <option class="dropdown-item" >B+</option>
+                                                            <option class="dropdown-item" >B-</option>
+                                                      </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>EPS:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="eps" name="eps"
+                                                               placeholder="Ingrese su EPS">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Religión:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="religion" name="religion"
+                                                               placeholder="Ingrese su Religión">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>NÚMERO DE CELULAR:</td>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="numberPhone" name="numberPhone"
+                                                               placeholder="Ingrese el Número de Celular">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td>Parentezco:</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
+                                                            <option class="dropdown-item" selected>Seleccione...</option>
+
+                                                            </select>
+                                                            </div>
+                                                            </td>
+                                                            </tr>
+                                            </tbody>
+                                            </table>
+            </div>
+        </div>
+    </div>
+</div> 
                                 <hr/>
                                 <input type="submit" onclick="this.disabled=true;this.value=\'Sending, please wait...\';this.form.submit();" class="btn btn-success btn-lg" value="Guardar">
                                 <a href="' . (!isset($_POST) ? getActualURL() : (URLWEB_FULL . $pathMain)) . '" class="btn btn-danger btn-lg">Cancelar</a>

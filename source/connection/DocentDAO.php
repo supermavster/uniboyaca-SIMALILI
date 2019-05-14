@@ -36,6 +36,11 @@ class DocentDAO
         return "SELECT person.NumberDocument NumberDocument FROM `person` person, `docent` docent WHERE docent.idPerson = person.idPerson";
     }
 
+    final public static function getIDDocentByID($id)
+    {
+        return "SELECT idPerson FROM docent WHERE NumberDocument = '.$id.'";
+    }
+
     final public static function getDocent($id)
     {
         return "SELECT 

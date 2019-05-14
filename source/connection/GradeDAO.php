@@ -30,6 +30,16 @@ class GradeDAO
         return "SELECT * FROM `grade` WHERE `nameGrade` LIKE '%$name%'";
     }
 
+    final public static function getIDGradeByName($name)
+    {
+        return "SELECT `idGrade` FROM `grade` WHERE `nameGrade` LIKE '%$name%'";
+    }
+
+    final public static function addCourses($name, $idGrade, $idDocent)
+    {
+
+        return "INSERT INTO `course` (`idCourse`, `nameCourse`, `idGrade`, `idDocent`) VALUES (NULL, '$name','$idGrade','$idDocent')";
+    }
 
 }
 
