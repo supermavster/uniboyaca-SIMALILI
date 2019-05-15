@@ -244,7 +244,7 @@ class CheckActions
     protected function insertSubject()
     {
         $dataTemp = $_POST;
-        $idCourse = self::getConnection()->db_exec("value", GradeDAO::getIDGradeByName($_POST['idCourse']));
+                $idCourse = self::getConnection()->db_exec("value", GradeDAO::getIDGradeByName($_POST['idCourse']));
 
         $data = array(
             "idSubject" => $dataTemp['codeSubject'],
@@ -340,43 +340,39 @@ class CheckActions
 
         $data = $_POST;
 
-        $value =
-            array(
-                'typeEnrollment' => 'Seleccione...',
-                'name' => '',
-                'lastName' => '',
-                'typeID' => 'Seleccione...',
-                'numberID' => '',
-                'birthday' => '05/15/2019',
-                'rh' => 'Seleccione...',
-                'eps' => '',
-                'religion' => '',
-                'numberPhone' => '',
-                'codeStudent' => '',
-                'placebirth' => '',
-                'typeStudent' => 'Seleccione...',
-                'nameCourse' => 'Seleccione...',
-                'nameParent' => '',
-                'lastNameParent' => '',
-                'typeIDParent' => 'Seleccione...',
-                'numberIDParent' => '',
-                'birthdayParent' => '05/15/2019',
-                'rhParent' => 'Seleccione...',
-                'epsParent' => '',
-                'religionParent' => '',
-                'numberPhoneParent' => '',
-                'parentezco' => 'Seleccione...',
-            );
+$value =
+    array (
+        'typeEnrollment' => 'Seleccione...',
+        'name' => '',
+        'lastName' => '',
+        'typeID' => 'Seleccione...',
+        'numberID' => '',
+        'birthday' => '05/15/2019',
+        'rh' => 'Seleccione...',
+        'eps' => '',
+        'religion' => '',
+        'numberPhone' => '',
+        'codeStudent' => '',
+        'placebirth' => '',
+        'typeStudent' => 'Seleccione...',
+        'nameCourse' => 'Seleccione...',
+        'nameParent' => '',
+        'lastNameParent' => '',
+        'typeIDParent' => 'Seleccione...',
+        'numberIDParent' => '',
+        'birthdayParent' => '05/15/2019',
+        'rhParent' => 'Seleccione...',
+        'epsParent' => '',
+        'religionParent' => '',
+        'numberPhoneParent' => '',
+        'parentezco' => 'Seleccione...',
+    );
 
 // Persona - Student & Familliar
         //relacion studentfamiliar
-
+        
         /*$registerDate = date("Y-m-d", strtotime($data['registerDate']));
         $endDate = date("Y-m-d", strtotime($data['endDate']));
-
-
-
-
         // Show the max users registers
         $maxUsers = $this->connection->db_exec("value", UsersDAO::getMaxUser()) + 1;
 
