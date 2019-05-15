@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/controller/CheckActions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="386" column="5" lean-forward="true" selection-start-line="386" selection-start-column="5" selection-end-line="386" selection-end-column="5" />
+            <state relative-caret-position="1204">
+              <caret line="406" selection-start-line="3" selection-end-line="406" />
             </state>
           </provider>
         </entry>
@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/source/view/enrollment/enrollment-new.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3298">
-              <caret line="194" column="109" lean-forward="true" selection-start-line="194" selection-start-column="100" selection-end-line="194" selection-end-column="110" />
+              <caret line="194" column="109" selection-start-line="194" selection-start-column="100" selection-end-line="194" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -443,13 +443,7 @@
       <workItem from="1557804011738" duration="4943000" />
       <workItem from="1557897873418" duration="4323000" />
       <workItem from="1557902439838" duration="195000" />
-    </task>
-    <task id="LOCAL-00012" summary="[Add] Secretary - Elements">
-      <created>1554867899112</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1554867899112</updated>
+      <workItem from="1557902653648" duration="245000" />
     </task>
     <task id="LOCAL-00013" summary="[Fix] Sign">
       <created>1554868277102</created>
@@ -787,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557859261666</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Solo falta matricula">
+      <created>1557902892658</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1557902892659</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146098000" />
+    <option name="totallyTimeSpent" value="146343000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -803,9 +804,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33150986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -816,7 +817,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32914045" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" weight="0.32606438" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" visible="true" weight="0.3259958" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3322851" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -863,7 +864,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="[Add] PHP Files" />
     <MESSAGE value="[Add] Docent - View" />
     <MESSAGE value="[Add] ALL - Views" />
     <MESSAGE value="[Fix] Views" />
@@ -887,6 +887,7 @@
     <MESSAGE value="[Add] Return Option" />
     <MESSAGE value="[Add] Add Options" />
     <MESSAGE value="[Add] Add Signatura - Docent" />
+    <MESSAGE value="Solo falta matricula m njk" />
     <MESSAGE value="Solo falta matricula" />
     <option name="LAST_COMMIT_MESSAGE" value="Solo falta matricula" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1183,8 +1184,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/controller/CheckActions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="386" column="5" lean-forward="true" selection-start-line="386" selection-start-column="5" selection-end-line="386" selection-end-column="5" />
+        <state relative-caret-position="1204">
+          <caret line="406" selection-start-line="3" selection-end-line="406" />
         </state>
       </provider>
     </entry>
@@ -1198,7 +1199,7 @@
     <entry file="file://$PROJECT_DIR$/source/view/enrollment/enrollment-new.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3298">
-          <caret line="194" column="109" lean-forward="true" selection-start-line="194" selection-start-column="100" selection-end-line="194" selection-end-column="110" />
+          <caret line="194" column="109" selection-start-line="194" selection-start-column="100" selection-end-line="194" selection-end-column="110" />
         </state>
       </provider>
     </entry>
