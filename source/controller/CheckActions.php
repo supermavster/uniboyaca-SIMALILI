@@ -368,6 +368,9 @@ $value =
         'parentezco' => 'Seleccione...',
     );
 
+
+showElements($data);
+echo "Acciones: Crear -> Persona (Estudiante y Familiar); Relacion Estudiante & Familiar; Asignar curso, asignar parentezco y añadir ID (EstudiantePadre) a Matricula.";
 // Persona - Student & Familliar
         //relacion studentfamiliar
         
