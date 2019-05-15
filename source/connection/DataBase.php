@@ -84,7 +84,8 @@ class DataBase
 
     public function getDB()
     {
-        return $this->connections;
+        if (isset($this->connections))
+            return $this->connections;
     }
 
     public function close()

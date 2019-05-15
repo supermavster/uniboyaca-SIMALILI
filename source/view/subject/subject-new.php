@@ -1,14 +1,14 @@
 <?php
 /** Grade Actions **/
 // Show grades registers
-$gradeNames = $connection->db_exec("fetch_array", GradeDAO::getNameGrades());
+$gradeNames = self::getConnection()->db_exec("fetch_array", 'SELECT `nameGrade` FROM `grade`');
 $names = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
 foreach ($gradeNames as $keys => $values) {
     $names .= '<option class="dropdown-item" >' . $values[0] . '</option>';
 }
 
 // Show Docents registers
-$gradeNames = $connection->db_exec("fetch_array", DocentDAO::getNameDocents());
+$gradeNames = self::getConnection()->db_exec("fetch_array", DocentDAO::getNames());
 $namesDocents = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
 foreach ($gradeNames as $keys => $values) {
     $namesDocents .= '<option class="dropdown-item" >' . $values[0] . '</option>';
@@ -69,21 +69,21 @@ $section->appendInnerHTML('
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>CURSO ASIGNADO:</td>
+                                    <td>DOCENTE ASIGNADO:</td>
                                     <td>
                                         <div class="dropdown">
-                                            <select id="idGrade" name="idGrade" class="btn btn-secondary dropdown-toggle">
-                                                ' . $names . '
+                                            <select id="idDocent" name="idDocent" class="btn btn-secondary dropdown-toggle">
+                                                ' . $namesDocents . '
                                             </select>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>DOCENTE ASIGNADO:</td>
+                                    <td>CURSO ASIGNADO:</td>
                                     <td>
                                         <div class="dropdown">
-                                            <select id="nameDocent" name="nameDocent" class="btn btn-secondary dropdown-toggle">
-                                                ' . $namesDocents . '
+                                            <select id="idCourse" name="idCourse" class="btn btn-secondary dropdown-toggle">
+                                                ' . $names . '
                                             </select>
                                         </div>
                                     </td>

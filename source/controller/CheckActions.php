@@ -196,15 +196,12 @@ class CheckActions
 
     protected function insertGrade()
     {
-        showElements($_POST);
-
-
         //{ "idGrade": "a", "numberCourses": "2", "selectCourse": "a1", "selectDocent": "3" }
         self::getConnection()->db_exec("query", GradeDAO::addGrade($_POST['idGrade']));
 
-        $idGrade = self::getCoannection()->db_exec("value", GradeDAO::getIDGradeByName($_POST['idGrade']));
-        $idDocent = self::getCoannection()->db_exec("value", DocentDAO::getIDDocentByID($_POST['selectDocent']));
-        if (isset($id) && !empty($id)) {
+        $idGrade = self::getConnection()->db_exec("value", GradeDAO::getIDGradeByName($_POST['idGrade']));
+        $idDocent = self::getConnection()->db_exec("value", DocentDAO::getIDDocentByID($_POST['selectDocent']));
+        if (isset($idGrade) && !empty($idDocent)) {
             $name = $_POST['selectCourse'];
             if (!self::getConnection()->db_exec("query", GradeDAO::addCourses($name, $idGrade, $idDocent))) {
                 self::addAndExit();
@@ -247,16 +244,13 @@ class CheckActions
     protected function insertSubject()
     {
         $dataTemp = $_POST;
+        $idCourse = self::getConnection()->db_exec("value", GradeDAO::getIDGradeByName($_POST['idCourse']));
+
         $data = array(
-            "Cod_Asignatur" => $dataTemp['codeSubject'],
-            "Nombre_asignatura" => $dataTemp['nameSubject'],
-            "Estado" => "Activa",
-            "Asignatura_curso_idAsignatura_curso" => 1,
-            "Asignatura_curso_Curso_id_curso" => 1,
-            "Asignatura_curso_Curso_Grado_id_Grado" => 1,
-            "Docente_idDocente" => $dataTemp['nameDocent'],
-            "Docente_idDocente1" => $dataTemp['nameDocent'],
-            "Grado_id_Grado" => $dataTemp['idGrade'],
+            "idSubject" => $dataTemp['codeSubject'],
+            "nameSubject" => $dataTemp['nameSubject'],
+            "idDocent" => $dataTemp['idDocent'],
+            "idCourse" => $idCourse,
         );
         // Add Subject
         if (!$this->connection->db_exec("query", SubjectDAO::addSubject($data))) {
@@ -346,49 +340,37 @@ class CheckActions
 
         $data = $_POST;
 
-        $values =
+        $value =
             array(
+                'typeEnrollment' => 'Seleccione...',
                 'name' => '',
                 'lastName' => '',
                 'typeID' => 'Seleccione...',
                 'numberID' => '',
-                'birthday' => '' . date('m/d/Y') . '',
-                'birthplace' => '',
-                'years' => 'Seleccione...',
+                'birthday' => '05/15/2019',
                 'rh' => 'Seleccione...',
                 'eps' => '',
-                'nameFather' => '',
-                'ccFather' => '',
-                'phoneFather' => '',
-                'nameMother' => '',
-                'ccMother' => '',
-                'phoneMother' => '',
-                'nameAttendant' => '',
-                'phoneAttendant' => '',
-                'relationship' => '',
-                'address' => '',
-                'grade' => '',
                 'religion' => '',
-                'institute' => '',
+                'numberPhone' => '',
+                'codeStudent' => '',
+                'placebirth' => '',
+                'typeStudent' => 'Seleccione...',
+                'nameCourse' => 'Seleccione...',
+                'nameParent' => '',
+                'lastNameParent' => '',
+                'typeIDParent' => 'Seleccione...',
+                'numberIDParent' => '',
+                'birthdayParent' => '05/15/2019',
+                'rhParent' => 'Seleccione...',
+                'epsParent' => '',
+                'religionParent' => '',
+                'numberPhoneParent' => '',
+                'parentezco' => 'Seleccione...',
             );
 
-        // Data Values Main
-        $values = array(
+// Persona - Student & Familliar
+        //relacion studentfamiliar
 
-            "Nombre_Completo" => $data['name'] . " " . $data['lastName'],
-            "Lugar_nacimiento" => $data['birthplace'],
-            "Fecha_nac" => $data['birthday'],
-            "Edad" => $data['years'],
-            "Religion" => $data['religion'],
-            "Titulo_profesional" => $data['profession'],
-            "Titulo_documento" => $data['typeID'],
-            "Num_id" => $data['numberID'],
-            "Fecha_Registro" => $registerDate,
-            "Fecha_fin" => $endDate,
-            "Estado" => $data['eps'],
-            "Usuarios_idUsuarios" => $data['birthplace']
-        );
-        //showContent($data);
         /*$registerDate = date("Y-m-d", strtotime($data['registerDate']));
         $endDate = date("Y-m-d", strtotime($data['endDate']));
 
@@ -411,8 +393,9 @@ class CheckActions
 
     private function addAndExit($txt = "Añadidos")
     {
-        $this->connection->close();
         echo("<script>alert('Datos $txt con Exito');window.open('" . getActualURL() . "', '_self');    </script>");
+
+        //self::getConnection()->close();
     }
 
     private function exitAll($message)

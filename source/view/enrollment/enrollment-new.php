@@ -1,4 +1,17 @@
 <?php
+$options = self::getConnection()->db_exec("fetch_array", 'SELECT `nameRelationship` FROM `relationship` ');
+$names = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
+foreach ($options as $keys => $values) {
+    $names .= '<option class="dropdown-item" >' . $values['nameRelationship'] . '</option>';
+}
+
+$gradeNames = self::getConnection()->db_exec("fetch_array", 'SELECT `nameCourse` FROM `course`');
+$namesG = "<option class=\"dropdown-item\" selected>Seleccione...</option>";
+foreach ($gradeNames as $keys => $values) {
+    $namesG .= '<option class="dropdown-item" >' . $values[0] . '</option>';
+}
+
+
 $section->appendInnerHTML('
         <div class="container">
             <div class="card card-profile shadow mt--300">
@@ -47,9 +60,21 @@ $section->appendInnerHTML('
     <div class="card-body">
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-                <p class="description">Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-                <p class="description">Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse.</p>
-            </div>
+ <table class="col-lg-12">
+                                            <tbody><tr>
+                                    <td>Tipo de matricula:</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <select id="typeEnrollment" name="typeEnrollment" class="btn btn-secondary dropdown-toggle">
+                                                <option class="dropdown-item" selected>Seleccione...</option>
+                                                            <option class="dropdown-item" >Nueva</option>
+                                                            <option class="dropdown-item" >Antigua</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>          
+                                  </tbody>
+                                  </table></div>
             <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
                 <table class="col-lg-12">
                                             <tbody>
@@ -158,7 +183,7 @@ $section->appendInnerHTML('
                                                 <td>Código de Estudiante:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="numberPhone" name="numberPhone"
+                                                        <input type="text" class="form-control" id="codeStudent" name="codeStudent"
                                                                placeholder="Ingrese el Número de Celular">
                                                     </div>
                                                 </td>
@@ -167,7 +192,7 @@ $section->appendInnerHTML('
                                                 <td>Lugar de Nacimiento:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="numberPhone" name="numberPhone"
+                                                        <input type="text" class="form-control" id="placebirth" name="placebirth"
                                                                placeholder="Ingrese el Número de Celular">
                                                     </div>
                                                 </td>
@@ -176,7 +201,7 @@ $section->appendInnerHTML('
                                                 <td>Tipo de estudiante:</td>
                                                 <td>
                                                     <div class="dropdown">
-                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
+                                                      <select id="typeStudent" name="typeStudent" class="btn btn-secondary dropdown-toggle">
                                                             <option class="dropdown-item" selected>Seleccione...</option>
                                                             <option class="dropdown-item" >Normal</option>
                                                             <option class="dropdown-item" >Especial</option>
@@ -188,10 +213,8 @@ $section->appendInnerHTML('
                                                 <td>Curso:</td>
                                                 <td>
                                                     <div class="dropdown">
-                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
-                                                            <option class="dropdown-item" selected>Seleccione...</option>
-                                                            <option class="dropdown-item" >Normal</option>
-                                                            <option class="dropdown-item" >Especial</option>
+                                                      <select id="nameCourse" name="nameCourse" class="btn btn-secondary dropdown-toggle">
+                                                            ' . $namesG . '
                                                       </select>
                                                     </div>
                                                 </td>
@@ -200,14 +223,13 @@ $section->appendInnerHTML('
                                             </table>
             </div>
             <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
-                <p class="description">Raw denim you probably haven\'t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
                 <table class="col-lg-12">
                                             <tbody>
                                             <tr>
                                                 <td>NOMBRES:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input class="form-control" name="name" id="name" placeholder="Ingrese los Nombres"
+                                                        <input class="form-control" name="nameParent" id="nameParent" placeholder="Ingrese los Nombres"
                                                                type="text">
                                                     </div>
                                                 </td>
@@ -216,7 +238,7 @@ $section->appendInnerHTML('
                                                 <td>APELLIDOS:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="lastName" name="lastName"
+                                                        <input type="text" class="form-control" id="lastNameParent" name="lastNameParent"
                                                                placeholder="Ingrese los Apellidos">
                                                     </div>
                                                 </td>
@@ -225,7 +247,7 @@ $section->appendInnerHTML('
                                                 <td>TIPO DE IDENTIFICACIÓN:</td>
                                                 <td>
                                                     <div class="dropdown">
-                                                      <select id="typeID" name="typeID" class="btn btn-secondary dropdown-toggle">
+                                                      <select id="typeIDParent" name="typeIDParent" class="btn btn-secondary dropdown-toggle">
                                                             <option class="dropdown-item" selected>Seleccione...</option>
                                                             <option class="dropdown-item" >Cedula de Ciudadania</option>
                                                             <option class="dropdown-item" >Pasaporte</option>
@@ -239,7 +261,7 @@ $section->appendInnerHTML('
                                                 <td>NÚMERO DE IDENTIFICACIÓN:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="numberID" name="numberID"
+                                                        <input type="text" class="form-control" id="numberIDParent" name="numberIDParent"
                                                                placeholder="Ingrese el Número de Identificación">
                                                     </div>
                                                 </td>
@@ -253,7 +275,7 @@ $section->appendInnerHTML('
                                                                 <span class="input-group-text"><i
                                                                         class="ni ni-calendar-grid-58"></i></span>
                                                             </div>
-                                                            <input id="birthday" name="birthday" class="form-control datepicker" placeholder="Select date"
+                                                            <input id="birthdayParent" name="birthdayParent" class="form-control datepicker" placeholder="Select date"
                                                                    type="text" value="' . date('m/d/Y') . '">
                                                         </div>
                                                     </div>
@@ -263,7 +285,7 @@ $section->appendInnerHTML('
                                                 <td>RH:</td>
                                                 <td>
                                                     <div class="dropdown">
-                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
+                                                      <select id="rhParent" name="rhParent" class="btn btn-secondary dropdown-toggle">
                                                             <option class="dropdown-item" selected>Seleccione...</option>
                                                             <option class="dropdown-item" >O+</option>
                                                             <option class="dropdown-item" >O-</option>
@@ -281,7 +303,7 @@ $section->appendInnerHTML('
                                                 <td>EPS:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="eps" name="eps"
+                                                        <input type="text" class="form-control" id="epsParent" name="epsParent"
                                                                placeholder="Ingrese su EPS">
                                                     </div>
                                                 </td>
@@ -290,7 +312,7 @@ $section->appendInnerHTML('
                                                 <td>Religión:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="religion" name="religion"
+                                                        <input type="text" class="form-control" id="religionParent" name="religionParent"
                                                                placeholder="Ingrese su Religión">
                                                     </div>
                                                 </td>
@@ -299,7 +321,7 @@ $section->appendInnerHTML('
                                                 <td>NÚMERO DE CELULAR:</td>
                                                 <td>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="numberPhone" name="numberPhone"
+                                                        <input type="text" class="form-control" id="numberPhoneParent" name="numberPhoneParent"
                                                                placeholder="Ingrese el Número de Celular">
                                                     </div>
                                                 </td>
@@ -308,9 +330,8 @@ $section->appendInnerHTML('
                                                 <td>Parentezco:</td>
                                                 <td>
                                                     <div class="dropdown">
-                                                      <select id="rh" name="rh" class="btn btn-secondary dropdown-toggle">
-                                                            <option class="dropdown-item" selected>Seleccione...</option>
-
+                                                      <select id="parentezco" name="parentezco" class="btn btn-secondary dropdown-toggle">
+                                                            ' . $names . '                 
                                                             </select>
                                                             </div>
                                                             </td>

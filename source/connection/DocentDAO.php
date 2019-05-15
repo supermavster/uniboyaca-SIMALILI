@@ -38,7 +38,7 @@ class DocentDAO
 
     final public static function getIDDocentByID($id)
     {
-        return "SELECT idPerson FROM docent WHERE NumberDocument = '.$id.'";
+        return "SELECT person.idPerson FROM docent docent, person person WHERE docent.idPerson = person.idPerson and person.NumberDocument = '$id'";
     }
 
     final public static function getDocent($id)
